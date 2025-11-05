@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
+/* --- Светлая тема по умолчанию (глобально) --- */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  color-scheme: light; /* форсируем светлую схему для форм/скроллбаров */
 }
+
+/* (НЕ реагируем на системную тёмную тему — блока prefers-color-scheme: dark НЕТ) */
 
 @theme inline {
   --color-background: var(--background);
@@ -12,15 +16,45 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Компонентные классы (пример: Tooltip) ---------- */
+@layer components {
+  .tooltip {
+    @apply relative inline-flex flex-col items-center;
+  }
+
+  .tooltip__trigger {
+    @apply bg-white rounded-full border-2 border-black p-2 cursor-pointer;
+  }
+
+  .tooltip__icon {
+    @apply text-black;
+  }
+
+  .tooltip__content {
+    @apply absolute top-full left-1/2 -translate-x-1/2 mt-2 hidden
+           px-4 py-2 bg-white text-black text-sm rounded shadow-lg z-10
+           whitespace-normal w-[70vw] max-w-[90vw];
+  }
+
+  .tooltip:hover .tooltip__content,
+  .tooltip:focus-within .tooltip__content {
+    @apply flex;
+  }
+
+  .tooltip__trigger:focus-visible {
+    @apply outline-none ring-2 ring-black/30;
+  }
+}
+
+/* Десктопные правки (Tailwind v4: обычный media-query) */
+@media (width >= 768px) {
+  .tooltip__content {
+    @apply whitespace-nowrap w-auto max-w-max;
+  }
 }
