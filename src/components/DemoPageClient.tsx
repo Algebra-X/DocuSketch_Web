@@ -17,11 +17,15 @@ const QUESTIONS_BY_ROOM: Partial<Record<RoomId, Question[]>> = {
   bathroom: [
     { id: "q1", title: "Your bathroom was destroyed by a nuclear explosion?", 
       subtitle: "You can choose one option", 
-      options: [ "Yes", "No", "Maybe🤔", "More likely yes than no", "More likely no than yes", ], }, 
+      options: [ "Yes", "No", "Maybe🤔", "More likely yes than no", "More likely no than yes" ], }, 
     { id: "q2",
       title: "Was your bathroom destroyed by a 100 person party?", 
       subtitle: "You can choose one option", 
       options: ["Yes", "No", "Maybe", "There were only 15 people there"], },
+    { id: "q3",
+      title: "There is mold in the bathroom?", 
+      subtitle: "You can choose one option", 
+      options: ["Yes", "No", "Maybe", "More likely yes than no" ,"More likely no than yes"], },
   ],
   kitchen: [
     {
