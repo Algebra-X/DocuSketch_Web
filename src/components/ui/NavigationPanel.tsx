@@ -91,6 +91,11 @@ const NavigationPanel: FC = React.memo(() => {
               <Pencil size={20} color={TEXT_INACTIVE} />
               <span>Todos</span>
             </Link>
+
+            <Link href="/demo" className="flex items-center space-x-3 opacity-60 hover:opacity-100 text-[#CBC3E0]">
+              <Camera size={20} color={TEXT_INACTIVE} />
+              <span>Demo</span>
+            </Link>
           </nav>
 
           <div className="px-6 pb-6 mt-auto">

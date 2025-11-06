@@ -38,7 +38,7 @@ export default function LoginForm() {
       <div className=" flex flex-col items-center mb-6">
         <Image src="/logoMain.svg" alt="AlgebraX Logo" width={256} height={256} />
         <div className="text-center mb-8 px-2">
-          <h1 className="text-3xl md:text-4xl my-4">Anyskin admin platform</h1>
+          <h1 className="text-3xl md:text-4xl my-4">DocuSketch web</h1>
           <p className="text-lg md:text-xl">Please enter your account data 👇</p>
         </div>
       </div>
