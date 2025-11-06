@@ -3,7 +3,7 @@ import React from "react";
 import { LucideIcon } from "lucide-react";
 
 export type ButtonSize = "sm" | "md" | "lg" | "gg";
-export type HoverColor = "green" | "blue" | "red" | "gray";
+export type HoverColor = "green" | "blue" | "red" | "gray"| "pink";
 
 interface ButtonProps {
   text: string;
@@ -29,6 +29,7 @@ const hoverClasses: Record<HoverColor, string> = {
   blue: "hover:bg-blue-600",
   red: "hover:bg-red-600",
   gray: "hover:bg-gray-600",
+  pink: "hover:bg-[#ff007c] hover:text-white",
 };
 
 export default function Button({

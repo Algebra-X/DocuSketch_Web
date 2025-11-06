@@ -50,6 +50,42 @@ body {
   .tooltip__trigger:focus-visible {
     @apply outline-none ring-2 ring-black/30;
   }
+
+/* --- Navigation palette --- */
+.nav-panel-bg { background: #3d4152; }
+.nav-panel-text { color: #e5e7eb; }
+
+/* Ссылки */
+.nav-link {
+  color: #e5e7eb;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  transform: translateZ(0); /* для плавности */
+}
+.nav-link:hover,
+.nav-link--active {
+  opacity: 1;
+}
+.nav-link:hover {
+  color: #ff007c;         /* 👈 акцент при ховере */
+  transform: scale(1.03); /* лёгкое увеличение */
+}
+
+/* Кнопка выхода */
+.nav-logout-btn {
+  background: #55e6a9;
+  color: #0f172a;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.12s ease;
+}
+.nav-logout-btn:hover {
+  background: #ff007c;   /* 👈 акцент при ховере */
+  color: #ffffff;
+  transform: scale(1.03);
+}
+.nav-logout-btn:active {
+  transform: scale(0.99);
+}
+
 }
 
 /* Десктопные правки (Tailwind v4: обычный media-query) */
