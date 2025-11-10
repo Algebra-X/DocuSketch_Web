@@ -41,16 +41,14 @@ const NavigationPanel: FC = React.memo(() => {
     <div
       className="fixed inset-y-0 left-0 z-40 pointer-events-none"
       aria-label="Navigation panel"
-      style={{ width: PANEL_WIDTH + 48 }} // ширина панели + кнопка
+      style={{ width: PANEL_WIDTH + 48 }}
     >
-      {/* Двигаем и панель, и кнопку одной трансформацией */}
       <div
         className="h-full flex items-center transform-gpu will-change-transform transition-transform duration-200 ease-out"
         style={{
           transform: isOpen ? 'translateX(0)' : `translateX(-${PANEL_WIDTH}px)`,
         }}
       >
-        {/* Сама панель */}
         <aside
           className="h-full flex flex-col pointer-events-auto nav-panel-bg"
           style={{ width: PANEL_WIDTH }}
@@ -58,15 +56,6 @@ const NavigationPanel: FC = React.memo(() => {
           <nav className="mt-16 flex-1 px-6 flex flex-col gap-4">
             <Link
               href="/main"
-              className={`flex w-full items-center gap-3 nav-link ${active.isHome ? 'nav-link--active' : ''}`}
-            >
-              {/* Иконки наследуют currentColor из .nav-link */}
-              <Home size={20} />
-              <span>Home</span>
-            </Link>
-
-            <Link
-              href="/demo"
               className={`flex w-full items-center gap-3 nav-link ${active.isDemo ? 'nav-link--active' : ''}`}
             >
               <Camera size={20} />

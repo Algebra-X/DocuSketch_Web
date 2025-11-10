@@ -57,11 +57,6 @@ export default function SavedAnswers({ items, onUndo, canUndo }: Props) {
                   <span className="font-medium">{item.title}</span>
                   <span className="text-neutral-700"> — {item.answer}</span>
                 </div>
-                {/* при желании покажи время:
-                <div className="text-xs text-neutral-500">
-                  {new Date(item.answeredAt).toLocaleString()}
-                </div>
-                */}
               </li>
             ))}
           </ul>

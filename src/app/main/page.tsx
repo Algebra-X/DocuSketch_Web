@@ -1,8 +1,6 @@
-// src/app/main/page.tsx
-'use client';
+// app/survey/page.tsx (пример)
+import SurveyClient from "@/components/DemoPageClient";
 
-import MainPageClient from '@/components/MainPageClient';
-
-export default function MainPage() {
-  return <MainPageClient />;
+export default function Page() {
+  return <SurveyClient />;
 }
