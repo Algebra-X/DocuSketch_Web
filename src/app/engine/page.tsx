@@ -7,6 +7,8 @@ import type { Answer, NextQuestion, Candidate } from "@/engine/types";
 import QuestionCard from "@/components/engine/QuestionCard";
 import CandidatesPanel from "@/components/engine/CandidatesPanel";
 import TranscriptPanel from "@/components/engine/TranscriptPanel";
+type StopReason = "count" | "mass" | "exhausted";
+type StopState = { shouldStop: boolean; reason?: StopReason };
 
 export default function EnginePage() {
   const [selector, setSelector] = useState<Selector | null>(null);
@@ -17,7 +19,7 @@ export default function EnginePage() {
   const [transcript, setTranscript] = useState<Array<{ question: NextQuestion; answer: Answer }>>(
     []
   );
-  const [stop, setStop] = useState({ shouldStop: false, reason: undefined as string | undefined });
+  const [stop, setStop] = useState<StopState>({ shouldStop: false });
   const [progress, setProgress] = useState<number | undefined>(undefined);
   const [room, setRoom] = useState("BATHROOM");
 
@@ -27,10 +29,7 @@ export default function EnginePage() {
         setLoading(true);
         setError(null);
 
-        const [clusters, qbank] = await Promise.all([
-          loadClusterRules(),
-          loadQuestionBank(),
-        ]);
+        const [clusters, qbank] = await Promise.all([loadClusterRules(), loadQuestionBank()]);
 
         const sel = new Selector(room, {
           stopAt: 1,
@@ -44,7 +43,7 @@ export default function EnginePage() {
         const state = sel.getState();
         setCurrentQuestion(state.nextQuestion);
         setCandidates(state.candidates);
-        setStop(state.stop);
+        setStop(state.stop); 
         setProgress(state.metrics?.topKMass);
 
         setLoading(false);
@@ -88,10 +87,7 @@ export default function EnginePage() {
     // Reset selector and reapply all remaining answers
     try {
       setLoading(true);
-      const [clusters, qbank] = await Promise.all([
-        loadClusterRules(),
-        loadQuestionBank(),
-      ]);
+      const [clusters, qbank] = await Promise.all([loadClusterRules(), loadQuestionBank()]);
 
       const sel = new Selector(room, {
         stopAt: 1,
@@ -184,7 +180,7 @@ export default function EnginePage() {
             </label>
             {stop.shouldStop && (
               <span className="text-sm text-green-600 font-semibold">
-                ✓ Stopped ({stop.reason})
+                ✓ Stopped{stop.reason ? ` (${stop.reason})` : ""}
               </span>
             )}
           </div>
@@ -218,4 +214,3 @@ export default function EnginePage() {
     </div>
   );
 }
-

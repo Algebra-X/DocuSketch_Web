@@ -4,7 +4,7 @@ import type { FactValue, ClusterRule, Candidate } from "./types";
 
 const UNKNOWN_SENTINEL = "__UNKNOWN__";
 
-export function normalizeValue(v: any): FactValue {
+export function normalizeValue(v: unknown): FactValue {
   if (typeof v === "string") {
     const s = v.trim().toLowerCase();
     if (s === "true") return true;
@@ -12,19 +12,17 @@ export function normalizeValue(v: any): FactValue {
     if (s === "__unknown__" || s === "unknown" || s === "?" || s === "n/a" || s === "na") {
       return UNKNOWN_SENTINEL;
     }
+    return v as string;
   }
-  return v;
+  if (typeof v === "number" || typeof v === "boolean") {
+    return v;
+  }
+  return UNKNOWN_SENTINEL;
 }
 
 export function isUnknown(value: FactValue): boolean {
-  if (typeof value === "string") {
-    return value.trim().toLowerCase() === "__unknown__" || 
-           value.trim().toLowerCase() === "unknown" ||
-           value === "?" ||
-           value.trim().toLowerCase() === "n/a" ||
-           value.trim().toLowerCase() === "na";
-  }
-  return value === UNKNOWN_SENTINEL;
+  const nv = normalizeValue(value);
+  return nv === UNKNOWN_SENTINEL;
 }
 
 export function evidenceSymbol(
@@ -161,4 +159,3 @@ export function computeEntropy(probs: number[]): number {
   }
   return entropy;
 }
-

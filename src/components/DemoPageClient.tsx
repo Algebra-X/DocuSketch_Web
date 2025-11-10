@@ -35,6 +35,8 @@ function getRoomImage(roomType: string): string {
 /* =========================
    Types & helpers
    ========================= */
+type StopReason = "count" | "mass" | "exhausted";
+type StopState = { shouldStop: boolean; reason?: StopReason };
 
 const Card: React.FC<React.PropsWithChildren<{ className?: string }>> = ({ className = "", children }) => (
   <div className={`rounded-2xl bg-white shadow-sm ring-1 ring-black/5 ${className}`}>{children}</div>
@@ -407,7 +409,7 @@ export default function DemoPageClient({ initialRoom }: { initialRoom?: RoomId }
   const [currentQuestion, setCurrentQuestion] = React.useState<NextQuestion | null>(null);
   const [candidates, setCandidates] = React.useState<Candidate[]>([]);
   const [answerLog, setAnswerLog] = React.useState<AnswerEntry[]>([]);
-  const [stop, setStop] = React.useState({ shouldStop: false, reason: undefined as string | undefined });
+  const [stop, setStop] = React.useState<StopState>({ shouldStop: false });
   const [progress, setProgress] = React.useState(0);
 
   // Load available room types from cluster rules on mount
