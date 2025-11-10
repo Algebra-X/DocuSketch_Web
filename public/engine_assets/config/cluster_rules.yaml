@@ -1,0 +1,1631 @@
+- cluster_id: basement__cluster_01
+  room_type: BASEMENT
+  requires:
+    loss.water_category:
+    - CAT3
+  excludes: {}
+  indicates:
+    extraction_pumping.extraction_intensity:
+    - HEAVY
+- cluster_id: basement__cluster_02
+  room_type: BASEMENT
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: basement__cluster_03
+  room_type: BASEMENT
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+    building_modifiers.vapor_barrier_present:
+    - true
+- cluster_id: basement__cluster_04
+  room_type: BASEMENT
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: basement__cluster_05
+  room_type: BASEMENT
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: basement__cluster_06
+  room_type: BASEMENT
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: basement__cluster_07
+  room_type: BASEMENT
+  requires:
+    loss.water_category:
+    - CAT3
+  excludes: {}
+  indicates: {}
+- cluster_id: basement__cluster_08
+  room_type: BASEMENT
+  requires:
+    loss.water_category:
+    - CAT3
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: basement__cluster_09
+  room_type: BASEMENT
+  requires:
+    loss.water_category:
+    - CAT3
+  excludes: {}
+  indicates:
+    decon.contaminated_water_disposal:
+    - true
+- cluster_id: basement__cluster_10
+  room_type: BASEMENT
+  requires:
+    extraction_pumping.extraction_surface:
+    - HARD_SURFACE
+  excludes: {}
+  indicates:
+    extraction_pumping.extraction_surface:
+    - HARD_SURFACE
+- cluster_id: basement__cluster_11
+  room_type: BASEMENT
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: basement__cluster_12
+  room_type: BASEMENT
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: basement__cluster_13
+  room_type: BASEMENT
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: basement__cluster_14
+  room_type: BASEMENT
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: basement__cluster_15
+  room_type: BASEMENT
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: basement__cluster_16
+  room_type: BASEMENT
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: bathroom__cluster_01
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    cleaning_surface_prep.abrasive_treatment:
+    - DRY_ICE_BLASTING
+- cluster_id: bathroom__cluster_02
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bathroom__cluster_03
+  room_type: BATHROOM
+  requires:
+    loss.work_timing:
+    - EMERGENCY_AFTER
+  excludes: {}
+  indicates: {}
+- cluster_id: bathroom__cluster_04
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bathroom__cluster_05
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.dehumidification.environmental_control:
+    - true
+- cluster_id: bathroom__cluster_06
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    decon.equipment_decon:
+    - STANDARD
+- cluster_id: bathroom__cluster_07
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bathroom__cluster_08
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bathroom__cluster_09
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    extraction_pumping.extraction_surface:
+    - HARD_SURFACE
+    loss.water_category:
+    - CAT3
+- cluster_id: bathroom__cluster_10
+  room_type: BATHROOM
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: bathroom__cluster_11
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: bathroom__cluster_12
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.cavity_drying.holes_drilled:
+    - true
+    drying.cavity_drying.holes_filled:
+    - false
+- cluster_id: bathroom__cluster_13
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bathroom__cluster_14
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    ppe.ppe_level:
+    - HEAVY_DUTY
+    - STANDARD
+- cluster_id: bathroom__cluster_15
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.return_register_protection:
+    - LARGE
+- cluster_id: bathroom__cluster_16
+  room_type: BATHROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: bedroom__cluster_01
+  room_type: BEDROOM
+  requires:
+    loss.water_category:
+    - CAT3
+  excludes: {}
+  indicates: {}
+- cluster_id: bedroom__cluster_02
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bedroom__cluster_03
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bedroom__cluster_04
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.work_timing:
+    - AFTER_HOURS
+    drying.cavity_drying.holes_filled:
+    - false
+- cluster_id: bedroom__cluster_05
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bedroom__cluster_06
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bedroom__cluster_07
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    building_modifiers.vapor_barrier_present:
+    - true
+- cluster_id: bedroom__cluster_08
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.containment_level:
+    - BARRIER
+- cluster_id: bedroom__cluster_09
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bedroom__cluster_10
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.return_register_protection:
+    - LARGE
+- cluster_id: bedroom__cluster_11
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bedroom__cluster_12
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bedroom__cluster_13
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bedroom__cluster_14
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.work_timing:
+    - AFTER_HOURS
+- cluster_id: bedroom__cluster_15
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: bedroom__cluster_16
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    extraction_pumping.extraction_intensity:
+    - STANDARD
+- cluster_id: bedroom__cluster_17
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.confined_space:
+    - true
+- cluster_id: bedroom__cluster_18
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    ppe.ppe_level:
+    - HEAVY_DUTY
+    - STANDARD
+- cluster_id: bedroom__cluster_19
+  room_type: BEDROOM
+  requires: {}
+  excludes: {}
+  indicates:
+    decon.antimicrobial:
+    - PLANT_BASED
+- cluster_id: closet__cluster_01
+  room_type: CLOSET
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT2
+    drying.air_movement.air_mover_type:
+    - STANDARD
+- cluster_id: closet__cluster_02
+  room_type: CLOSET
+  requires:
+    loss.water_category:
+    - CAT3
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: closet__cluster_03
+  room_type: CLOSET
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: closet__cluster_04
+  room_type: CLOSET
+  requires:
+    loss.water_category:
+    - CAT3
+  excludes: {}
+  indicates: {}
+- cluster_id: closet__cluster_05
+  room_type: CLOSET
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: closet__cluster_06
+  room_type: CLOSET
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: closet__cluster_07
+  room_type: CLOSET
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: closet__cluster_08
+  room_type: CLOSET
+  requires:
+    loss.work_timing:
+    - EMERGENCY_AFTER
+  excludes: {}
+  indicates: {}
+- cluster_id: closet__cluster_09
+  room_type: CLOSET
+  requires: {}
+  excludes: {}
+  indicates:
+    ppe.ppe_level:
+    - HEAVY_DUTY
+- cluster_id: closet__cluster_10
+  room_type: CLOSET
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: closet__cluster_11
+  room_type: CLOSET
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.heat_assisted:
+    - DRYING_BLANKETS_MATS
+    monitoring_power.monitoring_mode:
+    - NONE
+- cluster_id: closet__cluster_12
+  room_type: CLOSET
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: closet__cluster_13
+  room_type: CLOSET
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.return_register_protection:
+    - LARGE
+- cluster_id: closet__cluster_14
+  room_type: CLOSET
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: closet__cluster_15
+  room_type: CLOSET
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.dehumidification.approach:
+    - REFRIGERANT
+    monitoring_power.monitoring_mode:
+    - NONE
+- cluster_id: crawlspace__cluster_01
+  room_type: CRAWLSPACE
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: crawlspace__cluster_02
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates:
+    billing.pricing_mode:
+    - LABOR_MINIMUM
+    loss.work_timing:
+    - EMERGENCY_DURING
+- cluster_id: crawlspace__cluster_03
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: crawlspace__cluster_04
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates:
+    ppe.respirator:
+    - N95
+- cluster_id: crawlspace__cluster_05
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: crawlspace__cluster_06
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: crawlspace__cluster_07
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: crawlspace__cluster_08
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: crawlspace__cluster_09
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: crawlspace__cluster_10
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+    extraction_pumping.extraction_surface:
+    - HARD_SURFACE
+- cluster_id: crawlspace__cluster_11
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.cavity_drying.holes_drilled:
+    - true
+    decon.equipment_decon:
+    - STANDARD
+- cluster_id: crawlspace__cluster_12
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: crawlspace__cluster_13
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: crawlspace__cluster_14
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.air_movement.air_mover_type:
+    - AXIAL
+    loss.water_category:
+    - CAT3
+- cluster_id: crawlspace__cluster_15
+  room_type: CRAWLSPACE
+  requires: {}
+  excludes: {}
+  indicates:
+    decon.contaminated_water_disposal:
+    - true
+    decon.waste_handling:
+    - BAG
+- cluster_id: garage__cluster_01
+  room_type: GARAGE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: garage__cluster_02
+  room_type: GARAGE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: garage__cluster_03
+  room_type: GARAGE
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.work_timing:
+    - EMERGENCY_DURING
+    extraction_pumping.extraction_intensity:
+    - STANDARD
+- cluster_id: garage__cluster_04
+  room_type: GARAGE
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.work_timing:
+    - AFTER_HOURS
+- cluster_id: garage__cluster_05
+  room_type: GARAGE
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: garage__cluster_06
+  room_type: GARAGE
+  requires: {}
+  excludes: {}
+  indicates:
+    decon.contaminated_water_disposal:
+    - true
+- cluster_id: garage__cluster_07
+  room_type: GARAGE
+  requires:
+    cleaning_surface_prep.abrasive_treatment:
+    - SANDING
+  excludes: {}
+  indicates:
+    cleaning_surface_prep.abrasive_treatment:
+    - SANDING
+    decon.equipment_decon:
+    - STANDARD
+- cluster_id: garage__cluster_08
+  room_type: GARAGE
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.containment_level:
+    - BARRIER_WITH_AIRLOCK
+- cluster_id: garage__cluster_09
+  room_type: GARAGE
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: garage__cluster_10
+  room_type: GARAGE
+  requires: {}
+  excludes: {}
+  indicates:
+    building_modifiers.vapor_barrier_present:
+    - true
+- cluster_id: garage__cluster_11
+  room_type: GARAGE
+  requires: {}
+  excludes: {}
+  indicates:
+    monitoring_power.monitoring_mode:
+    - NONE
+- cluster_id: garage__cluster_12
+  room_type: GARAGE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: garage__cluster_13
+  room_type: GARAGE
+  requires:
+    containment.negative_air_size:
+    - LARGE
+  excludes: {}
+  indicates:
+    containment.negative_air_size:
+    - LARGE
+- cluster_id: garage__cluster_14
+  room_type: GARAGE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: garage__cluster_15
+  room_type: GARAGE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: general__cluster_01
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.work_timing:
+    - EMERGENCY_DURING
+    ppe.respirator:
+    - N95
+- cluster_id: general__cluster_02
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates:
+    billing.pricing_mode:
+    - LABOR_MINIMUM
+    loss.water_category:
+    - CAT3
+- cluster_id: general__cluster_03
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.negative_air_size:
+    - LARGE
+- cluster_id: general__cluster_04
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: general__cluster_05
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates:
+    ppe.respirator:
+    - HALF_FACE
+- cluster_id: general__cluster_06
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.wood_floor_drying_system:
+    - EXTRACTION_MAT
+    drying.air_movement.air_mover_type:
+    - STANDARD
+- cluster_id: general__cluster_07
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.work_timing:
+    - AFTER_HOURS
+- cluster_id: general__cluster_08
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates:
+    decon.waste_handling:
+    - BAG
+- cluster_id: general__cluster_09
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates:
+    ppe.cartridge:
+    - ORGANIC_VAPOR_ACID_GAS
+- cluster_id: general__cluster_10
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: general__cluster_11
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates:
+    decon.equipment_decon:
+    - STANDARD
+    decon.waste_handling:
+    - HAZARDOUS_BAG_BOX_CONTAINER
+- cluster_id: general__cluster_12
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates:
+    decon.equipment_decon:
+    - HEAVY
+    drying.air_movement.air_mover_type:
+    - AXIAL
+- cluster_id: general__cluster_13
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: general__cluster_14
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates:
+    ppe.respirator:
+    - PAPR
+- cluster_id: general__cluster_15
+  room_type: GENERAL
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: hallway__cluster_01
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates:
+    extraction_pumping.extraction_intensity:
+    - STANDARD
+- cluster_id: hallway__cluster_02
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+    cleaning_surface_prep.abrasive_treatment:
+    - DRY_ICE_BLASTING
+- cluster_id: hallway__cluster_03
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates:
+    decon.equipment_decon:
+    - STANDARD
+- cluster_id: hallway__cluster_04
+  room_type: HALLWAY
+  requires:
+    loss.water_category:
+    - CAT3
+    loss.work_timing:
+    - EMERGENCY_AFTER
+  excludes: {}
+  indicates: {}
+- cluster_id: hallway__cluster_05
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates:
+    building_modifiers.vapor_barrier_present:
+    - true
+    building_modifiers.additional_material_layers_present:
+    - true
+- cluster_id: hallway__cluster_06
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: hallway__cluster_07
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: hallway__cluster_08
+  room_type: HALLWAY
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: hallway__cluster_09
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.work_timing:
+    - AFTER_HOURS
+- cluster_id: hallway__cluster_10
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.air_movement.air_mover_type:
+    - AXIAL
+- cluster_id: hallway__cluster_11
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.work_timing:
+    - AFTER_HOURS
+- cluster_id: hallway__cluster_12
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates:
+    ppe.ppe_level:
+    - HEAVY_DUTY
+    - STANDARD
+- cluster_id: hallway__cluster_13
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates:
+    decon.antimicrobial:
+    - PLANT_BASED
+- cluster_id: hallway__cluster_14
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.heat_assisted:
+    - DRYING_BLANKETS_MATS
+    monitoring_power.monitoring_mode:
+    - NONE
+- cluster_id: hallway__cluster_15
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.dehumidification.environmental_control:
+    - true
+    drying.heat_assisted:
+    - DUCTED_AIR
+- cluster_id: hallway__cluster_16
+  room_type: HALLWAY
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_01
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_02
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_03
+  room_type: KITCHEN
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_04
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_05
+  room_type: KITCHEN
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_06
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.negative_air_size:
+    - LARGE
+- cluster_id: kitchen__cluster_07
+  room_type: KITCHEN
+  requires:
+    loss.water_category:
+    - CAT3
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_08
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_09
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_10
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_11
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_12
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_13
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates:
+    building_modifiers.additional_material_layers_present:
+    - true
+    containment.containment_level:
+    - BARRIER_WITH_AIRLOCK
+- cluster_id: kitchen__cluster_14
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_15
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates:
+    cleaning_surface_prep.abrasive_treatment:
+    - SANDING
+    decon.contaminated_water_disposal:
+    - true
+- cluster_id: kitchen__cluster_16
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates:
+    ppe.ppe_level:
+    - HEAVY_DUTY
+    - STANDARD
+- cluster_id: kitchen__cluster_17
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: kitchen__cluster_18
+  room_type: KITCHEN
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.return_register_protection:
+    - LARGE
+- cluster_id: laundry__cluster_01
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: laundry__cluster_02
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates:
+    building_modifiers.additional_material_layers_present:
+    - true
+- cluster_id: laundry__cluster_03
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates:
+    decon.waste_handling:
+    - HAZARDOUS_BAG_BOX_CONTAINER
+- cluster_id: laundry__cluster_04
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates:
+    cleaning_surface_prep.abrasive_treatment:
+    - SANDING
+- cluster_id: laundry__cluster_05
+  room_type: LAUNDRY
+  requires:
+    loss.work_timing:
+    - EMERGENCY_AFTER
+  excludes: {}
+  indicates: {}
+- cluster_id: laundry__cluster_06
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: laundry__cluster_07
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: laundry__cluster_08
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: laundry__cluster_09
+  room_type: LAUNDRY
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: laundry__cluster_10
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: laundry__cluster_11
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: laundry__cluster_12
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: laundry__cluster_13
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.cavity_drying.holes_filled:
+    - false
+    drying.dehumidification.environmental_control:
+    - true
+- cluster_id: laundry__cluster_14
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates:
+    extraction_pumping.extraction_surface:
+    - HARD_SURFACE
+- cluster_id: laundry__cluster_15
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates:
+    monitoring_power.monitoring_mode:
+    - NONE
+- cluster_id: laundry__cluster_16
+  room_type: LAUNDRY
+  requires: {}
+  excludes: {}
+  indicates:
+    extraction_pumping.extraction_intensity:
+    - HEAVY
+    drying.air_movement.air_mover_type:
+    - AXIAL
+- cluster_id: living_area__cluster_01
+  room_type: LIVING AREA
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: living_area__cluster_02
+  room_type: LIVING AREA
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: living_area__cluster_03
+  room_type: LIVING AREA
+  requires: {}
+  excludes: {}
+  indicates:
+    building_modifiers.vapor_barrier_present:
+    - true
+- cluster_id: living_area__cluster_04
+  room_type: LIVING AREA
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: living_area__cluster_05
+  room_type: LIVING AREA
+  requires:
+    loss.water_category:
+    - CAT3
+  excludes: {}
+  indicates: {}
+- cluster_id: living_area__cluster_06
+  room_type: LIVING AREA
+  requires:
+    loss.water_category:
+    - CAT3
+    loss.work_timing:
+    - EMERGENCY_AFTER
+  excludes: {}
+  indicates: {}
+- cluster_id: living_area__cluster_07
+  room_type: LIVING AREA
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: living_area__cluster_08
+  room_type: LIVING AREA
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.containment_level:
+    - BARRIER
+    - BARRIER_WITH_AIRLOCK
+- cluster_id: living_area__cluster_09
+  room_type: LIVING AREA
+  requires: {}
+  excludes: {}
+  indicates:
+    extraction_pumping.extraction_surface:
+    - HARD_SURFACE
+- cluster_id: living_area__cluster_10
+  room_type: LIVING AREA
+  requires: {}
+  excludes: {}
+  indicates:
+    decon.equipment_decon:
+    - STANDARD
+- cluster_id: living_area__cluster_11
+  room_type: LIVING AREA
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.negative_air_size:
+    - LARGE
+- cluster_id: living_area__cluster_12
+  room_type: LIVING AREA
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: living_area__cluster_13
+  room_type: LIVING AREA
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: living_area__cluster_14
+  room_type: LIVING AREA
+  requires:
+    ppe.ppe_level:
+    - HEAVY_DUTY
+  excludes: {}
+  indicates:
+    ppe.ppe_level:
+    - STANDARD
+    ppe.respirator:
+    - N95
+- cluster_id: living_area__cluster_15
+  room_type: LIVING AREA
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.containment_level:
+    - BARRIER_WITH_AIRLOCK
+- cluster_id: living_area__cluster_16
+  room_type: LIVING AREA
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.work_timing:
+    - AFTER_HOURS
+- cluster_id: living_area__cluster_17
+  room_type: LIVING AREA
+  requires:
+    containment.return_register_protection:
+    - LARGE
+  excludes: {}
+  indicates:
+    containment.return_register_protection:
+    - LARGE
+- cluster_id: living_area__cluster_18
+  room_type: LIVING AREA
+  requires:
+    decon.contaminated_water_disposal:
+    - true
+  excludes: {}
+  indicates:
+    decon.contaminated_water_disposal:
+    - true
+    decon.waste_handling:
+    - BAG
+- cluster_id: office__cluster_01
+  room_type: OFFICE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: office__cluster_02
+  room_type: OFFICE
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: office__cluster_03
+  room_type: OFFICE
+  requires: {}
+  excludes: {}
+  indicates:
+    decon.equipment_decon:
+    - STANDARD
+- cluster_id: office__cluster_04
+  room_type: OFFICE
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: office__cluster_05
+  room_type: OFFICE
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: office__cluster_06
+  room_type: OFFICE
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: office__cluster_07
+  room_type: OFFICE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: office__cluster_08
+  room_type: OFFICE
+  requires: {}
+  excludes: {}
+  indicates:
+    cleaning_surface_prep.abrasive_treatment:
+    - DRY_ICE_BLASTING
+- cluster_id: office__cluster_09
+  room_type: OFFICE
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+    extraction_pumping.extraction_surface:
+    - HARD_SURFACE
+- cluster_id: office__cluster_10
+  room_type: OFFICE
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.containment_level:
+    - BARRIER
+- cluster_id: office__cluster_11
+  room_type: OFFICE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: office__cluster_12
+  room_type: OFFICE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: office__cluster_13
+  room_type: OFFICE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: office__cluster_14
+  room_type: OFFICE
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: office__cluster_15
+  room_type: OFFICE
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: other__cluster_01
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates:
+    decon.equipment_decon:
+    - STANDARD
+- cluster_id: other__cluster_02
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates:
+    cleaning_surface_prep.abrasive_treatment:
+    - SODA_BLASTING
+- cluster_id: other__cluster_03
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: other__cluster_04
+  room_type: OTHER
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: other__cluster_05
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: other__cluster_06
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: other__cluster_07
+  room_type: OTHER
+  requires:
+    loss.water_category:
+    - CAT3
+  excludes: {}
+  indicates: {}
+- cluster_id: other__cluster_08
+  room_type: OTHER
+  requires:
+    containment.containment_level:
+    - BARRIER
+  excludes: {}
+  indicates: {}
+- cluster_id: other__cluster_09
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.negative_air_size:
+    - LARGE
+    drying.cavity_drying.holes_filled:
+    - false
+- cluster_id: other__cluster_10
+  room_type: OTHER
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: other__cluster_11
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: other__cluster_12
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.negative_air_size:
+    - X_LARGE
+    loss.water_category:
+    - CAT3
+- cluster_id: other__cluster_13
+  room_type: OTHER
+  requires:
+    loss.work_timing:
+    - EMERGENCY_AFTER
+  excludes: {}
+  indicates: {}
+- cluster_id: other__cluster_14
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates:
+    cleaning_surface_prep.abrasive_treatment:
+    - SANDING
+- cluster_id: other__cluster_15
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: other__cluster_16
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: other__cluster_17
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: other__cluster_18
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: other__cluster_19
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.standing_water:
+    - true
+    extraction_pumping.pumping_method:
+    - SUBMERSIBLE_PUMP
+- cluster_id: other__cluster_20
+  room_type: OTHER
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: stairs__cluster_01
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.air_movement.air_mover_type:
+    - STANDARD
+- cluster_id: stairs__cluster_02
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: stairs__cluster_03
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: stairs__cluster_04
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: stairs__cluster_05
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.work_timing:
+    - AFTER_HOURS
+- cluster_id: stairs__cluster_06
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.work_timing:
+    - EMERGENCY_AFTER
+    - AFTER_HOURS
+- cluster_id: stairs__cluster_07
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: stairs__cluster_08
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: stairs__cluster_09
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.negative_air_size:
+    - LARGE
+    containment.containment_level:
+    - BARRIER_WITH_AIRLOCK
+- cluster_id: stairs__cluster_10
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.work_timing:
+    - AFTER_HOURS
+- cluster_id: stairs__cluster_11
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates:
+    extraction_pumping.extraction_intensity:
+    - STANDARD
+    extraction_pumping.extraction_surface:
+    - CARPETED
+- cluster_id: stairs__cluster_12
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: stairs__cluster_13
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.wood_floor_drying_system:
+    - EXTRACTION_MAT
+- cluster_id: stairs__cluster_14
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: stairs__cluster_15
+  room_type: STAIRS
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: utility__cluster_01
+  room_type: UTILITY
+  requires:
+    loss.water_category:
+    - CAT3
+  excludes: {}
+  indicates: {}
+- cluster_id: utility__cluster_02
+  room_type: UTILITY
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: utility__cluster_03
+  room_type: UTILITY
+  requires:
+    loss.work_timing:
+    - AFTER_HOURS
+  excludes: {}
+  indicates: {}
+- cluster_id: utility__cluster_04
+  room_type: UTILITY
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: utility__cluster_05
+  room_type: UTILITY
+  requires:
+    loss.work_timing:
+    - EMERGENCY_AFTER
+  excludes: {}
+  indicates: {}
+- cluster_id: utility__cluster_06
+  room_type: UTILITY
+  requires: {}
+  excludes: {}
+  indicates:
+    containment.containment_level:
+    - BARRIER_WITH_AIRLOCK
+    loss.water_category:
+    - CAT3
+- cluster_id: utility__cluster_07
+  room_type: UTILITY
+  requires:
+    drying.air_quality_treatment:
+    - HEPA
+  excludes: {}
+  indicates: {}
+- cluster_id: utility__cluster_08
+  room_type: UTILITY
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: utility__cluster_09
+  room_type: UTILITY
+  requires: {}
+  excludes: {}
+  indicates:
+    extraction_pumping.extraction_surface:
+    - HARD_SURFACE
+- cluster_id: utility__cluster_10
+  room_type: UTILITY
+  requires: {}
+  excludes: {}
+  indicates:
+    loss.water_category:
+    - CAT3
+- cluster_id: utility__cluster_11
+  room_type: UTILITY
+  requires: {}
+  excludes: {}
+  indicates:
+    ppe.ppe_level:
+    - HEAVY_DUTY
+    - STANDARD
+- cluster_id: utility__cluster_12
+  room_type: UTILITY
+  requires:
+    containment.ducting:
+    - LAY_FLAT_LARGE
+  excludes: {}
+  indicates: {}
+- cluster_id: utility__cluster_13
+  room_type: UTILITY
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.wood_floor_drying_system:
+    - EXTRACTION_MAT
+- cluster_id: utility__cluster_14
+  room_type: UTILITY
+  requires: {}
+  excludes: {}
+  indicates: {}
+- cluster_id: utility__cluster_15
+  room_type: UTILITY
+  requires: {}
+  excludes: {}
+  indicates:
+    drying.cavity_drying.holes_filled:
+    - true

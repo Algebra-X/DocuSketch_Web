@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-export type RoomId = "bathroom" | "kitchen" | "living" | "bedroom";
+export type RoomId = string;
 
 export type Question = {
   id: string;

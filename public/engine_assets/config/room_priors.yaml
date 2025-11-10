@@ -1,0 +1,190 @@
+BASEMENT:
+  basement__cluster_01: 0.145905
+  basement__cluster_02: 0.117233
+  basement__cluster_03: 0.276348
+  basement__cluster_04: 0.149917
+  basement__cluster_05: 0.126235
+  basement__cluster_06: 0.640278
+  basement__cluster_07: 0.126333
+  basement__cluster_08: 0.069968
+  basement__cluster_09: 0.071533
+  basement__cluster_10: 0.004404
+BATHROOM:
+  bathroom__cluster_01: 0.310178
+  bathroom__cluster_02: 0.289568
+  bathroom__cluster_03: 0.271822
+  bathroom__cluster_04: 0.104028
+  bathroom__cluster_05: 0.089209
+  bathroom__cluster_06: 0.54352
+  bathroom__cluster_07: 0.18122
+  bathroom__cluster_08: 0.267099
+  bathroom__cluster_09: 0.2055
+  bathroom__cluster_10: 0.148996
+  bathroom__cluster_11: 0.099676
+  bathroom__cluster_12: 0.051565
+  bathroom__cluster_13: 0.038914
+  bathroom__cluster_14: 0.049118
+  bathroom__cluster_15: 0.029685
+  bathroom__cluster_16: 0.034918
+  bathroom__cluster_17: 0.021787
+BEDROOM:
+  bedroom__cluster_01: 0.268492
+  bedroom__cluster_02: 0.158351
+  bedroom__cluster_03: 0.06127
+  bedroom__cluster_04: 0.20049
+  bedroom__cluster_05: 0.234587
+  bedroom__cluster_06: 0.106902
+  bedroom__cluster_07: 0.288389
+  bedroom__cluster_08: 0.217299
+  bedroom__cluster_09: 0.172454
+  bedroom__cluster_10: 0.20261
+  bedroom__cluster_11: 0.030688
+  bedroom__cluster_12: 0.036866
+CELLAR: {}
+CLOSET:
+  closet__cluster_01: 0.242521
+  closet__cluster_02: 0.07979
+  closet__cluster_03: 0.344219
+  closet__cluster_04: 0.159284
+  closet__cluster_05: 0.693411
+  closet__cluster_06: 0.127841
+  closet__cluster_07: 0.117929
+  closet__cluster_08: 0.05478
+CRAWLSPACE:
+  crawlspace__cluster_01: 0.188929
+  crawlspace__cluster_02: 0.131093
+  crawlspace__cluster_03: 0.399752
+  crawlspace__cluster_04: 0.235748
+  crawlspace__cluster_05: 0.08455
+  crawlspace__cluster_06: 0.08152
+  crawlspace__cluster_07: 0.078766
+  crawlspace__cluster_08: 0.09295
+  crawlspace__cluster_09: 0.081245
+  crawlspace__cluster_10: 0.000689
+DECK: {}
+DINING: {}
+ENSUITE: {}
+ENTRY: {}
+FOYER: {}
+GARAGE:
+  garage__cluster_01: 0.212972
+  garage__cluster_02: 0.181726
+  garage__cluster_03: 0.444106
+  garage__cluster_04: 0.401015
+  garage__cluster_05: 0.029442
+  garage__cluster_06: 0.05674
+  garage__cluster_07: 0.147321
+  garage__cluster_08: 0.001466
+  garage__cluster_09: 0.025832
+  garage__cluster_10: 0.04388
+  garage__cluster_11: 0.025606
+  garage__cluster_12: 0.033164
+  garage__cluster_13: 0.083587
+  garage__cluster_14: 0.004625
+GENERAL:
+  general__cluster_01: 0.29306
+  general__cluster_02: 0.184895
+  general__cluster_03: 0.079963
+  general__cluster_04: 0.021646
+  general__cluster_05: 0.088066
+  general__cluster_06: 0.422883
+GREENHOUSE: {}
+GYM: {}
+HALLWAY:
+  hallway__cluster_01: 0.213517
+  hallway__cluster_02: 0.411313
+  hallway__cluster_03: 0.205773
+  hallway__cluster_04: 0.107297
+  hallway__cluster_05: 0.122553
+  hallway__cluster_06: 0.187708
+  hallway__cluster_07: 0.285369
+  hallway__cluster_08: 0.067296
+  hallway__cluster_09: 0.027308
+  hallway__cluster_10: 0.008356
+  hallway__cluster_11: 0.005706
+  hallway__cluster_12: 0.05351
+  hallway__cluster_13: 0.006347
+  hallway__cluster_14: 0.009607
+  hallway__cluster_15: 0.023727
+  hallway__cluster_16: 0.006376
+  hallway__cluster_17: 0.012198
+KITCHEN:
+  kitchen__cluster_01: 0.23797
+  kitchen__cluster_02: 0.211667
+  kitchen__cluster_03: 0.321785
+  kitchen__cluster_04: 0.121839
+  kitchen__cluster_05: 0.19695
+  kitchen__cluster_06: 0.30535
+  kitchen__cluster_07: 0.430567
+  kitchen__cluster_08: 0.658192
+  kitchen__cluster_09: 0.209395
+  kitchen__cluster_10: 0.078776
+  kitchen__cluster_11: 0.236195
+  kitchen__cluster_12: 0.06572
+  kitchen__cluster_13: 0.124301
+  kitchen__cluster_14: 0.116704
+  kitchen__cluster_15: 0.06278
+LANDING: {}
+LAUNDRY:
+  laundry__cluster_01: 0.233447
+  laundry__cluster_02: 0.115909
+  laundry__cluster_03: 0.166098
+  laundry__cluster_04: 0.097462
+  laundry__cluster_05: 0.110265
+LIVING AREA:
+  living_area__cluster_01: 0.23311
+  living_area__cluster_02: 0.249119
+  living_area__cluster_03: 0.197792
+  living_area__cluster_04: 0.035145
+OFFICE:
+  office__cluster_01: 0.293086
+  office__cluster_02: 0.234621
+  office__cluster_03: 0.162633
+  office__cluster_04: 0.152785
+  office__cluster_05: 0.103475
+  office__cluster_06: 0.231015
+  office__cluster_07: 0.230252
+  office__cluster_08: 0.046883
+OTHER:
+  other__cluster_01: 0.064531
+  other__cluster_02: 0.197646
+  other__cluster_03: 0.030369
+  other__cluster_04: 0.082955
+  other__cluster_05: 0.140509
+  other__cluster_06: 0.199722
+  other__cluster_07: 0.004235
+  other__cluster_08: 0.009812
+PANTRY: {}
+REC ROOM: {}
+RECREATION ROOM: {}
+ROOF: {}
+ROOM: {}
+SHED: {}
+STAIRS:
+  stairs__cluster_01: 0.149208
+  stairs__cluster_02: 0.152848
+  stairs__cluster_03: 0.12786
+  stairs__cluster_04: 0.107003
+  stairs__cluster_05: 0.118471
+  stairs__cluster_06: 0.11772
+  stairs__cluster_07: 0.120118
+  stairs__cluster_08: 0.153513
+  stairs__cluster_09: 0.008464
+  stairs__cluster_10: 0.035475
+  stairs__cluster_11: 0.018835
+  stairs__cluster_12: 0.006355
+  stairs__cluster_13: 0.007193
+  stairs__cluster_14: 0.01274
+  stairs__cluster_15: 0.009504
+  stairs__cluster_16: 0.003698
+STORAGE ROOM: {}
+UTILITY:
+  utility__cluster_01: 0.046687
+  utility__cluster_02: 0.089012
+  utility__cluster_03: 0.138043
+  utility__cluster_04: 0.070291
+  utility__cluster_05: 0.127918
+  utility__cluster_06: 0.167443
+  utility__cluster_07: 0.183786
+  utility__cluster_08: 0.083607
+

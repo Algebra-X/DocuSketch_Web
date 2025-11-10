@@ -1,0 +1,413 @@
+version: 0.1
+scope: water_mitigation
+notes:
+- Qualitative facts only (no counts, durations, dimensions).
+- Global modifiers (e.g., after-hours, Cat 3, confined space) apply across items.
+- Components allow actions + attributes without quantities.
+definitions:
+  enums:
+    water_category: &id001
+    - CAT1
+    - CAT2
+    - CAT3
+    water_class: &id002
+    - CLASS_1
+    - CLASS_2
+    - CLASS_3
+    - CLASS_4
+    climate_control: &id003
+    - CLIMATE_CONTROLLED
+    - NON_CLIMATE_CONTROLLED
+    work_timing: &id004
+    - BUSINESS_HOURS
+    - AFTER_HOURS
+    - EMERGENCY_DURING
+    - EMERGENCY_AFTER
+    containment_level: &id005
+    - NONE
+    - BARRIER
+    - BARRIER_WITH_AIRLOCK
+    containment_component: &id006
+    - AIR_FILTER_ON_BARRIER
+    - ZIPPER_STANDARD
+    - ZIPPER_HEAVY_DUTY
+    - TENSION_POSTS
+    negative_air_size: &id007
+    - NONE
+    - STANDARD
+    - LARGE
+    - X_LARGE
+    ducting_type: &id008
+    - FLEXIBLE_ROUND
+    - LAY_FLAT_STANDARD
+    - LAY_FLAT_LARGE
+    - MULTIPORT_ADAPTER
+    return_register_protection: &id009
+    - NONE
+    - STANDARD
+    - LARGE
+    antimicrobial_type: &id010
+    - NONE
+    - SYNTHETIC
+    - PLANT_BASED
+    - BIOLOGICAL
+    - MOLD_STAIN_REMOVER
+    waste_handling_level: &id011
+    - NONE
+    - BAG
+    - HAZARDOUS_BAG_BOX_CONTAINER
+    equipment_decon_level: &id012
+    - STANDARD
+    - HEAVY
+    ppe_level: &id013
+    - STANDARD
+    - HEAVY_DUTY
+    respirator: &id014
+    - NONE
+    - N95
+    - HALF_FACE
+    - FULL_FACE
+    - PAPR
+    - SAR
+    cartridge: &id015
+    - NONE
+    - HEPA
+    - HEPA_VAPOR_GAS
+    - ORGANIC_VAPOR_ACID_GAS
+    substrate: &id016
+    - CONCRETE
+    - WOOD
+    - TILE_GROUT
+    surface_action: &id018
+    - DETACH
+    - DETACH_RESET
+    - DEMO
+    - CLEAN_HEPA
+    - PROTECT_COVER
+    component_type: &id017
+    - CEILING_TILE_SUSPENDED
+    - CEILING_TILE_STAPLED
+    - DRYWALL
+    - PLASTER
+    - PANELING
+    - INSULATION_CAVITY
+    - INSULATION_OPEN
+    - SHEATHING
+    - TOE_KICK
+    - BACKSPLASH
+    - BASEBOARD
+    - COVE_BASE
+    - TRIM
+    - TACKLESS_STRIP
+    - SUBFLOOR
+    - SLEEPERS
+    - UNDERLAYMENT
+    - VAPOR_BARRIER
+    - CARPET
+    - CARPET_PAD
+    - VINYL_SHEET
+    - VINYL_TILE
+    - WOOD_SOLID
+    - WOOD_ENGINEERED
+    - FLOATING_FLOOR
+    - TILE_FLOOR
+    - COUNTERTOP_LAMINATE_FLAT
+    - COUNTERTOP_LAMINATE_POSTFORMED
+    - COUNTERTOP_SOLID_SURFACE
+    - COUNTERTOP_GRANITE
+    - COUNTERTOP_TILE
+    - COUNTERTOP_SUBDECK
+    - CABINET_FULL_HEIGHT
+    - CABINET_UPPER
+    - CABINET_LOWER
+    - VANITY
+    component_attributes: &id019
+    - NON_SALVAGEABLE
+    - OVERSIZED
+    - BAGGING_REQUIRED
+    - CATEGORY_SPECIFIC
+    - CONFINED_SPACE
+    - GLUE_DOWN
+    - VAPOR_BARRIER_PRESENT
+    fixture_type: &id020
+    - SINK_SINGLE
+    - SINK_DOUBLE
+    - SINK_PEDESTAL
+    - SINK_UNDERMOUNT
+    - TOILET
+    - GARBAGE_DISPOSAL
+    - DISHWASHER
+    - RANGE_GAS
+    - RANGE_ELECTRIC
+    - REFRIGERATOR
+    - WASHER
+    - DRYER_GAS
+    - DRYER_ELECTRIC
+    - WATER_HEATER
+    shower_detail: &id021
+    - CURB_CONCRETE
+    - CURB_FRAMED
+    - WATERPROOF_MEMBRANE_DRAIN_CONTEXT
+    extraction_surface: &id022
+    - CARPETED
+    - HARD_SURFACE
+    extraction_intensity: &id023
+    - STANDARD
+    - HEAVY
+    - WEIGHT_ASSISTED
+    pumping_method: &id024
+    - NONE
+    - SUBMERSIBLE_PUMP
+    - TRASH_PUMP
+    - TRUCK_MOUNTED
+    dehumidifier_type: &id025
+    - NONE
+    - REFRIGERANT
+    - DESICCANT
+    air_mover_type: &id026
+    - NONE
+    - STANDARD
+    - MINI
+    - AXIAL
+    heat_assisted: &id027
+    - NONE
+    - HYDRONIC_BOILER
+    - DUCTED_AIR
+    - THERMAL_EXCHANGER_PLUS_AIR_MOVER
+    - THERMAL_AIR_MOVER
+    - INFRARED_PANELS
+    - DRYING_BLANKETS_MATS
+    - SENSOR_CONTROLLED_SYSTEM
+    cavity_drying_method: &id028
+    - NONE
+    - INJECTION
+    - DUCTED
+    wood_floor_drying: &id029
+    - NONE
+    - SUBFLOOR_AIRFLOW
+    - EXTRACTION_MAT
+    - ADD_ON_KIT
+    air_filter: &id030
+    - NONE
+    - HEPA
+    - CARBON_VAPOR
+    - GAS_ODOR_NEUTRALIZATION
+    monitoring_mode: &id031
+    - NONE
+    - ONSITE_TECH
+    - REMOTE_GATEWAY_SENSORS
+    temporary_power: &id032
+    - false
+    - true
+    testing: &id033
+    - NONE
+    - MOISTURE_CALCIUM_CHLORIDE
+    - AIR_SURFACE_LAB_PRE
+    - AIR_SURFACE_LAB_POST
+    - ATP_ONSITE
+    - DOP_TEST
+    - THERMAL_IMAGING
+    content_handling: &id034
+    - NONE
+    - BLOCK_AND_PAD
+    - TRANSPORT_CARPET_FOR_DRYING
+    - HANG_DRY_CARPETS_RUGS
+    surface_protection: &id035
+    - NONE
+    - FLOOR_FILM
+    - FLOOR_CLOTH
+    - FLOOR_NEOPRENE
+    - BREATHABLE
+    - LEAK_PROOF
+    - PROTECT_WITH_PLASTIC
+    hepa_vac_scope: &id036
+    - FLOORS
+    - WALLS
+    - WITH_SHEATHING
+    - LIGHT
+    - DETAILED
+    - HOURLY
+    abrasive_treatment: &id037
+    - NONE
+    - SANDING
+    - DRY_ICE_BLASTING
+    - SODA_BLASTING
+    pricing_mode: &id038
+    - AGREED_PRICE
+    - BID_ITEM
+    - PAID_BILL
+    - LABOR_MINIMUM
+schema:
+  loss:
+    water_category:
+      type: enum
+      enum: *id001
+    water_class:
+      type: enum
+      enum: *id002
+    climate_control:
+      type: enum
+      enum: *id003
+    standing_water:
+      type: boolean
+    work_timing:
+      type: enum
+      enum: *id004
+    confined_space:
+      type: boolean
+  containment:
+    containment_level:
+      type: enum
+      enum: *id005
+    components:
+      type: multiselect
+      enum: *id006
+    negative_air_size:
+      type: enum
+      enum: *id007
+    ducting:
+      type: multiselect
+      enum: *id008
+    return_register_protection:
+      type: enum
+      enum: *id009
+  decon:
+    antimicrobial:
+      type: enum
+      enum: *id010
+    waste_handling:
+      type: enum
+      enum: *id011
+    contaminated_water_disposal:
+      type: boolean
+    equipment_decon:
+      type: enum
+      enum: *id012
+  ppe:
+    ppe_level:
+      type: enum
+      enum: *id013
+    respirator:
+      type: enum
+      enum: *id014
+    cartridge:
+      type: enum
+      enum: *id015
+    extra_ppe:
+      type: multiselect
+      enum:
+      - EYE_PROTECTION
+      - DISPOSABLE_SUIT
+      - WATERPROOF_BOOTS
+      - FACE_SHIELD
+      - TEMP_SAFETY_SHOWER
+  building_modifiers:
+    high_tall_wall:
+      type: boolean
+    glued_on_drywall:
+      type: boolean
+    vapor_barrier_present:
+      type: boolean
+    substrate:
+      type: enum
+      enum: *id016
+    additional_material_layers_present:
+      type: boolean
+  components:
+    type: list
+    item:
+      component_type:
+        type: enum
+        enum: *id017
+      actions:
+        type: multiselect
+        enum: *id018
+      attributes:
+        type: multiselect
+        enum: *id019
+  fixtures_appliances:
+    detach_or_reset:
+      type: multiselect
+      enum: *id020
+    shower_details:
+      type: multiselect
+      enum: *id021
+  extraction_pumping:
+    extraction_surface:
+      type: enum
+      enum: *id022
+    extraction_intensity:
+      type: enum
+      enum: *id023
+    third_party_extraction_review:
+      type: boolean
+    pumping_method:
+      type: enum
+      enum: *id024
+    pumping_cat3_indicator:
+      type: boolean
+  drying:
+    dehumidification:
+      approach:
+        type: enum
+        enum: *id025
+      environmental_control:
+        type: boolean
+      booster_used:
+        type: boolean
+    air_movement:
+      air_mover_type:
+        type: enum
+        enum: *id026
+      port_adapters:
+        type: boolean
+    heat_assisted:
+      type: enum
+      enum: *id027
+    cavity_drying:
+      method:
+        type: enum
+        enum: *id028
+      holes_drilled:
+        type: boolean
+      holes_filled:
+        type: boolean
+    wood_floor_drying_system:
+      type: enum
+      enum: *id029
+    air_quality_treatment:
+      type: multiselect
+      enum: *id030
+  monitoring_power:
+    monitoring_mode:
+      type: enum
+      enum: *id031
+    third_party_monitoring_review:
+      type: boolean
+    temporary_power_distribution:
+      type: enum
+      enum: *id032
+  testing_inspection_diagnostics:
+    tests:
+      type: multiselect
+      enum: *id033
+  contents_protection:
+    contents_handling:
+      type: multiselect
+      enum: *id034
+    surface_protection:
+      type: multiselect
+      enum: *id035
+  cleaning_surface_prep:
+    hepa_vac_scope:
+      type: multiselect
+      enum: *id036
+    abrasive_treatment:
+      type: enum
+      enum: *id037
+    confined_space_variant:
+      type: boolean
+  billing:
+    pricing_mode:
+      type: enum
+      enum: *id038

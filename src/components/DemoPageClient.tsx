@@ -2,29 +2,39 @@
 
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import QuestionRang, { RoomId, Question as BaseQuestion } from "@/components/ui/QuestionRang";
+import { Selector } from "@/engine/selector";
+import { loadClusterRules, loadQuestionBank, loadPolicyShims, loadRoomPriors, loadAutoClusters, loadClusterNames, loadWTRLineItems } from "@/engine/loader";
+import type { Answer, NextQuestion, Candidate, AutoCluster, ClusterNames } from "@/engine/types";
+import { RoomId } from "@/components/ui/QuestionRang";
 import SavedAnswers, { AnswerEntry } from "@/components/ui/SavedAnswers";
+import { probabilityToColor, computeElbowColors } from "@/engine/utils";
 
-export type Importance = number;
-
-export type Question = BaseQuestion & {
-  importance?: Importance; 
-  createdAt?: number;       
+// ---- Room assets and helpers ----
+const ROOM_IMAGES: Record<string, string> = {
+  BATHROOM: "/vanna1.jpg",
+  KITCHEN: "/kuhnya-eterno-790-1.jpg",
+  LIVING_ROOM: "/gostinaya-20-1.jpg",
+  BEDROOM: "/spalnya-123-1.jpg",
 };
 
-// ---- Mock rooms ----
-const ROOMS: Record<RoomId, { label: string; image: string }> = {
-  bathroom: { label: "Bathroom", image: "/vanna1.jpg" },
-  kitchen:  { label: "Kitchen",  image: "/kuhnya-eterno-790-1.jpg" },
-  living:   { label: "Living Room", image: "/gostinaya-20-1.jpg" },
-  bedroom:  { label: "Bedroom", image: "/spalnya-123-1.jpg" },
-};
+function toTitleCase(s: string): string {
+  return s
+    .split("_")
+    .map((w) => (w ? w[0].toUpperCase() + w.slice(1).toLowerCase() : w))
+    .join(" ");
+}
+
+function getRoomLabel(roomType: string): string {
+  return toTitleCase(roomType.trim());
+}
+
+function getRoomImage(roomType: string): string {
+  return ROOM_IMAGES[roomType] ?? "/window.svg";
+}
 
 /* =========================
    Types & helpers
    ========================= */
-
-type AnswersMap = Record<string, string>;
 
 const Card: React.FC<React.PropsWithChildren<{ className?: string }>> = ({ className = "", children }) => (
   <div className={`rounded-2xl bg-white shadow-sm ring-1 ring-black/5 ${className}`}>{children}</div>
@@ -53,16 +63,16 @@ const OptionButton: React.FC<{ label: string; onClick?: () => void }> = ({ label
   </button>
 );
 
-const QuestionBlock: React.FC<{ question: Question; onSelect?: (value: string) => void }> = ({ question, onSelect }) => {
+const QuestionBlock: React.FC<{ question: NextQuestion; onSelect?: (value: string | number | boolean | "__UNKNOWN__") => void }> = ({ question, onSelect }) => {
   const needScroll = question.options.length > 4;
   return (
     <Card className="p-4">
-      <div className="text-sm font-semibold text-neutral-800">{question.title}</div>
-      {question.subtitle && <div className="mt-2 text-sm text-neutral-500">{question.subtitle}</div>}
+      <div className="text-sm font-semibold text-neutral-800">{question.prompt}</div>
       <div className={needScroll ? "mt-4 max-h-64 space-y-3 overflow-y-auto pr-1" : "mt-4 space-y-3"}>
-        {question.options.map((opt) => (
-          <OptionButton key={opt} label={opt} onClick={() => onSelect?.(opt)} />
+        {question.options.map((opt, idx) => (
+          <OptionButton key={idx} label={opt.label} onClick={() => onSelect?.(opt.value)} />
         ))}
+        <OptionButton label="Unknown" onClick={() => onSelect?.("__UNKNOWN__")} />
       </div>
     </Card>
   );
@@ -72,65 +82,72 @@ const QuestionBlock: React.FC<{ question: Question; onSelect?: (value: string) =
    Content blocks
    ========================= */
 
-const RoomGrid: React.FC<{ onPick: (room: RoomId) => void }> = ({ onPick }) => (
-  <div className="w-full max-w-[560px] mx-auto">
+const RoomGrid: React.FC<{
+  rooms: string[];
+  onPick: (room: string) => void;
+}> = ({ rooms, onPick }) => (
+  <div className="w-full max-w-[640px] mx-auto">
     <h3 className="text-center text-sm font-semibold text-neutral-800 mb-4">Please select the room you are in</h3>
-    <div className="grid grid-cols-2 gap-4">
-      {(Object.keys(ROOMS) as RoomId[]).map((id) => (
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      {rooms.map((roomType) => (
         <button
-          key={id}
-          onClick={() => onPick(id)}
+          key={roomType}
+          onClick={() => onPick(roomType)}
           className="group overflow-hidden rounded-xl ring-1 ring-black/5 transition hover:shadow-md bg-white"
           type="button"
         >
           <div className="h-24 w-full overflow-hidden">
             <img
-              src={ROOMS[id].image}
-              alt={ROOMS[id].label}
+              src={getRoomImage(roomType)}
+              alt={getRoomLabel(roomType)}
               className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
           </div>
-          <div className="px-3 py-2 text-center text-sm font-medium text-neutral-700">{ROOMS[id].label}</div>
+          <div className="px-3 py-2 text-center text-sm font-medium text-neutral-700">{getRoomLabel(roomType)}</div>
         </button>
       ))}
     </div>
   </div>
 );
 
-const QuestionScreen: React.FC<{ question: Question | null; onAnswer: (qId: string, val: string) => void }> = ({ question, onAnswer }) => (
+const QuestionScreen: React.FC<{ question: NextQuestion | null; onAnswer: (q: NextQuestion, val: string | number | boolean | "__UNKNOWN__") => void; isStopped: boolean }> = ({ question, onAnswer, isStopped }) => (
   <div className={`h-full ${question ? "" : "flex items-center justify-center"}`}>
     <AnimatePresence mode="wait">
-      {question ? (
+      {isStopped ? (
+        <motion.div key="done" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center text-sm text-neutral-600">
+          Done! The engine has converged on the best candidate cluster(s).
+        </motion.div>
+      ) : question ? (
         <motion.div
-          key={question.id}
+          key={question.factId}
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -12 }}
           transition={{ duration: 0.25 }}
         >
-          <QuestionBlock question={question} onSelect={(val) => onAnswer(question.id, val)} />
+          <QuestionBlock question={question} onSelect={(val) => onAnswer(question, val)} />
         </motion.div>
       ) : (
-        <motion.div key="done" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center text-sm text-neutral-600">
-          Done! No more questions.
+        <motion.div key="loading" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center text-sm text-neutral-600">
+          Loading...
         </motion.div>
       )}
     </AnimatePresence>
   </div>
 );
 
-const PhoneShell: React.FC<{ room: RoomId | null; progress: number; onClose: () => void; children: React.ReactNode }> = ({ room, progress, onClose, children }) => {
-  const title = room ? ROOMS[room].label : "Please select the room you are in";
+const PhoneShell: React.FC<{ room: string | null; progress: number; onClose: () => void; onUndo?: () => void; canUndo?: boolean; children: React.ReactNode }> = ({ room, progress, onClose, onUndo, canUndo, children }) => {
+  const title = room ? getRoomLabel(room) : "Please select the room you are in";
   const showImage = Boolean(room);
   return (
     <div className="mx-auto w-[320px] sm:w-[360px]">
       <div className="relative rounded-[36px] bg-neutral-900/5 p-2 shadow-xl ring-1 ring-black/10">
-        <div className="rounded-[32px] bg-white min-h-[640px] flex flex-col">
-          <motion.div initial={false} animate={{ height: showImage ? 176 : 0 }} className="overflow-hidden rounded-t-[32px]">
+        <div className="rounded-[32px] bg-white h-[640px] flex flex-col overflow-hidden">
+          <motion.div initial={false} animate={{ height: showImage ? 176 : 0 }} className="overflow-hidden rounded-t-[32px] flex-shrink-0">
             {showImage && (
               <motion.img
                 key={room!}
-                src={ROOMS[room!].image}
+                src={getRoomImage(room!)}
                 alt={title}
                 className="h-44 w-full object-cover"
                 initial={{ opacity: 0, scale: 1.02 }}
@@ -141,251 +158,500 @@ const PhoneShell: React.FC<{ room: RoomId | null; progress: number; onClose: () 
           </motion.div>
 
           {showImage && (
-            <div className="space-y-3 px-4 py-3">
+            <div className="space-y-3 px-4 py-3 flex-shrink-0">
               <div className="flex items-center justify-between text-sm font-semibold text-neutral-800">
                 <span>{title}</span>
-                <button
-                  className="grid h-6 w-6 place-items-center rounded-md text-neutral-500 hover:bg-neutral-100"
-                  aria-label="close"
-                  type="button"
-                  onClick={onClose}
-                >
-                  ×
-                </button>
+                <div className="flex items-center gap-2">
+                  {onUndo && canUndo && (
+                    <button
+                      className="grid h-6 w-6 place-items-center rounded-md text-neutral-500 hover:bg-neutral-100"
+                      aria-label="undo"
+                      type="button"
+                      onClick={onUndo}
+                      title="Undo last answer"
+                    >
+                      ←
+                    </button>
+                  )}
+                  <button
+                    className="grid h-6 w-6 place-items-center rounded-md text-neutral-500 hover:bg-neutral-100"
+                    aria-label="close"
+                    type="button"
+                    onClick={onClose}
+                  >
+                    ×
+                  </button>
+                </div>
               </div>
               <ProgressBar value={progress} />
             </div>
           )}
 
-          <div className={`px-4 pb-5 flex-1 ${!showImage ? "flex items-center justify-center" : ""}`}>{children}</div>
+          <div className="px-4 pb-5 flex-1 overflow-y-auto min-h-0">{children}</div>
         </div>
       </div>
     </div>
   );
 };
 
-/* =========================
-   Sorting & recompute (importance-only)
-   ========================= */
+const CandidatesPanel: React.FC<{ candidates: Candidate[] }> = ({ candidates }) => {
+  const [names, setNames] = React.useState<ClusterNames>({});
+  const [autoClusters, setAutoClusters] = React.useState<Record<string, AutoCluster>>({});
+  const [selDesc, setSelDesc] = React.useState<Record<string, string>>({});
+  const [hover, setHover] = React.useState<{ id: string; x: number; y: number } | null>(null);
 
-function sortByImportance(ids: string[], reg: Record<string, Question>): string[] {
-  const arr = [...ids];
-  arr.sort((a, b) => {
-    const qa = reg[a];
-    const qb = reg[b];
-    const ia = qa?.importance ?? 0;
-    const ib = qb?.importance ?? 0;
-    if (ib !== ia) return ib - ia;            
-    const ca = qa?.createdAt ?? 0;
-    const cb = qb?.createdAt ?? 0;
-    if (ca !== cb) return ca - cb;          
-    return a.localeCompare(b);              
-  });
-  return arr;
-}
+  React.useEffect(() => {
+    let mounted = true;
+    (async () => {
+      try {
+        const [nmap, clist, sdesc] = await Promise.all([
+          loadClusterNames(),
+          loadAutoClusters(),
+          loadWTRLineItems(),
+        ]);
+        if (!mounted) return;
+        const cmap: Record<string, AutoCluster> = {};
+        for (const c of clist) cmap[c.cluster_id] = c;
+        setNames(nmap);
+        setAutoClusters(cmap);
+        setSelDesc(sdesc);
+      } catch (e) {
+        console.warn("Failed loading UI catalogs:", e);
+      }
+    })();
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
-
-/* reg: { q1: {importance: 100}, q2: {importance: 70}, q3: {importance: 95} }
-
-answers: { q1: "Yes" }
-
-unanswered: ["q2","q3"]
-
-sortByImportance → ["q3","q2"]
-
-Return: ["q3","q2"] → q2 will become current, then q3. */
-function recomputeFlow(room: RoomId | null, answers: AnswersMap, reg: Record<string, Question>): string[] {
-  if (!room) return [];
-  const unanswered = Object.keys(reg).filter((id) => answers[id] === undefined);
-  return sortByImportance(unanswered, reg);
-}
-
-/* =========================
-   API mocks
-   ========================= */
-
-async function apiFetchInitial(room: RoomId): Promise<Question[]> {
-  if (room === "bathroom") {
-    return [
-      { id: "q1", title: "Your bathroom was destroyed by a nuclear explosion?", subtitle: "You can choose one option", options: ["Yes", "No", "Maybe🤔", "More likely yes than no", "More likely no than yes"], importance: 100 },
-      { id: "q2", title: "Was your bathroom destroyed by a 100 person party?", subtitle: "You can choose one option", options: ["Yes", "No", "Maybe", "There were only 15 people there"], importance: 95 },
-      { id: "q3", title: "There is mold in the bathroom?", subtitle: "You can choose one option", options: ["Yes", "No", "Maybe", "More likely yes than no", "More likely no than yes"], importance: 80 },
-    ];
+  function parseItemToSel(itemCode: string): string {
+    // Formats like 'WTR_DHM>>>_+', 'WTR_MASKFLP_I', 'WTR_EXT+_+'
+    const firstUnderscore = itemCode.indexOf("_");
+    if (firstUnderscore < 0) return itemCode;
+    const afterCat = itemCode.slice(firstUnderscore + 1);
+    const lastUnderscore = afterCat.lastIndexOf("_");
+    if (lastUnderscore < 0) return afterCat;
+    return afterCat.slice(0, lastUnderscore);
   }
-  if (room === "kitchen") {
-    return [
-      { id: "k1", title: "Kitchen layout", options: ["Single-wall", "L-shaped", "Island", "U-shaped"], importance: 90 },
-    ];
-  }
-  if (room === "living") {
-    return [
-      { id: "l1", title: "Test 1", options: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"], importance: 90 },
-      { id: "l2", title: "Test 2", options: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"], importance: 85 },
-      { id: "l3", title: "Test 3", options: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"], importance: 80 },
-    ];
-  }
-  if (room === "bedroom") {
-    return [
-      { id: "b1", title: "Do you prefer soft lighting?", options: ["Yes", "No"], importance: 70 },
-    ];
-  }
-  return [];
-}
 
-async function apiFetchFollowUps(room: RoomId, triggerId: string, answer: string): Promise<Question[]> {
-  if (room === "bathroom" && triggerId === "q2") {
-    return [
-      { id: "l1", title: "Test 1", options: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"], importance: 92 },
-      { id: "l2", title: "Test 2", options: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"], importance: 75 },
-    ];
-  }
-  return [];
-}
+  const getDisplayName = React.useCallback((id: string) => {
+    return names[id]?.name || id;
+  }, [names]);
+
+  const getClusterSels = React.useCallback((id: string): string[] => {
+    const ac = autoClusters[id];
+    if (!ac) return [];
+    const uniq = new Set<string>();
+    for (const itm of ac.core_item_codes || []) {
+      uniq.add(parseItemToSel(itm));
+    }
+    return Array.from(uniq);
+  }, [autoClusters]);
+
+  const maxP = candidates.length > 0 ? Math.max(...candidates.map((c) => c.p)) : 0;
+  const elbowColors =
+    candidates.length >= 3 ? computeElbowColors(candidates.map((c) => c.p)) : null;
+
+  return (
+    <Card className="p-4 h-full flex flex-col">
+      <div className="text-sm font-semibold text-neutral-800 mb-4">Candidate Clusters</div>
+      {candidates.length === 0 ? (
+        <div className="text-sm text-neutral-600">No candidates remaining.</div>
+      ) : (
+        <div className="flex-1 overflow-y-auto pr-1">
+          <ul className="space-y-2">
+            {candidates.map((candidate, idx) => {
+              const color = elbowColors ? elbowColors[idx] : probabilityToColor(candidate.p, maxP);
+              const percentage = Math.round(candidate.p * 100);
+              const evidenceLabel =
+                candidate.evidence === "+"
+                  ? "supports"
+                  : candidate.evidence === "-"
+                  ? "contradicts"
+                  : candidate.evidence === "?"
+                  ? "unknown"
+                  : "not relevant";
+
+              return (
+                <li
+                  key={candidate.id}
+                  className="relative border border-black/5 rounded-lg bg-white/70 px-3 py-2"
+                  onMouseEnter={(e) => {
+                    const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
+                    setHover({ id: candidate.id, x: rect.right + 8, y: rect.top });
+                  }}
+                  onMouseMove={(e) => {
+                    setHover((prev) => prev ? { id: prev.id, x: e.clientX + 12, y: e.clientY + 12 } : null);
+                  }}
+                  onMouseLeave={() => setHover(null)}
+                >
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-xs font-mono text-neutral-700 truncate flex-1 mr-2">
+                      {getDisplayName(candidate.id)}
+                    </span>
+                    <span className="text-xs font-semibold text-neutral-600">{percentage}%</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="flex-1 h-1.5 bg-neutral-200 rounded-full overflow-hidden">
+                      <div
+                        className="h-full transition-all duration-300"
+                        style={{
+                          width: `${percentage}%`,
+                          backgroundColor: color,
+                        }}
+                      />
+                    </div>
+                    {candidate.evidence && (
+                      <span
+                        className="text-xs font-mono px-1.5 py-0.5 rounded"
+                        title={evidenceLabel}
+                        style={{
+                          backgroundColor:
+                            candidate.evidence === "+"
+                              ? "rgba(34, 197, 94, 0.1)"
+                              : candidate.evidence === "-"
+                              ? "rgba(239, 68, 68, 0.1)"
+                              : candidate.evidence === "?"
+                              ? "rgba(156, 163, 175, 0.1)"
+                              : "rgba(229, 231, 235, 0.5)",
+                          color:
+                            candidate.evidence === "+"
+                              ? "rgb(22, 163, 74)"
+                              : candidate.evidence === "-"
+                              ? "rgb(220, 38, 38)"
+                              : candidate.evidence === "?"
+                              ? "rgb(107, 114, 128)"
+                              : "rgb(156, 163, 175)",
+                        }}
+                      >
+                        {candidate.evidence}
+                      </span>
+                    )}
+                  </div>
+                  {/* Hover detail panel */}
+                  {hover && hover.id === candidate.id && (
+                    <div
+                      className="fixed z-50 bg-white opacity-100 shadow-2xl rounded-lg px-3 py-2 text-xs text-neutral-800 ring-1 ring-black/10"
+                      style={{
+                        left: Math.min(hover.x, window.innerWidth - 280),
+                        top: Math.min(hover.y, window.innerHeight - 200),
+                        width: 260,
+                      }}
+                    >
+                      <div className="font-semibold mb-1">{getDisplayName(candidate.id)}</div>
+                      <div>
+                        <table className="w-full text-left border-separate border-spacing-y-1">
+                          <thead className="sticky top-0 bg-white">
+                            <tr className="text-neutral-500">
+                              <th className="pr-2">SEL</th>
+                              <th>Description</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {getClusterSels(candidate.id).map((sel) => (
+                              <tr key={sel}>
+                                <td className="pr-2 font-mono text-[11px] text-neutral-700 whitespace-nowrap">{sel}</td>
+                                <td className="text-[11px]">
+                                  {selDesc[sel] || "—"}
+                                </td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
+      <div className="mt-4 pt-4 border-t border-black/5">
+        <p className="text-xs text-neutral-500">
+          Legend: <span className="font-mono">[+]</span> supports{" "}
+          <span className="font-mono">[-]</span> contradicts{" "}
+          <span className="font-mono">[·]</span> not relevant{" "}
+          <span className="font-mono">[?]</span> unknown
+        </p>
+      </div>
+    </Card>
+  );
+};
 
 /* =========================
    Main component
    ========================= */
 
-export default function SurveyClient({ initialRoom }: { initialRoom?: RoomId }) {
-  const [room, setRoom] = React.useState<RoomId | null>(initialRoom ?? null);
-  const [answers, setAnswers] = React.useState<AnswersMap>({});
+// Carrier mapping: ID -> Name
+const CARRIERS: Record<number, string> = {
+  92: "State Farm (US)",
+  91: "United Services Automobile Association (USAA)",
+  13: "Co-Operators",
+  35: "TD Insurance",
+  87: "Allstate / Encompass / Esurance",
+  41: "Wawanesa",
+  45: "Cooperators",
+  120: "Farmers Insurance",
+};
 
-  // Dynamic question catalog (fetched from API), grouped by room
-  const [dynamicByRoom, setDynamicByRoom] = React.useState<Partial<Record<RoomId, Question[]>>>({});
-
-  // Flow = ordered list of question IDs (only unanswered ones)
-  const [flow, setFlow] = React.useState<string[]>([]);
-
-  // Current question as ID (robust against reorders)
-  const [currentId, setCurrentId] = React.useState<string | null>(null);
-
-  // Answers journal (snapshot) — show ONLY actually answered questions, even if questions are later removed
+export default function DemoPageClient({ initialRoom }: { initialRoom?: RoomId }) {
+  // room holds the canonical room type string, e.g. "BATHROOM"
+  const [room, setRoom] = React.useState<string | null>((initialRoom as string | undefined) ?? null);
+  const [availableRooms, setAvailableRooms] = React.useState<string[]>([]);
+  const [carrierGroupId, setCarrierGroupId] = React.useState<number | undefined>(undefined);
+  const [provinceId, setProvinceId] = React.useState<number | undefined>(undefined);
+  const [selector, setSelector] = React.useState<Selector | null>(null);
+  const [loading, setLoading] = React.useState(false);
+  const [error, setError] = React.useState<string | null>(null);
+  const [currentQuestion, setCurrentQuestion] = React.useState<NextQuestion | null>(null);
+  const [candidates, setCandidates] = React.useState<Candidate[]>([]);
   const [answerLog, setAnswerLog] = React.useState<AnswerEntry[]>([]);
+  const [stop, setStop] = React.useState({ shouldStop: false, reason: undefined as string | undefined });
+  const [progress, setProgress] = React.useState(0);
 
-  // Registry id -> Question for the active room (O(1) access by ID)
-  const registry = React.useMemo(() => {
-    const map: Record<string, Question> = {};
-    if (!room) return map;
-    for (const q of dynamicByRoom[room] ?? []) map[q.id] = q;
-    return map;
-  }, [room, dynamicByRoom]);
-
-  // Ref with the latest registry — used inside async callbacks to avoid stale closures
-  const registryRef = React.useRef<Record<string, Question>>({});
-  React.useEffect(() => { registryRef.current = registry; }, [registry]);
-
-  // Ordered Question objects for UI (only unanswered, in the current flow order)
-  const orderedQuestions: Question[] = React.useMemo(
-    () => flow.map((id) => registry[id]).filter(Boolean),
-    [flow, registry]
-  );
-
-  // Progress: based on total known questions in the registry (not just flow length)
-  const totalKnown = React.useMemo(() => Object.keys(registry).length, [registry]);
-  const answeredCount = React.useMemo(() => Object.keys(answers).filter((id) => answers[id] !== undefined).length, [answers]);
-  const progress = totalKnown > 0 ? Math.round((answeredCount / totalKnown) * 100) : 100;
-
-  // Current question object (may be null if no unanswered left)
-  const currentQuestion: Question | null = currentId ? (registry[currentId] ?? null) : null;
-
-  // Merge helper (upsert by id) for incoming questions from API
-  function mergeQuestions(room: RoomId, incoming: Question[]) {
-    setDynamicByRoom((prev) => {
-      const cur = prev[room] ?? [];
-      const known = new Map(cur.map((q) => [q.id, q]));
-      for (const q of incoming) {
-        const existing = known.get(q.id);
-        if (existing) known.set(q.id, { ...existing, ...q });    // update existing
-        else known.set(q.id, { createdAt: Date.now(), ...q });   // insert new with timestamp
+  // Load available room types from cluster rules on mount
+  React.useEffect(() => {
+    async function loadRooms() {
+      try {
+        const clusters = await loadClusterRules();
+        const roomSet = new Set<string>();
+        for (const c of clusters) {
+          const rt = (c.room_type || "").trim();
+          if (rt) roomSet.add(rt.toUpperCase());
+        }
+        const list = Array.from(roomSet).sort();
+        setAvailableRooms(list);
+      } catch (err) {
+        // Non-fatal for UI; will also surface when initializing selector if needed
+        console.error("Failed to load rooms from cluster rules:", err);
       }
-      return { ...prev, [room]: Array.from(known.values()) };
-    });
-  }
+    }
+    loadRooms();
+  }, []);
 
-  // Recompute the flow and pick the next current (most important among unanswered)
-  function recomputeAndPick(a: AnswersMap) {
-    const nextFlow = recomputeFlow(room, a, registryRef.current);
-    setFlow(nextFlow);
-    setCurrentId(nextFlow[0] ?? null);
-  }
+  // Initialize engine when room, carrier, or province changes
+  React.useEffect(() => {
+    async function initialize() {
+      if (!room) return;
 
-  // Handlers
-  const handlePickRoom = async (r: RoomId) => {
+      try {
+        setLoading(true);
+        setError(null);
+
+        const [clusters, qbank, shims, priors] = await Promise.all([
+          loadClusterRules(),
+          loadQuestionBank(),
+          loadPolicyShims(),
+          loadRoomPriors(),
+        ]);
+
+        const sel = new Selector(room, {
+          stopAt: 1,
+          topk: 1,
+          tau: 0.85,
+          carrierGroup: carrierGroupId,
+          province: provinceId,
+        });
+
+        // Select per-room priors if available
+        const priForRoom = priors?.[room?.toUpperCase?.() || ""] as Record<string, number> | undefined;
+        await sel.initialize(clusters, qbank, {
+          policyShims: shims,
+          roomPriors: priForRoom || {},
+        });
+
+        setSelector(sel);
+        const state = sel.getState();
+        setCurrentQuestion(state.nextQuestion);
+        setCandidates(state.candidates);
+        setStop(state.stop);
+        setProgress(state.metrics?.topKMass ? state.metrics.topKMass * 100 : 0);
+
+        setLoading(false);
+      } catch (err) {
+        console.error("Failed to initialize engine:", err);
+        setError(err instanceof Error ? err.message : "Failed to initialize engine");
+        setLoading(false);
+      }
+    }
+
+    initialize();
+  }, [room, carrierGroupId, provinceId]);
+
+  const handlePickRoom = (r: string) => {
     setRoom(r);
-    const fresh: AnswersMap = {};
-    setAnswers(fresh);
-    setAnswerLog([]); // optional UX: reset answers journal when room changes
-
-    const initial = await apiFetchInitial(r);
-    mergeQuestions(r, initial);
-
-    // First compute using the just-fetched questions
-    const bootRegistry = { ...registryRef.current, ...Object.fromEntries(initial.map((q) => [q.id, q])) } as Record<string, Question>;
-    const bootFlow = recomputeFlow(r, fresh, bootRegistry);
-    setFlow(bootFlow);
-    setCurrentId(bootFlow[0] ?? null);
+    setAnswerLog([]);
+    setCurrentQuestion(null);
+    setCandidates([]);
+    setStop({ shouldStop: false });
+    setProgress(0);
   };
 
-  const handleAnswer = (qId: string, val: string) => {
-    setAnswers((prev) => {
-      const nextAns = { ...prev, [qId]: val };
+  const handleAnswer = (q: NextQuestion, val: string | number | boolean | "__UNKNOWN__") => {
+    if (!selector) return;
 
-      // === answers journal (snapshot) ===
-      setAnswerLog((prevLog) => {
-        const idx = prevLog.findIndex((e) => e.id === qId);
-        const titleSnapshot = registryRef.current[qId]?.title ?? `Question ${qId}`;
-        const entry: AnswerEntry = {
-          id: qId,
-          title: titleSnapshot,
-          answer: val,
-          answeredAt: idx >= 0 ? prevLog[idx].answeredAt : Date.now(), // keep original timestamp if updating answer
-        };
-        if (idx >= 0) {
-          const copy = [...prevLog];
-          copy[idx] = entry; // update existing entry
-          return copy;
-        }
-        return [...prevLog, entry]; // append new entry
+    const answer: Answer = {
+      factId: q.factId,
+      value: val,
+    };
+
+    selector.updateWithAnswer(answer.factId, answer.value);
+
+    const state = selector.getState(answer);
+    setCurrentQuestion(state.nextQuestion);
+    setCandidates(state.candidates);
+    setStop(state.stop);
+    setProgress(state.metrics?.topKMass ? state.metrics.topKMass * 100 : 0);
+
+    // Update answer log
+    const answerLabel = val === "__UNKNOWN__" ? "Unknown" : q.options.find((opt) => opt.value === val)?.label || String(val);
+    // Flag as Carrier (Phase A) only when question originated from carrier shims
+    const phase = q.origin === "carrier" ? "A" : undefined;
+    setAnswerLog((prev) => [
+      ...prev,
+      {
+        id: q.factId,
+        title: q.prompt,
+        answer: answerLabel,
+        value: val, // Store actual value for undo
+        answeredAt: Date.now(),
+        phase,
+      },
+    ]);
+  };
+
+  const handleUndo = async () => {
+    if (!selector || answerLog.length === 0 || !room) return;
+
+    // Remove last answer from log
+    const newAnswerLog = answerLog.slice(0, -1);
+    setAnswerLog(newAnswerLog);
+
+    // Reset selector and reapply all remaining answers
+    try {
+      setLoading(true);
+      const [clusters, qbank, shims, priors] = await Promise.all([
+        loadClusterRules(),
+        loadQuestionBank(),
+        loadPolicyShims(),
+        loadRoomPriors(),
+      ]);
+
+      const sel = new Selector(room, {
+        stopAt: 1,
+        topk: 1,
+        tau: 0.85,
+        carrierGroup: carrierGroupId,
+        province: provinceId,
       });
 
-      // 1) Locally recompute: remove answered from flow and pick next by importance
-      recomputeAndPick(nextAns);
+      const priForRoom = priors?.[room.toUpperCase()] as Record<string, number> | undefined;
+      await sel.initialize(clusters, qbank, {
+        policyShims: shims,
+        roomPriors: priForRoom || {},
+      });
 
-      // 2) Async: fetch follow-ups if any, merge, then recompute again
-      (async () => {
-        if (!room) return;
-        const more = await apiFetchFollowUps(room, qId, val);
-        if (more.length) {
-          mergeQuestions(room, more);
-          recomputeAndPick(nextAns);
-        }
-      })();
+      // Reapply all answers except the last one
+      for (const entry of newAnswerLog) {
+        sel.updateWithAnswer(entry.id, entry.value);
+      }
 
-      return nextAns;
-    });
+      setSelector(sel);
+      const state = sel.getState();
+      setCurrentQuestion(state.nextQuestion);
+      setCandidates(state.candidates);
+      setStop(state.stop);
+      setProgress(state.metrics?.topKMass ? state.metrics.topKMass * 100 : 0);
+      setLoading(false);
+    } catch (err) {
+      console.error("Failed to undo:", err);
+      setError(err instanceof Error ? err.message : "Failed to undo");
+      setLoading(false);
+    }
   };
 
   const handleClose = () => {
-    // Reset everything to initial state
     setRoom(null);
-    setFlow([]);
-    setCurrentId(null);
-    setAnswers({});
+    setSelector(null);
+    setCurrentQuestion(null);
+    setCandidates([]);
     setAnswerLog([]);
+    setStop({ shouldStop: false });
+    setProgress(0);
   };
 
-  // Index for QuestionRang compatibility (used for highlighting current question)
-  const currentIndexForCompat = currentId ? flow.indexOf(currentId) : 0;
+  if (error) {
+    return (
+      <div className="min-h-screen w-full bg-neutral-100 flex items-center justify-center">
+        <Card className="p-6 max-w-md">
+          <div className="text-sm font-semibold text-red-600 mb-2">Error</div>
+          <div className="text-sm text-neutral-700">{error}</div>
+          <button
+            onClick={() => window.location.reload()}
+            className="mt-4 px-4 py-2 bg-rose-400 text-white rounded-xl hover:bg-rose-500"
+          >
+            Retry
+          </button>
+        </Card>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen w-full bg-neutral-100">
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        {/* Top controls: Carrier and Province */}
+        <div className="mb-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <label className="text-xs font-medium text-neutral-700">
+            Carrier
+            <select
+              className="mt-1 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm"
+              value={carrierGroupId ?? ""}
+              onChange={(e) => {
+                const val = e.target.value;
+                setCarrierGroupId(val === "" ? undefined : parseInt(val, 10));
+              }}
+            >
+              <option value="">Select carrier (optional)</option>
+              {Object.entries(CARRIERS)
+                .sort(([idA], [idB]) => parseInt(idA, 10) - parseInt(idB, 10))
+                .map(([id, name]) => (
+                  <option key={id} value={id}>
+                    {name}
+                  </option>
+                ))}
+            </select>
+          </label>
+          <label className="text-xs font-medium text-neutral-700">
+            Province ID
+            <input
+              type="number"
+              className="mt-1 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm"
+              placeholder="e.g., 1, 2, 3"
+              value={provinceId ?? ""}
+              onChange={(e) => {
+                const val = e.target.value;
+                setProvinceId(val === "" ? undefined : parseInt(val, 10));
+              }}
+            />
+          </label>
+        </div>
         <div className="grid gap-6 lg:grid-cols-[420px_1fr]">
           {/* Left column: phone-like shell with the active question */}
           <div className="min-h-[80vh] flex">
-            <PhoneShell room={room} progress={progress} onClose={handleClose}>
+            <PhoneShell room={room} progress={progress} onClose={handleClose} onUndo={handleUndo} canUndo={answerLog.length > 0}>
               <AnimatePresence mode="wait">
-                {room ? (
+                {loading ? (
+                  <motion.div
+                    key="loading"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="text-center text-sm text-neutral-600"
+                  >
+                    Loading engine...
+                  </motion.div>
+                ) : room ? (
                   <motion.div
                     key="questions"
                     initial={{ opacity: 0, y: 12 }}
@@ -394,7 +660,7 @@ export default function SurveyClient({ initialRoom }: { initialRoom?: RoomId }) 
                     transition={{ duration: 0.25 }}
                     className="h-full"
                   >
-                    <QuestionScreen question={currentQuestion} onAnswer={handleAnswer} />
+                    <QuestionScreen question={currentQuestion} onAnswer={handleAnswer} isStopped={stop.shouldStop} />
                   </motion.div>
                 ) : (
                   <motion.div
@@ -405,23 +671,20 @@ export default function SurveyClient({ initialRoom }: { initialRoom?: RoomId }) 
                     transition={{ duration: 0.25 }}
                     className="h-full"
                   >
-                    <RoomGrid onPick={handlePickRoom} />
+                    <RoomGrid rooms={availableRooms} onPick={handlePickRoom} />
                   </motion.div>
                 )}
               </AnimatePresence>
             </PhoneShell>
           </div>
 
-          {/* Right column: queue overview + saved answers */}
+          {/* Right column: candidates + saved answers */}
           <div className="grid gap-6">
-            <QuestionRang
-              room={room}
-              questions={orderedQuestions}
-              currentIndex={Math.max(0, currentIndexForCompat)}
-              currentQuestion={currentQuestion}
-            />
+            <CandidatesPanel candidates={candidates} />
             <SavedAnswers
-              items={[...answerLog].sort((a, b) => a.answeredAt - b.answeredAt)} // oldest → newest; invert to show newest first
+              items={[...answerLog].sort((a, b) => a.answeredAt - b.answeredAt)}
+              onUndo={handleUndo}
+              canUndo={answerLog.length > 0}
             />
           </div>
         </div>
@@ -429,4 +692,3 @@ export default function SurveyClient({ initialRoom }: { initialRoom?: RoomId }) 
     </div>
   );
 }
-

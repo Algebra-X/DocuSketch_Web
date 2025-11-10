@@ -1,0 +1,582 @@
+Xact CAT, Xact Category Name,Xact SEL,Xact Description,Xact Unit,Xact Activity
+WTR,Water Extraction & remediation,EXTWPC,"2"" Submersible pump with hose (per hour)",HR,+
+WTR,Water Extraction & remediation,EXTWPT,"2"" Submersible trash pump with hose (per hour)",HR,+
+WTR,Water Extraction & remediation,MA5,Adapter for ducted drying- 5 ports (per 24 hrs)- No monit.,EA,+
+WTR,Water Extraction & remediation,MA9,Adapter for ducted drying- 9 ports (per 24 hrs)- No monit.,EA,+
+WTR,Water Extraction & remediation,FHEPAC,Add for HEPA filter - large cylinder,EA,+
+WTR,Water Extraction & remediation,FHEPA<,Add for HEPA filter (for canister/backpack vacuums),EA,+
+WTR,Water Extraction & remediation,FHEPA>,Add for HEPA filter (for neg. air machine/vacuum - Large),EA,+
+WTR,Water Extraction & remediation,FHEPA,Add for HEPA filter (for negative air exhaust fan),EA,+
+WTR,Water Extraction & remediation,FHEPA<<,Add for HEPA filter (for upright vacuums),EA,+
+WTR,Water Extraction & remediation,PPE+,Add for personal protective equipment - Heavy duty,EA,+
+WTR,Water Extraction & remediation,PPE,Add for personal protective equipment (hazardous cleanup),EA,+
+WTR,Water Extraction & remediation,FCWGC,Add for tear out wd flr glued down over concrete substrate,SF,-
+WTR,Water Extraction & remediation,FCWGCA,Add for tear out wd flr glued down over concrete-after hrs,SF,-
+WTR,Water Extraction & remediation,FCWGW,Add for tear out wood floor glued down over wood substrate,SF,-
+WTR,Water Extraction & remediation,FCWGWA,Add for tear out wood floor glued down over wood-after hrs,SF,-
+WTR,Water Extraction & remediation,DRYWH,Add for wet drywall on high walls - 11' to 14' high,SF,-
+WTR,Water Extraction & remediation,DRYWH>,Add for wet drywall on high walls - 14' to 20' high,SF,-
+WTR,Water Extraction & remediation,DRYWHA,Add for wet drywall on high walls- 11' to 14' high-aft hrs,SF,-
+WTR,Water Extraction & remediation,DRYWHA>,Add for wet drywall on high walls- 14' to 20' high-aft hrs,SF,-
+WTR,Water Extraction & remediation,SBCS,Add on - Confined space blasting,SF,+
+WTR,Water Extraction & remediation,FLD,Add on to tear out floor drain - tub/shower- metal/plastic,EA,-
+WTR,Water Extraction & remediation,BMUD,Add on to tear out mortar bed for tile,SF,-
+WTR,Water Extraction & remediation,SWRPMD,Add on to tear out shower drain-for use w/ wtrprf membrane,EA,-
+WTR,Water Extraction & remediation,SWRCC,Add on to tear out tile concrete shower curb - per LF,LF,-
+WTR,Water Extraction & remediation,SWRCF,Add on to tear out tile framed shower curb - per LF,LF,-
+WTR,Water Extraction & remediation,DRYWG,Add-on cost for tearing out glued-on drywall,SF,-
+WTR,Water Extraction & remediation,DRYWGA,Add-on cost for tearing out glued-on drywall - after hours,SF,-
+WTR,Water Extraction & remediation,TRIMTA,Add-on for tear out trim/base from tile/grout - after hrs,LF,-
+WTR,Water Extraction & remediation,TRIMT,Add-on for tearing out trim/base from tile/grout,LF,-
+WTR,Water Extraction & remediation,DRY,Air mover (per 24 hour period) - No monitoring,EA,+
+WTR,Water Extraction & remediation,DRY+,Air mover axial fan-up to 1/2 (per 24 hr period)-No monit.,EA,+
+WTR,Water Extraction & remediation,DRYSA,"Air mover snout adapter 48"" (per 24 hr period) - No monit.",EA,+
+WTR,Water Extraction & remediation,GRM,Apply anti-microbial agent to {V},SF,+
+WTR,Water Extraction & remediation,GRMA,Apply anti-microbial agent to {V} - after hours,SF,+
+WTR,Water Extraction & remediation,GRMBIOA,Apply bio cleaning agent (spore-based) to {V} - after hrs,SF,+
+WTR,Water Extraction & remediation,GRMBIO,Apply biological cleaning agent (spore-based) to {V},SF,+
+WTR,Water Extraction & remediation,GRMS,Apply mold/mildew stain remover to {V},SF,+
+WTR,Water Extraction & remediation,GRMSA,Apply mold/mildew stain remover to {V} - after hours,SF,+
+WTR,Water Extraction & remediation,GRMB,Apply plant-based anti-microbial agent to {V},SF,+
+WTR,Water Extraction & remediation,GRMBA,Apply plant-based anti-microbial agent to {V} - after hrs,SF,+
+WTR,Water Extraction & remediation,DRY++,Axial fan air mover - 1 HP (per 24 hr period)-No monit.,EA,+
+WTR,Water Extraction & remediation,CTFBSD,Backsplash - flat laid/solid surface - Detach,LF,+
+WTR,Water Extraction & remediation,CTFBSDA,Backsplash - flat laid/solid surface - Detach- after hours,LF,+
+WTR,Water Extraction & remediation,BASED,Baseboard - Detach,LF,+
+WTR,Water Extraction & remediation,BASEDA,Baseboard - Detach - after hours,LF,+
+WTR,Water Extraction & remediation,BASED>,Baseboard - Detach - oversized or multi-member,LF,+
+WTR,Water Extraction & remediation,BASEDA>,Baseboard - Detach - oversized or multi-member-after hours,LF,+
+WTR,Water Extraction & remediation,BASERS,Baseboard - Detach & reset,LF,+
+WTR,Water Extraction & remediation,BASERS>,Baseboard - Detach & reset - oversized or multimember,LF,+
+WTR,Water Extraction & remediation,TUBD,Bathtub - Detach,EA,+
+WTR,Water Extraction & remediation,TUBDA,Bathtub - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,BLKHR,Block and pad furniture - hourly charge,HR,+
+WTR,Water Extraction & remediation,BLKHRA,Block and pad furniture - hourly charge - after hours,HR,+
+WTR,Water Extraction & remediation,BLK,Block and pad furniture in room,EA,+
+WTR,Water Extraction & remediation,BLKA,Block and pad furniture in room - after hours,EA,+
+WTR,Water Extraction & remediation,BLK>,Block and pad furniture in room - Large amount,EA,+
+WTR,Water Extraction & remediation,BLKA>,Block and pad furniture in room - Large amount - after hrs,EA,+
+WTR,Water Extraction & remediation,BLK<,Block and pad furniture in room - Small amount,EA,+
+WTR,Water Extraction & remediation,BLKA<,Block and pad furniture in room - Small amount - after hrs,EA,+
+WTR,Water Extraction & remediation,HTAMB,Booster for thermal air mover/exchange system,DA,+
+WTR,Water Extraction & remediation,PPEB,Boots - waterproof latex - Disposable (per pair),EA,+
+WTR,Water Extraction & remediation,HBOX>,Box and liner - for hazardous material cleanup - Large,EA,+
+WTR,Water Extraction & remediation,HBOX,Box and liner - for hazardous material cleanup - Medium,EA,+
+WTR,Water Extraction & remediation,HBOX<,Box and liner - for hazardous material cleanup - Small,EA,+
+WTR,Water Extraction & remediation,CABFHD,Cabinet - full height unit - Detach,LF,+
+WTR,Water Extraction & remediation,CABFHDA,Cabinet - full height unit - Detach - after hours,LF,+
+WTR,Water Extraction & remediation,CABLWD,Cabinet - lower (base) unit - Detach,LF,+
+WTR,Water Extraction & remediation,CABLWDA,Cabinet - lower (base) unit - Detach - after hours,LF,+
+WTR,Water Extraction & remediation,CABLDS,Cabinet - lower (base) unit w/shoring - Detach,LF,+
+WTR,Water Extraction & remediation,CABLDSA,Cabinet - lower (base) unit w/shoring - Detach - after hrs,LF,+
+WTR,Water Extraction & remediation,CABUPD,Cabinet - upper (wall) unit - Detach,LF,+
+WTR,Water Extraction & remediation,CABUPDA,Cabinet - upper (wall) unit - Detach - after hours,LF,+
+WTR,Water Extraction & remediation,CABVCD,Cabinet - vanity and countertop - Detach,LF,+
+WTR,Water Extraction & remediation,CABVCDA,Cabinet - vanity and countertop - Detach - after hours,LF,+
+WTR,Water Extraction & remediation,CABVND,Cabinet - vanity unit - Detach,LF,+
+WTR,Water Extraction & remediation,CABVNDA,Cabinet - vanity unit - Detach - after hours,LF,+
+WTR,Water Extraction & remediation,CALC,Calcium Chloride moisture test - per sample,EA,+
+WTR,Water Extraction & remediation,FLVAP,"Carbon vapor filter (for air scrubber) - 16"" x 16""",EA,+
+WTR,Water Extraction & remediation,FLVAP>,"Carbon vapor filter (for air scrubber) - 24"" x 24""",EA,+
+WTR,Water Extraction & remediation,FLCHM,"Chemical gas and odor neutralization cartridge - 16"" x 16""",EA,+
+WTR,Water Extraction & remediation,FLCHM>,"Chemical gas and odor neutralization cartridge - 24"" x 24""",EA,+
+WTR,Water Extraction & remediation,LABSA,Cleaning & Remediation - Supervisory - after hours,HR,+
+WTR,Water Extraction & remediation,LABS,Cleaning & Remediation - Supervisory - per hr,HR,+
+WTR,Water Extraction & remediation,LABCA,Cleaning Technician - after hours,HR,+
+WTR,Water Extraction & remediation,LABC,Cleaning Technician - per hour,HR,+
+WTR,Water Extraction & remediation,BARRF,Containment Barrier - air filter,EA,+
+WTR,Water Extraction & remediation,BARRFA,Containment Barrier - air filter - after hours,EA,+
+WTR,Water Extraction & remediation,BARRP,Containment Barrier - tension post (per day),DA,+
+WTR,Water Extraction & remediation,BARR,Containment Barrier/Airlock/Decon. Chamber,SF,+
+WTR,Water Extraction & remediation,BARRA,Containment Barrier/Airlock/Decon. Chamber - after hours,SF,+
+WTR,Water Extraction & remediation,EXTDMP,Contaminated water dump fee - (Bid Item),EA,+
+WTR,Water Extraction & remediation,TEST,Contamination - air or surface testing & lab analysis,EA,+
+WTR,Water Extraction & remediation,TESTATP,Contamination - on-site ATP testing,EA,+
+WTR,Water Extraction & remediation,TEST+,Contamination - pre & post test - full service (Bid Item),EA,+
+WTR,Water Extraction & remediation,CTFLDA,Countertop - flat laid plastic lam. - Detach - after hours,LF,+
+WTR,Water Extraction & remediation,CTFLD,Countertop - flat laid plastic laminate - Detach,LF,+
+WTR,Water Extraction & remediation,CTPFDA,Countertop - post formed plastic lam. - Detach - after hrs,LF,+
+WTR,Water Extraction & remediation,CTPFD,Countertop - post formed plastic laminate - Detach,LF,+
+WTR,Water Extraction & remediation,CTSSD,Countertop - solid surface/granite - Detach,SF,+
+WTR,Water Extraction & remediation,CTSSDA,Countertop - solid surface/granite - Detach - after hours,SF,+
+WTR,Water Extraction & remediation,DHMDT3K,Dehumidifier - Desiccant -3000-4000 CFM No monit.-per 24hr,EA,+
+WTR,Water Extraction & remediation,DHMDT5K,Dehumidifier - Desiccant -4500-7500 CFM No monit.-per 24hr,EA,+
+WTR,Water Extraction & remediation,DHMDT9K,Dehumidifier - Desiccant-8500-15000 CFM No monit.-per 24hr,EA,+
+WTR,Water Extraction & remediation,DHMD,Dehumidifier (per 24 hour period) - Desiccant - No monit.,EA,+
+WTR,Water Extraction & remediation,DHM>>>,Dehumidifier (per 24 hr period) - 160+ ppd - No monitor.,EA,+
+WTR,Water Extraction & remediation,DHM>,Dehumidifier (per 24 hr period) - 70-109 ppd - No monitor.,EA,+
+WTR,Water Extraction & remediation,DHMD>,Dehumidifier (per 24 hr period) -Large-Desiccant-No monit.,EA,+
+WTR,Water Extraction & remediation,DHMD<,Dehumidifier (per 24 hr period) -Small-Desiccant-No monit.,EA,+
+WTR,Water Extraction & remediation,DHM>>,Dehumidifier (per 24 hr period)- 110-159 ppd - No monitor.,EA,+
+WTR,Water Extraction & remediation,DHM,Dehumidifier (per 24 hr period)- up to 69 ppd- No monitor.,EA,+
+WTR,Water Extraction & remediation,DHMB,Dehumidifier booster (per 24 hour period) - No monitoring,EA,+
+WTR,Water Extraction & remediation,DHMAC,Dehumidifier w/environmental control - per 24 hrs,EA,+
+WTR,Water Extraction & remediation,DISC,Discounts (Bid Item),EA,+
+WTR,Water Extraction & remediation,DWD,Dishwasher - Detach,EA,+
+WTR,Water Extraction & remediation,DWDA,Dishwasher - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,PPER,Disposable rain suit,EA,+
+WTR,Water Extraction & remediation,DOPT,DOP test/inspection - per piece of equipment,EA,+
+WTR,Water Extraction & remediation,WALLH,Drill holes for wall cavity drying,EA,+
+WTR,Water Extraction & remediation,WALLHA,Drill holes for wall cavity drying - after hrs,EA,+
+WTR,Water Extraction & remediation,SBIFSH,Dry ice blast exposed framing w/sheathing - Floor (PER SF),SF,+
+WTR,Water Extraction & remediation,SBIWSH,Dry ice blast exposed framing w/sheathing - Walls (PER SF),SF,+
+WTR,Water Extraction & remediation,SBIF,Dry ice blasting exposed framing - Floor (PER SF),SF,+
+WTR,Water Extraction & remediation,SBIW,Dry ice blasting exposed framing - Walls (PER SF),SF,+
+WTR,Water Extraction & remediation,DRYED,Dryer - electric - Detach,EA,+
+WTR,Water Extraction & remediation,DRYEDA,Dryer - electric - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,DRYGD,Dryer - gas - Detach,EA,+
+WTR,Water Extraction & remediation,DRYGDA,Dryer - gas - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,HTBL,Drying blanket/mat (per 24 hr period) - No monitoring,EA,+
+WTR,Water Extraction & remediation,FURN10,Drying furnace - ind. fired heater w/ducting - 100 kBtuh,DA,+
+WTR,Water Extraction & remediation,FURN17,Drying furnace - ind. fired heater w/ducting - 170 kBtuh,DA,+
+WTR,Water Extraction & remediation,FURN25,Drying furnace - ind. fired heater w/ducting - 250 kBtuh,DA,+
+WTR,Water Extraction & remediation,FURN40,Drying furnace - ind. fired heater w/ducting - 400 kBtuh,DA,+
+WTR,Water Extraction & remediation,FURN,Drying furnace - ind. fired heater w/ducting - 85 kBtuh,DA,+
+WTR,Water Extraction & remediation,DUCT6,"Ducting - flexible - 6"" round",LF,+
+WTR,Water Extraction & remediation,DUCTLF,Ducting - lay-flat,LF,+
+WTR,Water Extraction & remediation,DUCTLF>,Ducting - lay-flat - Large,LF,+
+WTR,Water Extraction & remediation,ESRV,Emergency service call - after business hours,EA,+
+WTR,Water Extraction & remediation,ESRVD,Emergency service call - during business hours,EA,+
+WTR,Water Extraction & remediation,EQA,"Equip. setup, take down & monitoring - after hrs",HR,+
+WTR,Water Extraction & remediation,EQDH,"Equipment decontamination charge - HVY, per piece of equip",EA,+
+WTR,Water Extraction & remediation,EQD,Equipment decontamination charge - per piece of equipment,EA,+
+WTR,Water Extraction & remediation,EQ,"Equipment setup, take down, and monitoring (hourly charge)",HR,+
+WTR,Water Extraction & remediation,PPEE,Eye protection - plastic goggles - Disposable,EA,+
+WTR,Water Extraction & remediation,PPES,Face shield - Disposable,EA,+
+WTR,Water Extraction & remediation,WALLF,Fill holes created by wall cavity drying,EA,+
+WTR,Water Extraction & remediation,MASKFP+,"Floor prot. - cloth - skid resist, leak proof, cleanable",SF,+
+WTR,Water Extraction & remediation,MASKFLP,Floor protection - cloth - skid resistant leak proof,SF,+
+WTR,Water Extraction & remediation,MASKFPB,"Floor protection - cloth - skid resistant, breathable",SF,+
+WTR,Water Extraction & remediation,MASKFPN,Floor protection - neoprene - reusable,SF,+
+WTR,Water Extraction & remediation,MASKFL,Floor protection - self-adhesive plastic film,SF,+
+WTR,Water Extraction & remediation,MASKFLA,Floor protection - self-adhesive plastic film - after hrs,SF,+
+WTR,Water Extraction & remediation,GDD,Garbage disposal / disposer - Detach,EA,+
+WTR,Water Extraction & remediation,GDDA,Garbage disposal / disposer - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,HDRY,Hang dry carpet in plant,SF,+
+WTR,Water Extraction & remediation,HDRY+,Hang dry custom oriental rug in plant,SF,+
+WTR,Water Extraction & remediation,HEATA,Heat drying - ducted air - 200 kBtu - 2300+ cfm,DA,+
+WTR,Water Extraction & remediation,HEATA>,Heat drying - ducted air - 400 kBtu - 5200+ cfm,DA,+
+WTR,Water Extraction & remediation,HEAT,Heat drying - hydronic boiler/power unit - 200 kBtu,DA,+
+WTR,Water Extraction & remediation,HEAT>,Heat drying - hydronic boiler/power unit - 250 kBtu,DA,+
+WTR,Water Extraction & remediation,HEAT>>,Heat drying - hydronic boiler/power unit - 300 kBtu,DA,+
+WTR,Water Extraction & remediation,HTX,Heat drying - thermal air exchanger,DA,+
+WTR,Water Extraction & remediation,HTAM,Heat drying - thermal air mover - Electric,DA,+
+WTR,Water Extraction & remediation,HTAM>,Heat drying - thermal air mover - Electric - Large,DA,+
+WTR,Water Extraction & remediation,HEATX,Heat drying - thermal exchanger with air mover - 50 kBtu,DA,+
+WTR,Water Extraction & remediation,HEATX>,Heat drying - thermal exchanger with air mover - 80 kBtu,DA,+
+WTR,Water Extraction & remediation,HEPAVAS,HEPA Vacuuming - Detailed - (PER SF),SF,+
+WTR,Water Extraction & remediation,HEPAVAC,HEPA Vacuuming - hourly charge,HR,+
+WTR,Water Extraction & remediation,HEPAVAL,HEPA Vacuuming - Light - (PER SF),SF,+
+WTR,Water Extraction & remediation,HEPAF,HEPA Vacuuming exposed framing - Floor - (PER SF),SF,+
+WTR,Water Extraction & remediation,HEPAW,HEPA Vacuuming exposed framing - Walls - (PER SF),SF,+
+WTR,Water Extraction & remediation,HEPAFSH,HEPA Vacuuming exposed framing w/ sheathing - Floor,SF,+
+WTR,Water Extraction & remediation,HEPAWSH,HEPA Vacuuming exposed framing w/ sheathing - Walls,SF,+
+WTR,Water Extraction & remediation,HTIP,Infrared heat panel (per 24 hr period) - No monitoring,EA,+
+WTR,Water Extraction & remediation,DORSLD,Interior door slab only - Detach,EA,+
+WTR,Water Extraction & remediation,DORSLDA,Interior door slab only - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,LIFT,Lift carpet for drying,SF,+
+WTR,Water Extraction & remediation,LIFTA,Lift carpet for drying - after hours,SF,+
+WTR,Water Extraction & remediation,MASKV,Mask and cover register / air return,EA,+
+WTR,Water Extraction & remediation,MASKV>,Mask and cover register / air return - Large,EA,+
+WTR,Water Extraction & remediation,CABMCD,Medicine cabinet - Detach,EA,+
+WTR,Water Extraction & remediation,CABMCDA,Medicine cabinet - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,DRY-,Mini air mover (per 24 hour period) - No monitoring,EA,+
+WTR,Water Extraction & remediation,MUCK,Muck-out/Flood loss cleanup,SF,-
+WTR,Water Extraction & remediation,MUCKCS,Muck-out/Flood loss cleanup - confined space,SF,-
+WTR,Water Extraction & remediation,MUCKCS+,Muck-out/Flood loss cleanup - confined space - Heavy,SF,-
+WTR,Water Extraction & remediation,MUCKCS-,Muck-out/Flood loss cleanup - confined space - Light,SF,-
+WTR,Water Extraction & remediation,MUCK+,Muck-out/Flood loss cleanup - Heavy,SF,-
+WTR,Water Extraction & remediation,MUCK-,Muck-out/Flood loss cleanup - Light,SF,-
+WTR,Water Extraction & remediation,MUCKHR,Muck-out/Flood loss cleanup - per hour (Labor only),HR,-
+WTR,Water Extraction & remediation,DRYMA,Multi-port air mover adapter (per 24 hr period)- No monit.,EA,+
+WTR,Water Extraction & remediation,NAFAN>,Neg. air fan/Air scrub.-Large (per 24 hr period)-No monit.,DA,+
+WTR,Water Extraction & remediation,NAFAN>>,Neg. air fan/Air scrub.-XLrg (per 24 hr period)-No monit.,DA,+
+WTR,Water Extraction & remediation,NAFAN,Negative air fan/Air scrubber (24 hr period) - No monit.,DA,+
+WTR,Water Extraction & remediation,PPERCPM,PAPR cartridge - HEPA & vapor & gas (single cartridge),EA,+
+WTR,Water Extraction & remediation,PPERCP,PAPR cartridge - HEPA only (single cartridge),EA,+
+WTR,Water Extraction & remediation,PPERCPV,PAPR cartridge - vapor only (single cartridge),EA,+
+WTR,Water Extraction & remediation,SNKPD,Pedestal sink - Detach,EA,+
+WTR,Water Extraction & remediation,SNKPDA,Pedestal sink - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,BARRZ,Peel & seal zipper,EA,+
+WTR,Water Extraction & remediation,BARRZA,Peel & seal zipper - after hours,EA,+
+WTR,Water Extraction & remediation,BARRZ+,Peel & seal zipper - heavy duty,EA,+
+WTR,Water Extraction & remediation,BARRZA+,Peel & seal zipper - heavy duty - after hours,EA,+
+WTR,Water Extraction & remediation,MR,Per job charge for 3rd party monitoring/review (Bid Item),EA,+
+WTR,Water Extraction & remediation,PPEG6,Personal protective gloves - Disposable (per pair),EA,+
+WTR,Water Extraction & remediation,PPEGHD,Personal protective gloves - Heavy duty (per pair),EA,+
+WTR,Water Extraction & remediation,PPEM,Personal protective mask (N-95),EA,+
+WTR,Water Extraction & remediation,HBAG>,Plastic bag - for hazardous material cleanup - Large,EA,+
+WTR,Water Extraction & remediation,HBAG,Plastic bag - for hazardous material cleanup - Medium,EA,+
+WTR,Water Extraction & remediation,HBAG<,Plastic bag - for hazardous material cleanup - Small,EA,+
+WTR,Water Extraction & remediation,BAG,Plastic bag - used for disposal of contaminated items,EA,+
+WTR,Water Extraction & remediation,HC14,Plastic container - hazardous material cleanup - 14 gl,EA,+
+WTR,Water Extraction & remediation,HC30,Plastic container - hazardous material cleanup - 30 gl,EA,+
+WTR,Water Extraction & remediation,HC60,Plastic container - hazardous material cleanup - 60 gl,EA,+
+WTR,Water Extraction & remediation,HCON>,Plastic container - hazardous material cleanup - Large,EA,+
+WTR,Water Extraction & remediation,HCON,Plastic container - hazardous material cleanup - Medium,EA,+
+WTR,Water Extraction & remediation,HCON<,Plastic container - hazardous material cleanup - Small,EA,+
+WTR,Water Extraction & remediation,HBAGG,Plastic glove bag - for hazardous material cleanup,EA,+
+WTR,Water Extraction & remediation,HBAGG>,Plastic glove bag - for hazardous material cleanup - Large,EA,+
+WTR,Water Extraction & remediation,POWD>,Power distribution box - 100+ amp (per day),DA,+
+WTR,Water Extraction & remediation,POWDW>,Power distribution box - 100+ amp (per week),WK,+
+WTR,Water Extraction & remediation,POWD,Power distribution box - below 100 amp (per day),DA,+
+WTR,Water Extraction & remediation,POWDW,Power distribution box - below 100 amp (per week),WK,+
+WTR,Water Extraction & remediation,PPPAPR,Powered Air-Purifying Respirator (PAPR) - (per day),DA,+
+WTR,Water Extraction & remediation,PATCHJ,Precisely cut & remove drywall - per LF,LF,-
+WTR,Water Extraction & remediation,PROT,Protect - Cover with plastic,SF,+
+WTR,Water Extraction & remediation,PROTA,Protect - Cover with plastic - after hours,SF,+
+WTR,Water Extraction & remediation,EXTWPA,Pumping & hauling of standing Cat 3 water - after hours,GL,+
+WTR,Water Extraction & remediation,EXTWP,Pumping & hauling of standing Category 3 water,GL,+
+WTR,Water Extraction & remediation,EXTWPTM,Pumping of standing water - truck mounted (per hour),HR,+
+WTR,Water Extraction & remediation,RGED,Range - freestanding - electric - Detach,EA,+
+WTR,Water Extraction & remediation,RGEDA,Range - freestanding - electric - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,RGGD,Range - freestanding - gas - Detach,EA,+
+WTR,Water Extraction & remediation,RGGDA,Range - freestanding - gas - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,RFD,Refrigerator - Detach,EA,+
+WTR,Water Extraction & remediation,RFDA,Refrigerator - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,RMG,Remote monitoring - additional gateway (per 24 hr period),DA,+
+WTR,Water Extraction & remediation,RMS,Remote monitoring - each additional sensor (per 24 hr prd),DA,+
+WTR,Water Extraction & remediation,RM,Remote monitoring sys. w/up to 10 sensors (per 24 hr prd),DA,+
+WTR,Water Extraction & remediation,CSV,Remove polyethylene vapor barrier,SF,-
+WTR,Water Extraction & remediation,CSVS,Remove polyethylene vapor barrier - Category 3,SF,-
+WTR,Water Extraction & remediation,ACT3,Remove wet ceiling tile & drywall and bag - Cat 3,SF,-
+WTR,Water Extraction & remediation,ACT3A,Remove wet ceiling tile & drywall and bag - Cat 3 aft hrs,SF,-
+WTR,Water Extraction & remediation,ACT,Remove wet ceiling tile & drywall and bag for disposal,SF,-
+WTR,Water Extraction & remediation,ACTA,"Remove wet ceiling tile & drywall, bag for disp. after hrs",SF,-
+WTR,Water Extraction & remediation,ACTAS3,Remove wet ceiling tile w/staples - bag Cat 3,SF,-
+WTR,Water Extraction & remediation,ACTAS3A,Remove wet ceiling tile w/staples - bag Cat 3 - aft hrs,SF,-
+WTR,Water Extraction & remediation,ACTAS,Remove wet ceiling tile w/staples - bag for disposal,SF,-
+WTR,Water Extraction & remediation,ACTASA,"Remove wet ceiling tile w/staples, bag for disp. - aft hrs",SF,-
+WTR,Water Extraction & remediation,ACTSA,"Remove wet susp. ceiling tile, bag for disp. - after hrs",SF,-
+WTR,Water Extraction & remediation,ACTSS,Remove wet suspended ceiling tile and bag - Cat 3,SF,-
+WTR,Water Extraction & remediation,ACTSSA,Remove wet suspended ceiling tile and bag - Cat 3 aft hrs,SF,-
+WTR,Water Extraction & remediation,ACTS,Remove wet suspended ceiling tile and bag for disposal,SF,-
+WTR,Water Extraction & remediation,PPERF,Respirator - Full face - multi-purpose resp. (per day),DA,+
+WTR,Water Extraction & remediation,PPERH,Respirator - Half face - multi-purpose resp. (per day),DA,+
+WTR,Water Extraction & remediation,PPERCM,Respirator cartridge - HEPA & vapor & gas (per pair),EA,+
+WTR,Water Extraction & remediation,PPERC,Respirator cartridge - HEPA only (per pair),EA,+
+WTR,Water Extraction & remediation,PPERCV,Respirator cartridge - organic vapor & acid gas (per pair),EA,+
+WTR,Water Extraction & remediation,SANDF,Sand exposed framing - Floor,SF,+
+WTR,Water Extraction & remediation,SANDW,Sand exposed framing - Walls,SF,+
+WTR,Water Extraction & remediation,FCWSC,Screen wood floor,SF,+
+WTR,Water Extraction & remediation,HTSC,Sensored control system for electric heat drying (24 hr),EA,+
+WTR,Water Extraction & remediation,SNKDD,Sink - double basin - Detach,EA,+
+WTR,Water Extraction & remediation,SNKDDA,Sink - double basin - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,SNKD,Sink - single basin - Detach,EA,+
+WTR,Water Extraction & remediation,SNKDA,Sink - single basin - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,SNKUD,Sink - undermount - Detach,EA,+
+WTR,Water Extraction & remediation,SNKUDA,Sink - undermount - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,SBSF,Soda blasting exposed framing - Floor (PER SF),SF,+
+WTR,Water Extraction & remediation,SBSW,Soda blasting exposed framing - Walls (PER SF),SF,+
+WTR,Water Extraction & remediation,SBSFSH,Soda blasting exposed framing w/sheathing - Floor (PER SF),SF,+
+WTR,Water Extraction & remediation,SBSWSH,Soda blasting exposed framing w/sheathing - Walls (PER SF),SF,+
+WTR,Water Extraction & remediation,SMAT,Sticky / tacky mat,EA,+
+WTR,Water Extraction & remediation,DRY1CF,Structural drying per CF - Class 1 (Bid Item),CF,+
+WTR,Water Extraction & remediation,DRY2CF,Structural drying per CF - Class 2 (Bid Item),CF,+
+WTR,Water Extraction & remediation,DRY3CF,Structural drying per CF - Class 3 (Bid Item),CF,+
+WTR,Water Extraction & remediation,DRY4CF,Structural drying per CF - Class 4 (Bid Item),CF,+
+WTR,Water Extraction & remediation,DRYCCF,Structural drying per CF - Climate controlled (Bid Item),CF,+
+WTR,Water Extraction & remediation,DRYCNCF,Structural drying per CF - Non-climate cont. (Bid Item),CF,+
+WTR,Water Extraction & remediation,DRY1,Structural drying per SF - Class 1 (Bid Item),SF,+
+WTR,Water Extraction & remediation,DRY2,Structural drying per SF - Class 2 (Bid Item),SF,+
+WTR,Water Extraction & remediation,DRY3,Structural drying per SF - Class 3 (Bid Item),SF,+
+WTR,Water Extraction & remediation,DRY4,Structural drying per SF - Class 4 (Bid Item),SF,+
+WTR,Water Extraction & remediation,DRYC,Structural drying per SF - Climate controlled (Bid Item),SF,+
+WTR,Water Extraction & remediation,DRYCN,Structural drying per SF - Non-climate cont. (Bid Item),SF,+
+WTR,Water Extraction & remediation,PPSAR,Supply Air Respirator (SAR) - (per day),DA,+
+WTR,Water Extraction & remediation,TACKG,Tackless strip guard,LF,+
+WTR,Water Extraction & remediation,TACKGA,Tackless strip guard - after hours,LF,+
+WTR,Water Extraction & remediation,INSCSA,Tear out and bag wet insul. confined space- Cat 3- aft hrs,SF,-
+WTR,Water Extraction & remediation,INS,Tear out and bag wet insulation,SF,-
+WTR,Water Extraction & remediation,INSA,Tear out and bag wet insulation - after hours,SF,-
+WTR,Water Extraction & remediation,INSSA,Tear out and bag wet insulation - Category 3 - after hours,SF,-
+WTR,Water Extraction & remediation,INSS,Tear out and bag wet insulation - Category 3 water,SF,-
+WTR,Water Extraction & remediation,INSC,Tear out and bag wet insulation in confined space,SF,-
+WTR,Water Extraction & remediation,INSCS,Tear out and bag wet insulation in confined space - Cat 3,SF,-
+WTR,Water Extraction & remediation,INSCA,Tear out and bag wet insulation in confined space- aft hrs,SF,-
+WTR,Water Extraction & remediation,INSWLSA,"Tear out and bag wet insulation, LF - 2' Cat 3 - after hrs",LF,-
+WTR,Water Extraction & remediation,INSW4SA,"Tear out and bag wet insulation, LF - 4' Cat 3 after hours",LF,-
+WTR,Water Extraction & remediation,INSWLFA,"Tear out and bag wet insulation, per LF - 2' - after hours",LF,-
+WTR,Water Extraction & remediation,INSWLS,"Tear out and bag wet insulation, per LF - 2' - Cat 3",LF,-
+WTR,Water Extraction & remediation,INSW4A,"Tear out and bag wet insulation, per LF - 4' - after hours",LF,-
+WTR,Water Extraction & remediation,INSW4S,"Tear out and bag wet insulation, per LF - 4' - Cat 3",LF,-
+WTR,Water Extraction & remediation,INSWLF,"Tear out and bag wet insulation, per LF - to 2' tall",LF,-
+WTR,Water Extraction & remediation,INSW4,"Tear out and bag wet insulation, per LF - to 4' tall",LF,-
+WTR,Water Extraction & remediation,BASE,Tear out baseboard,LF,-
+WTR,Water Extraction & remediation,BASEA,Tear out baseboard - after hours,LF,-
+WTR,Water Extraction & remediation,BASEBA,Tear out baseboard and bag for disp. - up to Cat 3 aft hrs,LF,-
+WTR,Water Extraction & remediation,BASEB,Tear out baseboard and bag for disposal - up to Cat 3,LF,-
+WTR,Water Extraction & remediation,CABFH,Tear out cabinetry - full height unit,LF,-
+WTR,Water Extraction & remediation,CABFHA,Tear out cabinetry - full height unit - after hours,LF,-
+WTR,Water Extraction & remediation,CABLOW,Tear out cabinetry - lower (base) units,LF,-
+WTR,Water Extraction & remediation,CABLOWA,Tear out cabinetry - lower (base) units - after hours,LF,-
+WTR,Water Extraction & remediation,CABUP,Tear out cabinetry - upper (wall) units,LF,-
+WTR,Water Extraction & remediation,CABUPA,Tear out cabinetry - upper (wall) units - after hours,LF,-
+WTR,Water Extraction & remediation,CABVAN,Tear out cabinetry - vanity,LF,-
+WTR,Water Extraction & remediation,CABVANA,Tear out cabinetry - vanity - after hours,LF,-
+WTR,Water Extraction & remediation,CABVNC,Tear out cabinetry - vanity and countertop,LF,-
+WTR,Water Extraction & remediation,CABVNCA,Tear out cabinetry - vanity and countertop - after hours,LF,-
+WTR,Water Extraction & remediation,CTFLA,Tear out countertop - flat laid plastic lam. - after hours,LF,-
+WTR,Water Extraction & remediation,CTFL,Tear out countertop - flat laid plastic laminate,LF,-
+WTR,Water Extraction & remediation,CTPFA,Tear out countertop - post formed plastic lam. - after hrs,LF,-
+WTR,Water Extraction & remediation,CTPF,Tear out countertop - post formed plastic laminate,LF,-
+WTR,Water Extraction & remediation,CTSS,Tear out countertop - solid surface/granite,SF,-
+WTR,Water Extraction & remediation,CTSSA,Tear out countertop - solid surface/granite - after hours,SF,-
+WTR,Water Extraction & remediation,CTDKS,Tear out countertop subdeck & bag - Cat 3 water,SF,-
+WTR,Water Extraction & remediation,CTDKSA,Tear out countertop subdeck & bag - Cat 3 water - aft. hrs,SF,-
+WTR,Water Extraction & remediation,CTDK,Tear out countertop subdeck & bag for disposal,SF,-
+WTR,Water Extraction & remediation,CTDKA,Tear out countertop subdeck & bag for disposal - after hrs,SF,-
+WTR,Water Extraction & remediation,CTDKSN,"Tear out countertop subdeck, no bag - Cat 3 water",SF,-
+WTR,Water Extraction & remediation,CTDKSNA,"Tear out countertop subdeck, no bag - Cat 3 water- aft hrs",SF,-
+WTR,Water Extraction & remediation,CTDKN,"Tear out countertop subdeck, no bagging",SF,-
+WTR,Water Extraction & remediation,CTDKNA,"Tear out countertop subdeck, no bagging - after hours",SF,-
+WTR,Water Extraction & remediation,CBBA,Tear out cove base and bag for disp. - up to Cat 3 aft hrs,LF,-
+WTR,Water Extraction & remediation,CB,Tear out cove base molding,LF,-
+WTR,Water Extraction & remediation,CBA,Tear out cove base molding - after hours,LF,-
+WTR,Water Extraction & remediation,CBB,Tear out cove base molding and bag for disp. - up to Cat 3,LF,-
+WTR,Water Extraction & remediation,FCWLA,Tear out non-salv floating floor & bag - after hrs,SF,-
+WTR,Water Extraction & remediation,FCWLS,Tear out non-salv floating floor & bag - Category 3 water,SF,-
+WTR,Water Extraction & remediation,FCWL,Tear out non-salv floating floor & bag for disposal,SF,-
+WTR,Water Extraction & remediation,FCWLSA,Tear out non-salv floating floor & bag- Cat 3 wtr-aft hrs,SF,-
+WTR,Water Extraction & remediation,FCWLSNA,"Tear out non-salv floating floor, no bag - Cat 3 -aft hrs",SF,-
+WTR,Water Extraction & remediation,FCWLN,"Tear out non-salv floating floor, no bagging",SF,-
+WTR,Water Extraction & remediation,FCWLNA,"Tear out non-salv floating floor, no bagging - after hours",SF,-
+WTR,Water Extraction & remediation,FCWLSN,"Tear out non-salv floating floor, no bagging - Category 3",SF,-
+WTR,Water Extraction & remediation,FCWA,Tear out non-salv solid/eng. wood flr & bag - after hrs,SF,-
+WTR,Water Extraction & remediation,FCW,Tear out non-salv solid/eng. wood flr & bag for disposal,SF,-
+WTR,Water Extraction & remediation,ULAYA,Tear out non-salv underlayment & bag - after hours,SF,-
+WTR,Water Extraction & remediation,ULAYSA,Tear out non-salv underlayment & bag - Cat 3 wtr - aft.hrs,SF,-
+WTR,Water Extraction & remediation,ULAYS,Tear out non-salv underlayment & bag - Category 3 water,SF,-
+WTR,Water Extraction & remediation,ULAY,Tear out non-salv underlayment & bag for disposal,SF,-
+WTR,Water Extraction & remediation,ULAYN,"Tear out non-salv underlayment, no bagging",SF,-
+WTR,Water Extraction & remediation,ULAYNA,"Tear out non-salv underlayment, no bagging - after hours",SF,-
+WTR,Water Extraction & remediation,ULAYSNA,"Tear out non-salv underlayment, no bagging - Cat 3 - a/hrs",SF,-
+WTR,Water Extraction & remediation,ULAYSN,"Tear out non-salv underlayment, no bagging - Category 3",SF,-
+WTR,Water Extraction & remediation,FCVLA,"Tear out non-salv vinyl, cut & bag - add'l layer after hrs",SF,-
+WTR,Water Extraction & remediation,FCVL,"Tear out non-salv vinyl, cut & bag - additional layer",SF,-
+WTR,Water Extraction & remediation,FCVSLA,"Tear out non-salv vinyl, cut & bag - Cat 3 add'l lyr a/hrs",SF,-
+WTR,Water Extraction & remediation,FCVSA,"Tear out non-salv vinyl, cut & bag - Cat 3 water-after hrs",SF,-
+WTR,Water Extraction & remediation,FCVSL,"Tear out non-salv vinyl, cut & bag - Cat 3 wtr - add'l lyr",SF,-
+WTR,Water Extraction & remediation,FCVS,"Tear out non-salv vinyl, cut & bag - Category 3 water",SF,-
+WTR,Water Extraction & remediation,FCVSNA,"Tear out non-salv vinyl, no bagging - Cat 3 water-aft. hrs",SF,-
+WTR,Water Extraction & remediation,FCVSN,"Tear out non-salv vinyl, no bagging - Category 3 water",SF,-
+WTR,Water Extraction & remediation,FCWSA,Tear out non-salv wood floor & bag - Cat 3 water - aft hrs,SF,-
+WTR,Water Extraction & remediation,FCWS,Tear out non-salv wood floor & bag - Category 3 water,SF,-
+WTR,Water Extraction & remediation,FCWSNA,"Tear out non-salv wood floor, no bag - Cat 3 - aft. hrs",SF,-
+WTR,Water Extraction & remediation,FCWSN,"Tear out non-salv wood floor, no bagging - Category 3",SF,-
+WTR,Water Extraction & remediation,BCSA,Tear out non-salv. cement board & bag - Cat 3 wtr- aft hrs,SF,-
+WTR,Water Extraction & remediation,BCA,Tear out non-salv. cement board & bag for disposal-aft hrs,SF,-
+WTR,Water Extraction & remediation,BCSNA,"Tear out non-salv. cement board, no bag - Cat 3- after hrs",SF,-
+WTR,Water Extraction & remediation,FCWN,"Tear out non-salv. solid/eng. wood flooring, no bagging",SF,-
+WTR,Water Extraction & remediation,FCWNA,"Tear out non-salv. solid/eng. wood flr, no bag - after hrs",SF,-
+WTR,Water Extraction & remediation,TILSA,Tear out non-salv. tile & bag - Cat 3 water - after hours,SF,-
+WTR,Water Extraction & remediation,TILS,Tear out non-salv. tile & bag - Category 3 water,SF,-
+WTR,Water Extraction & remediation,TIL,Tear out non-salv. tile & bag for disposal,SF,-
+WTR,Water Extraction & remediation,TILA,Tear out non-salv. tile & bag for disposal - after hours,SF,-
+WTR,Water Extraction & remediation,CTTLS,Tear out non-salv. tile countertop & bag - Cat 3 water,SF,-
+WTR,Water Extraction & remediation,CTTLA,Tear out non-salv. tile countertop & bag for disp- aft hrs,SF,-
+WTR,Water Extraction & remediation,CTTL,Tear out non-salv. tile countertop & bag for disposal,SF,-
+WTR,Water Extraction & remediation,CTTLSA,Tear out non-salv. tile countertop & bag-Cat 3 wtr-aft hrs,SF,-
+WTR,Water Extraction & remediation,CTTLSN,"Tear out non-salv. tile countertop, no bag - Cat 3 water",SF,-
+WTR,Water Extraction & remediation,CTTLSNA,"Tear out non-salv. tile countertop, no bag- Cat 3- aft hrs",SF,-
+WTR,Water Extraction & remediation,CTTLNA,"Tear out non-salv. tile countertop, no bagging - aft hrs",SF,-
+WTR,Water Extraction & remediation,FCTSA,Tear out non-salv. tile floor & bag - Cat 3 water-aft hrs,SF,-
+WTR,Water Extraction & remediation,FCTA,Tear out non-salv. tile floor & bag for disposal after hrs,SF,-
+WTR,Water Extraction & remediation,FCTSNA,"Tear out non-salv. tile floor, no bagging - Cat 3- aft hrs",SF,-
+WTR,Water Extraction & remediation,TILNA,"Tear out non-salv. tile, no bagging - after hours",SF,-
+WTR,Water Extraction & remediation,TILSNA,"Tear out non-salv. tile, no bagging - Cat 3 - after hours",SF,-
+WTR,Water Extraction & remediation,TILSN,"Tear out non-salv. tile, no bagging - Category 3 water",SF,-
+WTR,Water Extraction & remediation,FCVUV,"Tear out non-salv. vinyl & underlay, cut & bag for disp.",SF,-
+WTR,Water Extraction & remediation,FCVUVNA,"Tear out non-salv. vinyl & underlay, cut, no bag-after hrs",SF,-
+WTR,Water Extraction & remediation,FCVUVN,"Tear out non-salv. vinyl & underlay, cut, no bagging",SF,-
+WTR,Water Extraction & remediation,FCVTA,"Tear out non-salv. vinyl tile, cut & bag for disp. Aft hrs",SF,-
+WTR,Water Extraction & remediation,FCVTS,"Tear out non-salv. vinyl tile, cut & bag for disp. Cat 3",SF,-
+WTR,Water Extraction & remediation,FCVTSA,"Tear out non-salv. vinyl tile, cut & bag- Cat 3 - aft. hrs",SF,-
+WTR,Water Extraction & remediation,FCVTSNA,"Tear out non-salv. vinyl tile, no bag - Cat 3 - aft. hrs",SF,-
+WTR,Water Extraction & remediation,FCVTSN,"Tear out non-salv. vinyl tile, no bagging - Cat 3",SF,-
+WTR,Water Extraction & remediation,BCS,Tear out non-salvageable cement board & bag - Cat 3 water,SF,-
+WTR,Water Extraction & remediation,BC,Tear out non-salvageable cement board & bag for disposal,SF,-
+WTR,Water Extraction & remediation,BCNA,"Tear out non-salvageable cement board, no bag - after hrs",SF,-
+WTR,Water Extraction & remediation,BCN,"Tear out non-salvageable cement board, no bagging",SF,-
+WTR,Water Extraction & remediation,BCSN,"Tear out non-salvageable cement board, no bagging - Cat 3",SF,-
+WTR,Water Extraction & remediation,CTTLN,"Tear out non-salvageable tile countertop, no bagging",SF,-
+WTR,Water Extraction & remediation,FCTS,Tear out non-salvageable tile floor & bag - Cat 3 water,SF,-
+WTR,Water Extraction & remediation,FCT,Tear out non-salvageable tile floor & bag for disposal,SF,-
+WTR,Water Extraction & remediation,FCTN,"Tear out non-salvageable tile floor, no bagging",SF,-
+WTR,Water Extraction & remediation,FCTSN,"Tear out non-salvageable tile floor, no bagging - Cat 3",SF,-
+WTR,Water Extraction & remediation,FCTNA,"Tear out non-salvageable tile floor, no bagging- after hrs",SF,-
+WTR,Water Extraction & remediation,TILN,"Tear out non-salvageable tile, no bagging",SF,-
+WTR,Water Extraction & remediation,FCVT,"Tear out non-salvageable vinyl tile, cut & bag for disp.",SF,-
+WTR,Water Extraction & remediation,FCVA,"Tear out non-salvageable vinyl, cut & bag - after hrs",SF,-
+WTR,Water Extraction & remediation,FCV,"Tear out non-salvageable vinyl, cut & bag for disposal",SF,-
+WTR,Water Extraction & remediation,FCVN,"Tear out non-salvageable vinyl, no bagging",SF,-
+WTR,Water Extraction & remediation,FCVNA,"Tear out non-salvageable vinyl, no bagging - after hours",SF,-
+WTR,Water Extraction & remediation,BASE>,Tear out oversized or multi-member baseboard,LF,-
+WTR,Water Extraction & remediation,BASEA>,Tear out oversized or multi-member baseboard - after hours,LF,-
+WTR,Water Extraction & remediation,BASEB>,Tear out oversized/multibase - bag for disp. - up to Cat 3,LF,-
+WTR,Water Extraction & remediation,BASEBA>,Tear out oversized/multibase- bag/disp- up to Cat 3 aft hr,LF,-
+WTR,Water Extraction & remediation,SF,Tear out subfloor & bag for disposal,SF,-
+WTR,Water Extraction & remediation,SFA,Tear out subfloor & bag for disposal - after hrs,SF,-
+WTR,Water Extraction & remediation,SFSA,Tear out subfloor & bag for disposal - Cat 3 - aft hrs,SF,-
+WTR,Water Extraction & remediation,SFS,Tear out subfloor & bag for disposal - Category 3,SF,-
+WTR,Water Extraction & remediation,SFSNA,"Tear out subfloor, no bagging - Cat 3 - aft hrs",SF,-
+WTR,Water Extraction & remediation,SFSN,"Tear out subfloor, no bagging - Category 3",SF,-
+WTR,Water Extraction & remediation,SFSL,"Tear out subfloor, sleepers & bag for disposal",SF,-
+WTR,Water Extraction & remediation,SFSLA,"Tear out subfloor, sleepers & bag for disposal - after hrs",SF,-
+WTR,Water Extraction & remediation,SFSLSA,"Tear out subflr, sleepers & bag for disp - Cat 3 - aft hrs",SF,-
+WTR,Water Extraction & remediation,SFSLS,"Tear out subflr, sleepers & bag for disposal - Category 3",SF,-
+WTR,Water Extraction & remediation,SFSLSNA,"Tear out subflr, sleepers, no bagging - Cat 3 - aft hrs",SF,-
+WTR,Water Extraction & remediation,SFSLSN,"Tear out subflr, sleepers, no bagging - Category 3",SF,-
+WTR,Water Extraction & remediation,TACKSA,Tear out tackless strip and bag for disp - Cat 3 - aft hrs,LF,-
+WTR,Water Extraction & remediation,TACK,Tear out tackless strip and bag for disposal,LF,-
+WTR,Water Extraction & remediation,TACKA,Tear out tackless strip and bag for disposal - after hours,LF,-
+WTR,Water Extraction & remediation,TACKS,Tear out tackless strip and bag for disposal - Category 3,LF,-
+WTR,Water Extraction & remediation,TACKSNA,"Tear out tackless strip, no bagging - Cat 3 - after hrs",LF,-
+WTR,Water Extraction & remediation,TACKSN,"Tear out tackless strip, no bagging - Category 3",LF,-
+WTR,Water Extraction & remediation,PLYTK,Tear out toe kick and bag for disposal,LF,-
+WTR,Water Extraction & remediation,PLYTKA,Tear out toe kick and bag for disposal - after hours,LF,-
+WTR,Water Extraction & remediation,PLYTKSA,Tear out toe kick and bag for disposal - Cat 3 - aft hrs,LF,-
+WTR,Water Extraction & remediation,PLYTKS,Tear out toe kick and bag for disposal - Category 3,LF,-
+WTR,Water Extraction & remediation,PLYTN,"Tear out toe kick, no bagging",LF,-
+WTR,Water Extraction & remediation,PLYTNA,"Tear out toe kick, no bagging - after hours",LF,-
+WTR,Water Extraction & remediation,PLYTSNA,"Tear out toe kick, no bagging - Cat 3 - aft hrs",LF,-
+WTR,Water Extraction & remediation,PLYTSN,"Tear out toe kick, no bagging - Category 3",LF,-
+WTR,Water Extraction & remediation,TRI,Tear out trim,LF,-
+WTR,Water Extraction & remediation,TRIA,Tear out trim - after hours,LF,-
+WTR,Water Extraction & remediation,TRIM,Tear out trim and bag for disposal - up to Cat 3,LF,-
+WTR,Water Extraction & remediation,TRIMA,Tear out trim and bag for disposal - up to Cat 3 - aft hrs,LF,-
+WTR,Water Extraction & remediation,FCVUVSA,Tear out vinyl & underlay & bag - Cat 3 water - after hrs,SF,-
+WTR,Water Extraction & remediation,FCVUVA,"Tear out vinyl & underlay, bag for disp. - after hours",SF,-
+WTR,Water Extraction & remediation,FCVUVS,"Tear out vinyl & underlay, bag for disp. - Cat 3 water",SF,-
+WTR,Water Extraction & remediation,FCVUSNA,"Tear out vinyl & underlay, no bag - Cat 3 - after hours",SF,-
+WTR,Water Extraction & remediation,FCVUSN,"Tear out vinyl & underlay, no bagging - Cat 3 water",SF,-
+WTR,Water Extraction & remediation,PAD,Tear out wet carpet pad and bag for disposal,SF,-
+WTR,Water Extraction & remediation,PADA,"Tear out wet carpet pad, cut/bag - after hours",SF,-
+WTR,Water Extraction & remediation,PADSA,"Tear out wet carpet pad, cut/bag - Cat 3 wtr - after hours",SF,-
+WTR,Water Extraction & remediation,PADS,"Tear out wet carpet pad, cut/bag - Category 3 water",SF,-
+WTR,Water Extraction & remediation,PADSNA,"Tear out wet carpet pad, no bag - Cat 3 wtr - after hours",SF,-
+WTR,Water Extraction & remediation,PADN,"Tear out wet carpet pad, no bagging",SF,-
+WTR,Water Extraction & remediation,PADNA,"Tear out wet carpet pad, no bagging - after hours",SF,-
+WTR,Water Extraction & remediation,PADSN,"Tear out wet carpet pad, no bagging - Category 3 water",SF,-
+WTR,Water Extraction & remediation,DRYWA,"Tear out wet drywall, cleanup, bag - after hours",SF,-
+WTR,Water Extraction & remediation,DRYWS,"Tear out wet drywall, cleanup, bag - Cat 3",SF,-
+WTR,Water Extraction & remediation,DRYWSA,"Tear out wet drywall, cleanup, bag - Cat 3 - after hours",SF,-
+WTR,Water Extraction & remediation,DRYW,"Tear out wet drywall, cleanup, bag for disposal",SF,-
+WTR,Water Extraction & remediation,DRYWLSA,"Tear out wet drywall, cleanup, bag, LF - 2' Cat 3 aft hrs",LF,-
+WTR,Water Extraction & remediation,DRYW4SA,"Tear out wet drywall, cleanup, bag, LF - 4' Cat 3 aft hrs",LF,-
+WTR,Water Extraction & remediation,DRYWISA,"Tear out wet drywall, cleanup, bag, LF - 4"" Cat 3 aft hrs",LF,-
+WTR,Water Extraction & remediation,DRYWLFA,"Tear out wet drywall, cleanup, bag, per LF - 2' aft hrs",LF,-
+WTR,Water Extraction & remediation,DRYW4A,"Tear out wet drywall, cleanup, bag, per LF - 4' aft hrs",LF,-
+WTR,Water Extraction & remediation,DRYWIA,"Tear out wet drywall, cleanup, bag, per LF - 4"" aft hrs",LF,-
+WTR,Water Extraction & remediation,DRYWLS,"Tear out wet drywall, cleanup, bag, per LF - to 2' - Cat 3",LF,-
+WTR,Water Extraction & remediation,DRYW4S,"Tear out wet drywall, cleanup, bag, per LF - to 4' - Cat 3",LF,-
+WTR,Water Extraction & remediation,DRYWIS,"Tear out wet drywall, cleanup, bag, per LF - to 4"" - Cat 3",LF,-
+WTR,Water Extraction & remediation,DRYWLF,"Tear out wet drywall, cleanup, bag, per LF - up to 2' tall",LF,-
+WTR,Water Extraction & remediation,DRYW4,"Tear out wet drywall, cleanup, bag, per LF - up to 4' tall",LF,-
+WTR,Water Extraction & remediation,DRYWI,"Tear out wet drywall, cleanup, bag, per LF - up to 4"" tall",LF,-
+WTR,Water Extraction & remediation,DRYN,"Tear out wet drywall, no bagging",SF,-
+WTR,Water Extraction & remediation,DRYNA,"Tear out wet drywall, no bagging - after hours",SF,-
+WTR,Water Extraction & remediation,DRYNS,"Tear out wet drywall, no bagging - Cat 3",SF,-
+WTR,Water Extraction & remediation,DRYNSA,"Tear out wet drywall, no bagging - Cat 3 - after hours",SF,-
+WTR,Water Extraction & remediation,DRYNLSA,"Tear out wet drywall, no bagging, LF - 2' Cat 3 aft hrs",LF,-
+WTR,Water Extraction & remediation,DRYN4SA,"Tear out wet drywall, no bagging, LF - 4' Cat 3 aft hrs",LF,-
+WTR,Water Extraction & remediation,DRYNISA,"Tear out wet drywall, no bagging, LF - 4"" Cat 3 aft hrs",LF,-
+WTR,Water Extraction & remediation,DRYNLFA,"Tear out wet drywall, no bagging, per LF - 2' aft hrs",LF,-
+WTR,Water Extraction & remediation,DRYN4A,"Tear out wet drywall, no bagging, per LF - 4' aft hrs",LF,-
+WTR,Water Extraction & remediation,DRYNIA,"Tear out wet drywall, no bagging, per LF - 4"" aft hrs",LF,-
+WTR,Water Extraction & remediation,DRYNLS,"Tear out wet drywall, no bagging, per LF - to 2' - Cat 3",LF,-
+WTR,Water Extraction & remediation,DRYN4S,"Tear out wet drywall, no bagging, per LF - to 4' - Cat 3",LF,-
+WTR,Water Extraction & remediation,DRYNIS,"Tear out wet drywall, no bagging, per LF - to 4"" - Cat 3",LF,-
+WTR,Water Extraction & remediation,DRYNLF,"Tear out wet drywall, no bagging, per LF - up to 2' tall",LF,-
+WTR,Water Extraction & remediation,DRYN4,"Tear out wet drywall, no bagging, per LF - up to 4' tall",LF,-
+WTR,Water Extraction & remediation,DRYNI,"Tear out wet drywall, no bagging, per LF - up to 4"" tall",LF,-
+WTR,Water Extraction & remediation,INSCSNA,"Tear out wet insul. conf space, no bagging- Cat 3- aft hrs",SF,-
+WTR,Water Extraction & remediation,INSCNA,"Tear out wet insul. confined space, no bagging - aft hrs",SF,-
+WTR,Water Extraction & remediation,INSCSN,"Tear out wet insul. in confined space, no bagging - Cat 3",SF,-
+WTR,Water Extraction & remediation,INSCN,"Tear out wet insulation in confined space, no bagging",SF,-
+WTR,Water Extraction & remediation,INSN,"Tear out wet insulation, no bagging",SF,-
+WTR,Water Extraction & remediation,INSNA,"Tear out wet insulation, no bagging - after hours",SF,-
+WTR,Water Extraction & remediation,INSSNA,"Tear out wet insulation, no bagging - Cat 3 - after hours",SF,-
+WTR,Water Extraction & remediation,INSSN,"Tear out wet insulation, no bagging - Category 3 water",SF,-
+WTR,Water Extraction & remediation,INSNLSA,"Tear out wet insulation, no bagging, LF - 2' Cat 3 aft hrs",LF,-
+WTR,Water Extraction & remediation,INSN4SA,"Tear out wet insulation, no bagging, LF - 4' Cat 3 aft hrs",LF,-
+WTR,Water Extraction & remediation,INSNLS,"Tear out wet insulation, no bagging, per LF - 2' - Cat 3",LF,-
+WTR,Water Extraction & remediation,INSNLFA,"Tear out wet insulation, no bagging, per LF - 2' after hrs",LF,-
+WTR,Water Extraction & remediation,INSN4S,"Tear out wet insulation, no bagging, per LF - 4' - Cat 3",LF,-
+WTR,Water Extraction & remediation,INSN4A,"Tear out wet insulation, no bagging, per LF - 4' after hrs",LF,-
+WTR,Water Extraction & remediation,INSNLF,"Tear out wet insulation, no bagging, per LF - to 2' tall",LF,-
+WTR,Water Extraction & remediation,INSN4,"Tear out wet insulation, no bagging, per LF - to 4' tall",LF,-
+WTR,Water Extraction & remediation,FCCSA,"Tear out wet non-salv. cpt, cut/bag-Cat 3 wtr - after hrs",SF,-
+WTR,Water Extraction & remediation,FCCSNA,"Tear out wet non-salv. cpt, no bag- Cat 3 wtr - after hrs",SF,-
+WTR,Water Extraction & remediation,FCCGSN,"Tear out wet non-salv. glue down cpt, no bag - Cat 3 water",SF,-
+WTR,Water Extraction & remediation,FCCGDS,"Tear out wet non-salv. gluedn. cpt, cut/bag - Cat 3 water",SF,-
+WTR,Water Extraction & remediation,FCCGDA,"Tear out wet non-salv. gluedn. cpt, cut/bag- after hours",SF,-
+WTR,Water Extraction & remediation,FCCGDNA,"Tear out wet non-salv. gluedn. cpt, no bag - after hours",SF,-
+WTR,Water Extraction & remediation,FCCGDSA,"Tear out wet non-salv.gluedn.cpt,cut/bg-Cat 3 wtr-aft. hrs",SF,-
+WTR,Water Extraction & remediation,FCCGSNA,"Tear out wet non-salv.gluedn.cpt,no bag-Cat 3 wtr-aft. hrs",SF,-
+WTR,Water Extraction & remediation,FCCNA,"Tear out wet non-salvage carpet, no bag - after hours",SF,-
+WTR,Water Extraction & remediation,FCCA,"Tear out wet non-salvage cpt, cut/bag - after hours",SF,-
+WTR,Water Extraction & remediation,FCC,"Tear out wet non-salvageable carpet, cut & bag for disp.",SF,-
+WTR,Water Extraction & remediation,FCCS,"Tear out wet non-salvageable carpet, cut/bag - Cat 3 water",SF,-
+WTR,Water Extraction & remediation,FCCSN,"Tear out wet non-salvageable carpet, no bag - Cat 3 water",SF,-
+WTR,Water Extraction & remediation,FCCN,"Tear out wet non-salvageable carpet, no bagging",SF,-
+WTR,Water Extraction & remediation,FCCGD,"Tear out wet non-salvageable glue down carpet, cut/bag",SF,-
+WTR,Water Extraction & remediation,FCCGDN,"Tear out wet non-salvageable glue down carpet, no bagging",SF,-
+WTR,Water Extraction & remediation,PNLSA,"Tear out wet paneling, bag for disp. - Cat 3 - after hours",SF,-
+WTR,Water Extraction & remediation,PNL,"Tear out wet paneling, bag for disposal",SF,-
+WTR,Water Extraction & remediation,PNLA,"Tear out wet paneling, bag for disposal - after hours",SF,-
+WTR,Water Extraction & remediation,PNLS,"Tear out wet paneling, bag for disposal - Cat 3",SF,-
+WTR,Water Extraction & remediation,PNLSN,"Tear out wet paneling, no bagging - Cat 3",SF,-
+WTR,Water Extraction & remediation,PNLSNA,"Tear out wet paneling, no bagging - Cat 3 - after hours",SF,-
+WTR,Water Extraction & remediation,PLAA,"Tear out wet plaster, cleanup, bag - after hours",SF,-
+WTR,Water Extraction & remediation,PLASA,"Tear out wet plaster, cleanup, bag - Cat 3 - after hours",SF,-
+WTR,Water Extraction & remediation,PLAS,"Tear out wet plaster, cleanup, bag - Category 3 water",SF,-
+WTR,Water Extraction & remediation,PLA,"Tear out wet plaster, cleanup, bag for disposal",SF,-
+WTR,Water Extraction & remediation,PLASNA,"Tear out wet plaster, no bagging - Cat 3 - after hours",SF,-
+WTR,Water Extraction & remediation,PLASN,"Tear out wet plaster, no bagging - Category 3 water",SF,-
+WTR,Water Extraction & remediation,SSWR,Temporary safety shower,EA,+
+WTR,Water Extraction & remediation,THERM,Thermal imaging - (Bid Item),EA,+
+WTR,Water Extraction & remediation,TLTD,Toilet - Detach,EA,+
+WTR,Water Extraction & remediation,TLTDA,Toilet - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,DHMDT2K,Trailer-mount dehumidifier - 2000 CFM- per 24 hr,EA,+
+WTR,Water Extraction & remediation,TRAN,Transport carpet for drying,SF,+
+WTR,Water Extraction & remediation,TRID,Trim - Detach,LF,+
+WTR,Water Extraction & remediation,TRIDA,Trim - Detach - after hours,LF,+
+WTR,Water Extraction & remediation,WALLD,Wall cavity drying-Dctd type (per 24 hr period) No monit.,DA,+
+WTR,Water Extraction & remediation,WALL,Wall cavity drying-Inj. type (per 24 hr period) No monit.,DA,+
+WTR,Water Extraction & remediation,WSHD,Washer/Washing machine - Detach,EA,+
+WTR,Water Extraction & remediation,WSHDA,Washer/Washing machine - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,EXTSA+,Water extract carpeted floor - Cat 3 wtr- Hvy- after hours,SF,+
+WTR,Water Extraction & remediation,EXTGA+,Water extract carpeted flr - Cat 2 wtr - Heavy- after hrs,SF,+
+WTR,Water Extraction & remediation,EXTGA,Water extract from carpeted floor - Cat 2 wtr- after hours,SF,+
+WTR,Water Extraction & remediation,EXTSA,Water extract from carpeted floor - Cat 3 wtr- after hours,SF,+
+WTR,Water Extraction & remediation,EXTHSA,Water extract from hard surf flr - Cat 3 wtr - after hours,SF,+
+WTR,Water Extraction & remediation,EXTHGA,Water extract from hrd surf flr - Cat 2 wtr - after hours,SF,+
+WTR,Water Extraction & remediation,MISC,WATER EXTRACTION & REMEDIATION,,+
+WTR,Water Extraction & remediation,MN,Water Extraction & Remediation - Labor Minimum,EA,+
+WTR,Water Extraction & remediation,AGP,Water Extraction & Remediation (Agreed Price),EA,+
+WTR,Water Extraction & remediation,BIDITM,Water Extraction & Remediation (Bid Item),EA,+
+WTR,Water Extraction & remediation,PDB,Water Extraction & Remediation (Paid Bill),EA,+
+WTR,Water Extraction & remediation,LABA,Water Extraction & Remediation Technician - after hours,HR,+
+WTR,Water Extraction & remediation,LAB,Water Extraction & Remediation Technician - per hour,HR,+
+WTR,Water Extraction & remediation,EXTWA,Water extraction floor - Weight-assisted - after hours,SF,+
+WTR,Water Extraction & remediation,EXT,Water extraction from carpeted floor,SF,+
+WTR,Water Extraction & remediation,EXTG+,Water extraction from carpeted floor - Cat 2 water - Heavy,SF,+
+WTR,Water Extraction & remediation,EXTS+,Water extraction from carpeted floor - Cat 3 water - Heavy,SF,+
+WTR,Water Extraction & remediation,EXTG,Water extraction from carpeted floor - Category 2 water,SF,+
+WTR,Water Extraction & remediation,EXTS,Water extraction from carpeted floor - Category 3 water,SF,+
+WTR,Water Extraction & remediation,EXT+,Water extraction from carpeted floor - Heavy,SF,+
+WTR,Water Extraction & remediation,EXTA+,Water extraction from carpeted floor - Heavy - after hours,SF,+
+WTR,Water Extraction & remediation,EXTA,Water extraction from carpeted floor- after hours,SF,+
+WTR,Water Extraction & remediation,EXTW,Water extraction from floor - Weight-assisted,SF,+
+WTR,Water Extraction & remediation,EXTH,Water extraction from hard surface floor,SF,+
+WTR,Water Extraction & remediation,EXTHA,Water extraction from hard surface floor - after hours,SF,+
+WTR,Water Extraction & remediation,EXTHG,Water extraction from hard surface floor - Cat 2 water,SF,+
+WTR,Water Extraction & remediation,EXTHS,Water extraction from hard surface floor - Cat 3 water,SF,+
+WTR,Water Extraction & remediation,WETR,Water extraction with third party review,EA,+
+WTR,Water Extraction & remediation,WETNR,Water extraction without third party review,EA,+
+WTR,Water Extraction & remediation,WHD,Water heater - Detach,EA,+
+WTR,Water Extraction & remediation,WHDA,Water heater - Detach - after hours,EA,+
+WTR,Water Extraction & remediation,WFDAD,Wood floor drying add-on kit (per 24 hr period) No monit.,DA,+
+WTR,Water Extraction & remediation,WFI,Wood floor drying extraction mat (per 24 hr prd) No monit.,DA,+
+WTR,Water Extraction & remediation,WFD,Wood flr drying - subfloor air flow (per 24 hr) No monit.,DA,+

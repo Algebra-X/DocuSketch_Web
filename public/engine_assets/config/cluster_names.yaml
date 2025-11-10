@@ -1,0 +1,797 @@
+basement__cluster_01:
+  name: Severe Category 3 Carpet Loss
+  summary: Heavy extraction and removal of contaminated carpet and pad with dehumidification.
+basement__cluster_02:
+  name: After‑Hours Category 2 Extraction
+  summary: Evening response removing wet carpet and trim with antimicrobial treatment.
+basement__cluster_03:
+  name: Wall Cavity Drying and Containment
+  summary: Drywall and insulation removal with barrier setup for wall cavity drying.
+basement__cluster_04:
+  name: Bathroom Fixture and Finish Removal
+  summary: Detach plumbing fixtures and remove damaged finishes and cabinetry.
+basement__cluster_05:
+  name: Partial Height Wall and Floor Demo
+  summary: Two‑foot drywall and insulation removal with tile and carpet extraction.
+basement__cluster_06:
+  name: Mixed Surface Category 2‑3 Removal
+  summary: Plaster, insulation, and baseboard removal with equipment setup and monitoring.
+basement__cluster_07:
+  name: Heavy Category 3 Structural Cleanup
+  summary: Extensive muck‑out and removal of cabinetry, drywall, and insulation under
+    Cat 3.
+basement__cluster_08:
+  name: Category 3 Flooring and Trim Demo
+  summary: Remove contaminated subfloor, underlayment, drywall, and trim materials.
+basement__cluster_09:
+  name: Laundry Area Flood Pump‑Out
+  summary: Detach appliances and pump standing Cat 3 water with vinyl and ceiling
+    removal.
+basement__cluster_10:
+  name: Appliance Detach and Hard Floor Extraction
+  summary: Remove appliances and extract water from hard surfaces using pumps and
+    air scrubbers.
+basement__cluster_11:
+  name: Cabinet Detach and Precision Drywall Cut
+  summary: Detach cabinetry and toe kicks with selective drywall removal for drying
+    access.
+basement__cluster_12:
+  name: Ceiling and Paneling Category 3 Removal
+  summary: Remove wet ceiling tiles, paneling, and vinyl underlay with dehumidification.
+basement__cluster_13:
+  name: Cabinet Detach and Microbial Cleaning
+  summary: Detach counters and cabinets with detailed HEPA vacuuming and antimicrobial
+    treatment.
+basement__cluster_14:
+  name: Class 2 Microbial Mitigation
+  summary: Moderate moisture restoration with microbial control procedures.
+basement__cluster_15:
+  name: Ceiling Tile Category 3 Removal
+  summary: Remove and dispose of contaminated ceiling tiles with staples under Cat
+    3 conditions.
+basement__cluster_16:
+  name: Class 3 Severe Water Intrusion
+  summary: High‑intensity drying and demolition for extensive basement water damage.
+bathroom__cluster_01:
+  name: Severe Category 3 Structural Demo
+  summary: Full tear-out of saturated structural and finish materials after Category
+    3 water loss.
+bathroom__cluster_02:
+  name: Moderate Moisture Prep and Detach
+  summary: Detaching fixtures and finishes for wall cavity drying and moderate moisture
+    removal.
+bathroom__cluster_03:
+  name: After-Hours Category 3 Demo
+  summary: Emergency after-hours removal of contaminated finishes and fixtures.
+bathroom__cluster_04:
+  name: Standard Floor and Trim Removal
+  summary: Routine tear-out of flooring, trim, and underlayment for non-salvageable
+    materials.
+bathroom__cluster_05:
+  name: Containment and Drying Setup
+  summary: Establish containment, filtration, and dehumidification for controlled
+    drying.
+bathroom__cluster_06:
+  name: Equipment Handling and Bio Cleaning
+  summary: Setup, decontamination, and biological cleaning of affected areas and equipment.
+bathroom__cluster_07:
+  name: Carpeted Area Extraction and Detach
+  summary: Water extraction and removal of carpeted materials with fixture detachment.
+bathroom__cluster_08:
+  name: Shower and Tile System Removal
+  summary: Tear-out of tile, mortar bed, and shower drain assemblies for restoration
+    access.
+bathroom__cluster_09:
+  name: Vinyl and Hard Surface Extraction
+  summary: Removal of vinyl flooring and extraction from hard surfaces under Category
+    3 conditions.
+bathroom__cluster_10:
+  name: After-Hours Moderate Structural Demo
+  summary: Evening tear-out of baseboards, drywall, and flooring with minor extraction
+    tasks.
+bathroom__cluster_11:
+  name: Category 3 Carpet and Vanity Demo
+  summary: Removal of contaminated carpet, drywall, and vanity cabinetry after severe
+    water loss.
+bathroom__cluster_12:
+  name: After-Hours Wall Cavity Drying
+  summary: Wall cavity drying and antimicrobial treatment performed during off-hours.
+bathroom__cluster_13:
+  name: Moisture Class and Containment Setup
+  summary: Classification of water damage levels and installation of heavy-duty containment.
+bathroom__cluster_14:
+  name: Personal Protective Equipment Use
+  summary: Use of gloves and masks for safe handling during restoration activities.
+bathroom__cluster_15:
+  name: Register and Vent Masking
+  summary: Protection of HVAC openings with large register masking.
+bathroom__cluster_16:
+  name: Minor Class 1 Moisture Event
+  summary: Low-level moisture incident requiring minimal drying intervention.
+bedroom__cluster_01:
+  name: Cat 3 Structural Tear-Out
+  summary: Removes contaminated drywall, insulation, and flooring after Category 3
+    water loss.
+bedroom__cluster_02:
+  name: Partial Wall and Carpet Removal
+  summary: Targets lower drywall and carpet materials affected by moderate water intrusion.
+bedroom__cluster_03:
+  name: Tile and Fixture Detachment
+  summary: Removes tile finishes and plumbing fixtures impacted by severe water damage.
+bedroom__cluster_04:
+  name: After-Hours Laundry Area Response
+  summary: Handles emergency carpet and appliance removal with wall cavity drying
+    after hours.
+bedroom__cluster_05:
+  name: Hard Surface and Appliance Removal
+  summary: Extracts water and detaches kitchen-style appliances and flooring on hard
+    surfaces.
+bedroom__cluster_06:
+  name: Cabinetry and Countertop Detachments
+  summary: Focuses on removing built-in cabinets, sinks, and countertops for drying
+    access.
+bedroom__cluster_07:
+  name: Light Extraction and Cleaning Prep
+  summary: Performs light extraction, HEPA cleaning, and baseboard detachment for
+    drying setup.
+bedroom__cluster_08:
+  name: Containment and Equipment Setup
+  summary: Installs containment barriers and drying equipment for controlled restoration
+    zones.
+bedroom__cluster_09:
+  name: Standard Drying and Extraction
+  summary: Provides carpet lifting, extraction, and air movement for typical water
+    mitigation.
+bedroom__cluster_10:
+  name: After-Hours Protection and Extraction
+  summary: Conducts protective masking and water extraction during off-hours operations.
+bedroom__cluster_11:
+  name: Vinyl and Plaster Tear-Out
+  summary: Removes damaged vinyl, underlayment, and plaster surfaces for restoration
+    access.
+bedroom__cluster_12:
+  name: Air Filtration and Equipment Maintenance
+  summary: Manages negative air systems, HEPA filters, and equipment decontamination
+    tasks.
+bedroom__cluster_13:
+  name: General Category Classification Tasks
+  summary: Represents generic tear-out and disposal actions across multiple water
+    classes.
+bedroom__cluster_14:
+  name: After-Hours Cabinet and Trim Removal
+  summary: Removes cabinetry, trim, and vinyl materials during after-hours mitigation.
+bedroom__cluster_15:
+  name: Subfloor and Wall Section Removal
+  summary: Targets subfloor, insulation, and drywall removal up to four feet for drying.
+bedroom__cluster_16:
+  name: High-Capacity Drying and Extraction
+  summary: Uses large dehumidifiers and hard surface extraction for extensive moisture
+    events.
+bedroom__cluster_17:
+  name: Confined Space and Tile Removal
+  summary: Handles glued drywall, vinyl tile, and insulation in confined or complex
+    areas.
+bedroom__cluster_18:
+  name: Personal Protective Equipment Use
+  summary: Covers PPE items required for safe restoration operations.
+bedroom__cluster_19:
+  name: Antimicrobial Cleaning and Class 2 Drying
+  summary: Applies antimicrobial agents and performs Class 2 structural drying with
+    cleaning staff.
+closet__cluster_01:
+  name: Carpeted Closet Water Extraction
+  summary: Removes wet carpet materials and extracts Category 2 water from closet
+    flooring.
+closet__cluster_02:
+  name: Severe Category 3 Structural Removal
+  summary: Handles Cat 3 contamination with drywall, insulation, and fixture tear-out.
+closet__cluster_03:
+  name: After‑Hours Containment and Removal
+  summary: Performs emergency after‑hours tear‑outs with containment and antimicrobial
+    treatment.
+closet__cluster_04:
+  name: Heavy Category 3 Carpet Saturation
+  summary: Addresses deep Cat 3 saturation with insulation and drywall removal to
+    four feet.
+closet__cluster_05:
+  name: Appliance and Cabinet Detachment
+  summary: Removes built‑ins and appliances with hard‑surface extraction in closet
+    area.
+closet__cluster_06:
+  name: General Wet Material Demolition
+  summary: Removes wet drywall, insulation, and ceiling tiles with dehumidification
+    setup.
+closet__cluster_07:
+  name: Containment and Air Filtration Setup
+  summary: Installs barriers, HEPA filtration, and negative air for controlled drying.
+closet__cluster_08:
+  name: After‑Hours Category 3 Hard Surface
+  summary: Executes Cat 3 after‑hours removal of flooring and drywall with HEPA cleaning.
+closet__cluster_09:
+  name: Protective Equipment and Labor
+  summary: Covers PPE usage and technician labor for hazardous cleanup operations.
+closet__cluster_10:
+  name: Water Loss Classification Reference
+  summary: Defines water loss classes and tear‑out scope for restoration planning.
+closet__cluster_11:
+  name: Targeted Drying Mat Deployment
+  summary: Uses drying mats or blankets for localized moisture removal.
+closet__cluster_12:
+  name: Enhanced Floor Protection Layer
+  summary: Applies durable, leak‑proof cloth protection over finished flooring.
+closet__cluster_13:
+  name: HVAC Register Masking
+  summary: Covers large air returns or registers to prevent cross‑contamination.
+closet__cluster_14:
+  name: On‑Site Contamination Testing
+  summary: Performs ATP surface testing to verify cleanliness levels.
+closet__cluster_15:
+  name: High‑Capacity Dehumidification
+  summary: Deploys large dehumidifiers for heavy moisture load conditions.
+crawlspace__cluster_01:
+  name: Confined Space Cat 3 Cleanup
+  summary: After-hours confined-space flood and insulation removal with antimicrobial
+    treatment.
+crawlspace__cluster_02:
+  name: Standard Crawlspace Water Extraction
+  summary: Routine water removal and drying with basic antimicrobial application.
+crawlspace__cluster_03:
+  name: Mold Remediation With Negative Air
+  summary: HEPA-filtered negative air setup for mold and stain removal in crawlspace.
+crawlspace__cluster_04:
+  name: Heavy PPE Confined Drying
+  summary: High-capacity dehumidification and insulation removal requiring heavy protective
+    gear.
+crawlspace__cluster_05:
+  name: General Drying And Containment
+  summary: Typical crawlspace drying setup with containment and insulation removal.
+crawlspace__cluster_06:
+  name: Carpeted Crawlspace Extraction
+  summary: Removal of wet carpet, pad, and tack strips with light HEPA vacuuming.
+crawlspace__cluster_07:
+  name: Light Confined Flood Cleanup
+  summary: Moderate drying and muck-out operations in confined crawlspace areas.
+crawlspace__cluster_08:
+  name: Cat 3 Confined Insulation Removal
+  summary: Protective covering and HEPA cleaning of framing with insulation tear-out.
+crawlspace__cluster_09:
+  name: Category 3 Vapor Barrier Removal
+  summary: Hard-surface extraction and HEPA cleaning with barrier removal under Cat
+    3 conditions.
+crawlspace__cluster_10:
+  name: Severe Category 3 Extraction
+  summary: Heavy confined-space muck-out and hard-surface water removal after hours.
+crawlspace__cluster_11:
+  name: Wall Cavity Drying And Decon
+  summary: Drying wall cavities and decontaminating equipment with antimicrobial treatment.
+crawlspace__cluster_12:
+  name: Detailed HEPA And Drywall Removal
+  summary: Fine HEPA vacuuming and Category 3 drywall tear-out and cleanup.
+crawlspace__cluster_13:
+  name: Floor Framing HEPA Cleanup
+  summary: HEPA vacuuming of floor framing with localized insulation removal under
+    Cat 3.
+crawlspace__cluster_14:
+  name: High Power Air Movement
+  summary: Intensive air circulation using large axial fans for crawlspace drying.
+crawlspace__cluster_15:
+  name: Light Muck-Out Operations
+  summary: Basic flood debris removal and surface cleanup in crawlspace.
+garage__cluster_01:
+  name: Partial Wall Tear-Out Drying
+  summary: Removes lower drywall and insulation for wall cavity drying.
+garage__cluster_02:
+  name: Cabinetry and Surface Removal
+  summary: Removes damaged cabinets, counters, and finishes under Category 3 water.
+garage__cluster_03:
+  name: General Extraction and Airflow Setup
+  summary: Performs water extraction and sets up air movers for standard drying.
+garage__cluster_04:
+  name: After-Hours Intensive Drying
+  summary: Conducts after-hours tear-out, drying, and antimicrobial treatment.
+garage__cluster_05:
+  name: Severe Contamination Cleanup
+  summary: Handles Category 3 water, ceiling tile removal, and bio cleaning.
+garage__cluster_06:
+  name: Light Muck-Out and HEPA Cleaning
+  summary: Performs light flood cleanup with detailed HEPA vacuuming.
+garage__cluster_07:
+  name: Framing Sanding and Equipment Handling
+  summary: Sands framing surfaces and manages equipment setup and decontamination.
+garage__cluster_08:
+  name: Containment and Technician Operations
+  summary: Installs containment barriers and provides technician labor for extraction.
+garage__cluster_09:
+  name: After-Hours Structural and Fixture Work
+  summary: Executes after-hours extraction, baseboard, and cabinet detachment.
+garage__cluster_10:
+  name: Confined Space and Light Cleaning
+  summary: Removes insulation in tight areas and applies light HEPA cleaning.
+garage__cluster_11:
+  name: Air Filtration and Dehumidification
+  summary: Operates negative air machines and dehumidifiers with HEPA filters.
+garage__cluster_12:
+  name: Appliance Detach and Trim Removal
+  summary: Detaches appliances and trims while maintaining containment filtration.
+garage__cluster_13:
+  name: Large-Capacity Drying Equipment
+  summary: Uses large air scrubbers and dehumidifiers for heavy moisture loads.
+garage__cluster_14:
+  name: Paneling and Glued Drywall Removal
+  summary: Removes glued drywall and paneling with HEPA cleaning of framing.
+garage__cluster_15:
+  name: Cabinet Detach and Surface Protection
+  summary: Detaches cabinets and countertops and applies protective coverings.
+general__cluster_01:
+  name: Protective Gear And Testing
+  summary: Focuses on PPE use, thermal imaging, and contamination testing during initial
+    response.
+general__cluster_02:
+  name: Containment And Labor Setup
+  summary: Covers poly barriers, travel, containment materials, and technician labor
+    for setup.
+general__cluster_03:
+  name: Air Filtration And Drying Equipment
+  summary: Includes HEPA filters, dehumidifiers, and air movers for large-scale drying
+    and filtration.
+general__cluster_04:
+  name: Surface Cleaning And Containment
+  summary: Emphasizes HEPA vacuuming, barriers, antimicrobial application, and surface
+    testing.
+general__cluster_05:
+  name: Monitoring And Heavy PPE
+  summary: Combines remote monitoring, respirators, and heavy-duty protective equipment.
+general__cluster_06:
+  name: Standard Drying And Protection
+  summary: Represents typical drying setup with air movers, dehumidifiers, and floor
+    protection.
+general__cluster_07:
+  name: After Hours Emergency Response
+  summary: Handles emergency calls, antimicrobial work, and equipment setup outside
+    business hours.
+general__cluster_08:
+  name: Electrical Support And Disposal Safety
+  summary: Focuses on power distribution, PPE, and safe disposal of contaminated materials.
+general__cluster_09:
+  name: Hazardous Cleanup And Testing
+  summary: Centers on hazardous PPE, dehumidification, and pre/post contamination
+    testing.
+general__cluster_10:
+  name: Supervised Cleaning And Power Setup
+  summary: Combines supervisory labor, floor protection, and power distribution for
+    remediation.
+general__cluster_11:
+  name: Equipment Decontamination And Filtration
+  summary: Addresses HEPA filtration and decontamination of equipment used in hazardous
+    cleanup.
+general__cluster_12:
+  name: Heavy Drying And Cleaning Labor
+  summary: Covers high-capacity dehumidifiers, air movers, and cleaning technician
+    labor.
+general__cluster_13:
+  name: Containment Barriers After Hours
+  summary: Includes containment barriers, zippers, and ducting for after-hours protection
+    setup.
+general__cluster_14:
+  name: Advanced Respiratory Protection
+  summary: Focuses on full-face respirators, PAPR cartridges, and durable floor protection.
+general__cluster_15:
+  name: Equipment Setup And Monitoring
+  summary: Represents general equipment setup, takedown, and ongoing monitoring tasks.
+hallway__cluster_01:
+  name: Category 2 Carpet Extraction
+  summary: Removes and dries wet carpet and drywall from moderate water intrusion.
+hallway__cluster_02:
+  name: Category 3 Contaminated Removal
+  summary: Handles sewage-affected carpet, drywall, and framing with dry ice blasting.
+hallway__cluster_03:
+  name: Containment And Equipment Setup
+  summary: Installs barriers, HEPA filters, and monitors drying equipment.
+hallway__cluster_04:
+  name: After Hours Category 3 Demo
+  summary: Performs contaminated material removal and antimicrobial treatment after
+    hours.
+hallway__cluster_05:
+  name: Tile And Insulation Drying Prep
+  summary: Removes hard flooring and insulation, sets dehumidifiers for cavity drying.
+hallway__cluster_06:
+  name: Cabinetry And Ceiling Removal
+  summary: Detaches cabinets, countertops, and ceiling tiles affected by water.
+hallway__cluster_07:
+  name: Wood Floor And Plaster Cleanup
+  summary: Removes contaminated wood flooring and plaster with antimicrobial treatment.
+hallway__cluster_08:
+  name: After Hours Carpet Extraction
+  summary: Extracts water and removes carpet materials during off-hours operations.
+hallway__cluster_09:
+  name: After Hours Structural Drying
+  summary: Removes drywall and insulation, installs containment and HEPA cleaning
+    overnight.
+hallway__cluster_10:
+  name: Extended Height Wall Drying
+  summary: Removes drywall and insulation up to four feet with antimicrobial application.
+hallway__cluster_11:
+  name: Microbial Classification Handling
+  summary: Categorizes contamination levels and bags affected materials for disposal.
+hallway__cluster_12:
+  name: Personal Protective Equipment Use
+  summary: Provides gloves and masks for worker safety during mitigation.
+hallway__cluster_13:
+  name: Plant-Based Antimicrobial Protection
+  summary: Applies eco-friendly antimicrobial agents and floor protection coverings.
+hallway__cluster_14:
+  name: Targeted Floor Drying Blanket
+  summary: Uses drying mats for localized moisture removal on hallway floors.
+hallway__cluster_15:
+  name: Heated Air Drying System
+  summary: Employs industrial furnace and ducting to accelerate hallway drying.
+hallway__cluster_16:
+  name: Category 3 Tile Removal
+  summary: Removes non-salvageable tile flooring contaminated by black water.
+kitchen__cluster_01:
+  name: Full Cabinetry and Tile Removal
+  summary: Removes all cabinetry, countertops, and contaminated tile surfaces.
+kitchen__cluster_02:
+  name: Vinyl Floor and Insulation Removal
+  summary: Removes vinyl flooring, trim, and wet insulation from lower walls.
+kitchen__cluster_03:
+  name: After-Hours Wall and Floor Drying
+  summary: Performs cavity drying, floor removal, and containment during off-hours.
+kitchen__cluster_04:
+  name: Containment and Air Filtration Setup
+  summary: Installs barriers, HEPA filtration, and negative air systems for drying.
+kitchen__cluster_05:
+  name: After-Hours Structural Drying Setup
+  summary: Removes wet drywall and insulation and sets up dehumidifiers after hours.
+kitchen__cluster_06:
+  name: HEPA Cleaning and Equipment Decon
+  summary: Applies biological cleaning and decontaminates air and equipment surfaces.
+kitchen__cluster_07:
+  name: Category 3 Wall and Counter Removal
+  summary: Removes contaminated drywall, insulation, and countertops under Cat 3 water.
+kitchen__cluster_08:
+  name: Partial Wall and Ceiling Tear-Out
+  summary: Removes drywall, insulation, and tile up to four feet and ceiling areas.
+kitchen__cluster_09:
+  name: Appliance and Cabinet Detach with Extraction
+  summary: Detaches kitchen fixtures and extracts water from hard floors.
+kitchen__cluster_10:
+  name: Carpet and Wood Floor Extraction
+  summary: Removes wet carpet and wood flooring and performs water extraction.
+kitchen__cluster_11:
+  name: Cabinet and Drywall Detach Operations
+  summary: Detaches cabinetry and sink units and removes affected drywall sections.
+kitchen__cluster_12:
+  name: Appliance and Countertop Detach
+  summary: Detaches major kitchen appliances and solid surface countertops.
+kitchen__cluster_13:
+  name: Category 3 Vinyl and Wood Removal
+  summary: Removes contaminated vinyl and wood flooring with containment setup.
+kitchen__cluster_14:
+  name: Classification and Disposal Materials
+  summary: Defines water loss classes and provides disposal bag materials.
+kitchen__cluster_15:
+  name: Muck-Out and Framing Prep
+  summary: Performs flood cleanup, cabinet removal, and wall framing sanding.
+kitchen__cluster_16:
+  name: Personal Protective Equipment Use
+  summary: Specifies gloves and masks required for safe mitigation work.
+kitchen__cluster_17:
+  name: Reusable Floor Protection Setup
+  summary: Applies neoprene floor protection to safeguard surfaces.
+kitchen__cluster_18:
+  name: Register and Vent Masking
+  summary: Covers air registers and returns to prevent contamination spread.
+laundry__cluster_01:
+  name: Category 3 Carpet Removal
+  summary: Removes contaminated carpet, pad, and drywall after severe water loss.
+laundry__cluster_02:
+  name: Vinyl Floor and Trim Detach
+  summary: Removes damaged vinyl, trim, and baseboards for wall cavity drying.
+laundry__cluster_03:
+  name: Cabinetry and Fixture Tear-Out
+  summary: Detaches lower cabinets, sink, and tile for Category 3 cleanup.
+laundry__cluster_04:
+  name: Subfloor and Drywall Removal
+  summary: Removes wet drywall, insulation, and subfloor with containment setup.
+laundry__cluster_05:
+  name: After-Hours Appliance Mitigation
+  summary: Handles washer, dryer, and wall finishes removal during off-hours.
+laundry__cluster_06:
+  name: Category 2 Carpeted Ceiling Loss
+  summary: Extracts water and removes carpet, ceiling tiles, and paneling under Cat
+    2.
+laundry__cluster_07:
+  name: Countertop and Underlayment Removal
+  summary: Detaches counters, backsplash, and vinyl layers with minor drywall work.
+laundry__cluster_08:
+  name: Tile Floor and Subfloor Cleanup
+  summary: Removes tile, mortar bed, and subfloor with mold treatment and technician
+    labor.
+laundry__cluster_09:
+  name: After-Hours Structural Tear-Out
+  summary: Performs drywall, flooring, and trim removal during after-hours response.
+laundry__cluster_10:
+  name: Hard Surface Extraction and HEPA
+  summary: Extracts Cat 3 water from wood floors with HEPA cleaning and antimicrobial.
+laundry__cluster_11:
+  name: Cabinet and Drywall Partial Removal
+  summary: Detaches cabinetry and removes lower drywall and insulation for Cat 3 loss.
+laundry__cluster_12:
+  name: Containment and Disposal Setup
+  summary: Establishes containment barriers and disposal materials for mitigation.
+laundry__cluster_13:
+  name: Wall Cavity Drying and Dehumidification
+  summary: Uses injection drying, dehumidifiers, and air movers for wall moisture
+    control.
+laundry__cluster_14:
+  name: Hard Floor Extraction and Insulation Removal
+  summary: Extracts water from hard floors and removes insulation and drywall up to
+    4 feet.
+laundry__cluster_15:
+  name: Tile and Cement Board Containment
+  summary: Removes tile and cement board with containment and dehumidification setup.
+laundry__cluster_16:
+  name: After-Hours Heavy Extraction
+  summary: Performs heavy carpet extraction and ceiling tile removal during off-hours.
+living_area__cluster_01:
+  name: After‑Hours Wet Material Removal
+  summary: Nighttime demolition and drying of wet structural finishes.
+living_area__cluster_02:
+  name: General Interior Tear‑Out
+  summary: Removal of non‑salvageable finishes like tile, trim, and insulation.
+living_area__cluster_03:
+  name: Carpeted Floor Water Extraction
+  summary: Extraction and partial drywall removal for moderate carpet water loss.
+living_area__cluster_04:
+  name: Category 3 Cabinet and Wall Demo
+  summary: Tear‑out of cabinetry and finishes impacted by severe contamination.
+living_area__cluster_05:
+  name: Category 3 Structural Removal
+  summary: Extensive drywall, insulation, and subfloor removal under heavy contamination.
+living_area__cluster_06:
+  name: After‑Hours Category 3 Cleanup
+  summary: Nighttime demolition and antimicrobial treatment for hazardous water loss.
+living_area__cluster_07:
+  name: Appliance and Fixture Detachment
+  summary: Disconnecting built‑in appliances and fixtures for drying access.
+living_area__cluster_08:
+  name: Containment and Subfloor Work
+  summary: Barrier setup with selective drywall and subfloor removal.
+living_area__cluster_09:
+  name: Moisture Extraction and Drying
+  summary: Technician labor and equipment for active water removal and airflow.
+living_area__cluster_10:
+  name: Equipment Decontamination and Air Control
+  summary: Cleaning and filtering of remediation equipment and air systems.
+living_area__cluster_11:
+  name: Category 3 Carpet and Air Filtration
+  summary: Severe water loss carpet removal with large‑scale filtration units.
+living_area__cluster_12:
+  name: Classification and Microbial Control
+  summary: Setup of containment and disposal for categorized microbial cleanup.
+living_area__cluster_13:
+  name: Wood Floor Drying and Finish Removal
+  summary: Detachment of trim and drying of wood flooring with dehumidification.
+living_area__cluster_14:
+  name: Personal Protective Equipment Use
+  summary: Protective gloves and masks for safe restoration handling.
+living_area__cluster_15:
+  name: Containment and Surface Protection
+  summary: Plastic barriers and coverings to isolate and protect work areas.
+living_area__cluster_16:
+  name: After‑Hours Floor Protection
+  summary: Applying adhesive film to safeguard flooring during night work.
+living_area__cluster_17:
+  name: Register and Vent Masking
+  summary: Covering HVAC openings to prevent cross‑contamination.
+living_area__cluster_18:
+  name: Light Flood Muck‑Out
+  summary: Initial debris removal and cleanup after minor flooding.
+office__cluster_01:
+  name: General Wet Material Removal
+  summary: Removes wet drywall, flooring, and underlayment from office areas.
+office__cluster_02:
+  name: After-Hours Structural Tear-Out
+  summary: Performs drywall, insulation, and flooring removal during off-hours operations.
+office__cluster_03:
+  name: Moderate Water Extraction Setup
+  summary: Handles moderate water loss with extraction, dehumidification, and protection
+    steps.
+office__cluster_04:
+  name: Category 3 Structural Decontamination
+  summary: Removes contaminated materials and applies bio-cleaning for severe water
+    damage.
+office__cluster_05:
+  name: After-Hours Carpet and Baseboard Work
+  summary: Focuses on carpet, pad, and baseboard removal with drying equipment after
+    hours.
+office__cluster_06:
+  name: Standard Wall and Floor Removal
+  summary: Removes drywall, trim, and various flooring types under normal conditions.
+office__cluster_07:
+  name: Cabinetry and Fixture Demolition
+  summary: Detaches cabinets, countertops, and fixtures affected by Category 3 water.
+office__cluster_08:
+  name: Severe Carpet and Trim Decontamination
+  summary: Removes contaminated carpet and trim with dry ice blasting and HEPA filtration.
+office__cluster_09:
+  name: Heavy Flood Cleanup and Extraction
+  summary: Addresses major flood events with muck-out, extraction, and subfloor removal.
+office__cluster_10:
+  name: Containment and Air Control Setup
+  summary: Installs barriers, ducting, and masking for controlled drying and contamination
+    prevention.
+office__cluster_11:
+  name: Wood Floor and Appliance Detach
+  summary: Removes wood flooring and detaches appliances for drying and restoration.
+office__cluster_12:
+  name: Cabinet and Countertop Detach Operations
+  summary: Detaches cabinetry and countertops with high-capacity dehumidification
+    support.
+office__cluster_13:
+  name: Mold and Category 3 Surface Cleaning
+  summary: Applies antimicrobial treatments and removes contaminated subfloors and
+    finishes.
+office__cluster_14:
+  name: Class 2 Micro Tear-Out Reference
+  summary: Represents generic Class 2 micro tear-out operations for office restoration.
+office__cluster_15:
+  name: General Water Extraction Task
+  summary: Covers basic water extraction and remediation activities in office spaces.
+other__cluster_01:
+  name: Protective Equipment And Decon
+  summary: Focuses on PPE use, equipment setup, and decontamination tasks.
+other__cluster_02:
+  name: General Structural Tearout
+  summary: Handles removal of wet carpet, drywall, and framing cleanup.
+other__cluster_03:
+  name: Bathroom Fixture And Tile Removal
+  summary: Addresses detaching plumbing fixtures and removing tile assemblies.
+other__cluster_04:
+  name: After Hours Wall And Trim Demo
+  summary: Covers after-hours demolition of walls, trim, and insulation.
+other__cluster_05:
+  name: Kitchen Fixture Detachments
+  summary: Includes detaching kitchen appliances and cabinetry components.
+other__cluster_06:
+  name: Category Three Structural Cleanup
+  summary: Focuses on Cat 3 water removal and HEPA cleaning of framing.
+other__cluster_07:
+  name: Category Three Partial Height Demo
+  summary: Handles Cat 3 tearout of lower wall and floor materials.
+other__cluster_08:
+  name: Containment And Air Control Setup
+  summary: Covers barriers, negative air, and ventilation containment.
+other__cluster_09:
+  name: Heavy Extraction And Airflow Equipment
+  summary: Includes large fans, ducting, and heavy water extraction gear.
+other__cluster_10:
+  name: After Hours Floor And Furniture Work
+  summary: Manages after-hours carpet, pad, and furniture blocking tasks.
+other__cluster_11:
+  name: Laundry Area And Wall Removal
+  summary: Involves detaching laundry appliances and removing wet walls.
+other__cluster_12:
+  name: Category Three Mixed Material Demo
+  summary: Combines Cat 3 flooring, drywall, and cabinet detachment tasks.
+other__cluster_13:
+  name: After Hours Category Three Finishes
+  summary: Handles Cat 3 finish removal and HEPA cleaning after hours.
+other__cluster_14:
+  name: Drying And Antimicrobial Treatment
+  summary: Focuses on dehumidification, sanding, and antimicrobial application.
+other__cluster_15:
+  name: Environmental Classification And Access
+  summary: Defines work zone classes and heavy-duty containment access.
+other__cluster_16:
+  name: Emergency Response And PPE Setup
+  summary: Covers emergency service calls and protective setup operations.
+other__cluster_17:
+  name: General Interior Material Removal
+  summary: Handles plaster, ceiling, flooring, and trim tearout activities.
+other__cluster_18:
+  name: Vanity And Wall Finish Removal
+  summary: Includes vanity detachment and partial drywall/baseboard removal.
+other__cluster_19:
+  name: Hard Surface Extraction And Base Detach
+  summary: Focuses on water removal from hard floors and baseboard detachment.
+other__cluster_20:
+  name: Insulation Removal Basic
+  summary: Covers standard tearout and disposal of wet insulation.
+stairs__cluster_01:
+  name: Carpeted Stair Drying Setup
+  summary: Drying and partial demolition of wet carpeted stair surfaces.
+stairs__cluster_02:
+  name: Severe Category 3 Wood Removal
+  summary: Removal of contaminated wood, drywall, and insulation under Cat 3 conditions.
+stairs__cluster_03:
+  name: Hard Surface Cat 3 Cleanup
+  summary: Extraction and tear-out of vinyl and drywall on hard stair landings with
+    Cat 3 water.
+stairs__cluster_04:
+  name: Carpeted Cat 3 Extraction
+  summary: Category 3 water extraction and carpet removal on stair treads and landings.
+stairs__cluster_05:
+  name: After-Hours Moisture Response
+  summary: Nighttime extraction, drying, and antimicrobial treatment for stair areas.
+stairs__cluster_06:
+  name: After-Hours Containment Setup
+  summary: After-hours Cat 3 containment, barrier installation, and drywall removal.
+stairs__cluster_07:
+  name: Deep Structural Material Removal
+  summary: Extensive tear-out of plaster, drywall, and flooring up to four feet high.
+stairs__cluster_08:
+  name: Air Filtration and Appliance Detach
+  summary: Negative air setup and removal of appliances and flooring for stair zones.
+stairs__cluster_09:
+  name: Heavy-Duty Containment Filtration
+  summary: Large-scale air scrubber and decontamination barrier deployment.
+stairs__cluster_10:
+  name: After-Hours Floor Protection
+  summary: Protective plastic film installation on stair floors after hours.
+stairs__cluster_11:
+  name: Standard Carpet Extraction
+  summary: Routine water extraction from carpeted stair surfaces.
+stairs__cluster_12:
+  name: Trim Removal Preparation
+  summary: Detachment and removal of stair trim components.
+stairs__cluster_13:
+  name: Wood Floor Drying Mat Setup
+  summary: Use of extraction mats for targeted wood stair drying.
+stairs__cluster_14:
+  name: Reusable Cloth Floor Protection
+  summary: Installation of skid-resistant, leak-proof cloth protection on stairs.
+stairs__cluster_15:
+  name: Cloth Floor Protection Install
+  summary: Placement of durable cloth floor protection on stair surfaces.
+utility__cluster_01:
+  name: Category 3 Structural Tear-Out
+  summary: Removal of contaminated drywall, flooring, and insulation after severe
+    water loss.
+utility__cluster_02:
+  name: Moderate Water Extraction and Removal
+  summary: Extraction and removal of wet carpet, pad, and insulation from a Category
+    2 event.
+utility__cluster_03:
+  name: After-Hours Water Mitigation
+  summary: Emergency after-hours extraction, tear-out, and antimicrobial treatment.
+utility__cluster_04:
+  name: Fixture and Cabinet Detachment
+  summary: Detaching cabinets, plumbing fixtures, and damaged finishes for drying
+    access.
+utility__cluster_05:
+  name: After-Hours Category 3 Cleanup
+  summary: Nighttime removal of contaminated materials and HEPA cleaning of framing.
+utility__cluster_06:
+  name: Containment and Drywall Removal
+  summary: Setting up containment barriers and limited drywall tear-out for drying
+    control.
+utility__cluster_07:
+  name: Air Filtration and Equipment Control
+  summary: Use of negative air machines, HEPA filters, and monitoring equipment.
+utility__cluster_08:
+  name: Category 3 Floor and Cabinet Removal
+  summary: Extraction, muck-out, and removal of contaminated flooring and cabinetry.
+utility__cluster_09:
+  name: Hard Surface Extraction and Tear-Out
+  summary: Removal of wet drywall, wood, and vinyl flooring from Category 3 water
+    intrusion.
+utility__cluster_10:
+  name: General Class 2 Microbial Treatment
+  summary: Standard tear-out and antimicrobial application for moderate water damage.
+utility__cluster_11:
+  name: Personal Protective Equipment Use
+  summary: Use of gloves and masks for worker safety during mitigation.
+utility__cluster_12:
+  name: Large Ducting Setup
+  summary: Deployment of large lay-flat ducting for air movement or dehumidification.
+utility__cluster_13:
+  name: Wood Floor Drying System
+  summary: Use of extraction mats to dry hardwood flooring.
+utility__cluster_14:
+  name: Floor Surface Protection
+  summary: Application of self-adhesive film to protect floors during work.
+utility__cluster_15:
+  name: Wall Cavity Repair
+  summary: Patching holes created during wall cavity drying operations.

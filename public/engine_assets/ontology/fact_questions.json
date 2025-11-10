@@ -1,0 +1,906 @@
+{
+  "version": "0.1",
+  "taxonomy": "ontology\\taxonomy.yaml",
+  "questions": {
+    "billing.pricing_mode": {
+      "prompt": "How is this item being billed or priced?",
+      "type": "single_choice",
+      "options": [
+        "AGREED_PRICE",
+        "BID_ITEM",
+        "PAID_BILL",
+        "LABOR_MINIMUM"
+      ],
+      "option_labels": [
+        "Agreed Price",
+        "Bid Item",
+        "Paid Bill",
+        "Labor Minimum"
+      ]
+    },
+    "building_modifiers.additional_material_layers_present": {
+      "prompt": "Are there extra material layers on the building surface?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "building_modifiers.glued_on_drywall": {
+      "prompt": "Is the drywall glued directly to the framing or surface?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "building_modifiers.high_tall_wall": {
+      "prompt": "Does the area have high or tall walls that affect your work?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "building_modifiers.substrate": {
+      "prompt": "What type of surface is the equipment set on?",
+      "type": "single_choice",
+      "options": [
+        "CONCRETE",
+        "WOOD",
+        "TILE_GROUT"
+      ],
+      "option_labels": [
+        "Concrete",
+        "Wood",
+        "Tile/Grout"
+      ]
+    },
+    "building_modifiers.vapor_barrier_present": {
+      "prompt": "Is there a vapor barrier in the building?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "cleaning_surface_prep.abrasive_treatment": {
+      "prompt": "What type of abrasive treatment was used for surface prep?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "SANDING",
+        "DRY_ICE_BLASTING",
+        "SODA_BLASTING"
+      ],
+      "option_labels": [
+        "None",
+        "Sanding",
+        "Dry Ice Blasting",
+        "Soda Blasting"
+      ]
+    },
+    "cleaning_surface_prep.confined_space_variant": {
+      "prompt": "Was the cleaning or prep work done in a confined space?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "cleaning_surface_prep.hepa_vac_scope": {
+      "prompt": "Which areas or methods need HEPA vacuuming during surface prep?",
+      "type": "multi_choice",
+      "options": [
+        "FLOORS",
+        "WALLS",
+        "WITH_SHEATHING",
+        "LIGHT",
+        "DETAILED",
+        "HOURLY"
+      ],
+      "option_labels": [
+        "Floors",
+        "Walls",
+        "With Sheathing",
+        "Light",
+        "Detailed",
+        "Hourly"
+      ]
+    },
+    "components.actions": {
+      "prompt": "Which actions did you perform on this component?",
+      "type": "multi_choice",
+      "options": [
+        "DETACH",
+        "DETACH_RESET",
+        "DEMO",
+        "CLEAN_HEPA",
+        "PROTECT_COVER"
+      ],
+      "option_labels": [
+        "Detach",
+        "Detach and Reset",
+        "Demolish",
+        "Clean with HEPA",
+        "Protect or Cover"
+      ]
+    },
+    "components.attributes": {
+      "prompt": "Which special conditions apply to this component?",
+      "type": "multi_choice",
+      "options": [
+        "NON_SALVAGEABLE",
+        "OVERSIZED",
+        "BAGGING_REQUIRED",
+        "CATEGORY_SPECIFIC",
+        "CONFINED_SPACE",
+        "GLUE_DOWN",
+        "VAPOR_BARRIER_PRESENT"
+      ],
+      "option_labels": [
+        "Non-Salvageable",
+        "Oversized",
+        "Bagging Required",
+        "Category Specific",
+        "Confined Space",
+        "Glue Down",
+        "Vapor Barrier Present"
+      ]
+    },
+    "components.component_type": {
+      "prompt": "Which type of material or surface are you working on?",
+      "type": "single_choice",
+      "options": [
+        "CEILING_TILE_SUSPENDED",
+        "CEILING_TILE_STAPLED",
+        "DRYWALL",
+        "PLASTER",
+        "PANELING",
+        "INSULATION_CAVITY",
+        "INSULATION_OPEN",
+        "SHEATHING",
+        "TOE_KICK",
+        "BACKSPLASH",
+        "BASEBOARD",
+        "COVE_BASE",
+        "TRIM",
+        "TACKLESS_STRIP",
+        "SUBFLOOR",
+        "SLEEPERS",
+        "UNDERLAYMENT",
+        "VAPOR_BARRIER",
+        "CARPET",
+        "CARPET_PAD",
+        "VINYL_SHEET",
+        "VINYL_TILE",
+        "WOOD_SOLID",
+        "WOOD_ENGINEERED",
+        "FLOATING_FLOOR",
+        "TILE_FLOOR",
+        "COUNTERTOP_LAMINATE_FLAT",
+        "COUNTERTOP_LAMINATE_POSTFORMED",
+        "COUNTERTOP_SOLID_SURFACE",
+        "COUNTERTOP_GRANITE",
+        "COUNTERTOP_TILE",
+        "COUNTERTOP_SUBDECK",
+        "CABINET_FULL_HEIGHT",
+        "CABINET_UPPER",
+        "CABINET_LOWER",
+        "VANITY"
+      ],
+      "option_labels": [
+        "Ceiling Tile - Suspended",
+        "Ceiling Tile - Stapled",
+        "Drywall",
+        "Plaster",
+        "Paneling",
+        "Insulation - In Cavity",
+        "Insulation - Open",
+        "Sheathing",
+        "Toe Kick",
+        "Backsplash",
+        "Baseboard",
+        "Cove Base",
+        "Trim",
+        "Tackless Strip",
+        "Subfloor",
+        "Sleepers",
+        "Underlayment",
+        "Vapor Barrier",
+        "Carpet",
+        "Carpet Pad",
+        "Vinyl Sheet",
+        "Vinyl Tile",
+        "Wood - Solid",
+        "Wood - Engineered",
+        "Floating Floor",
+        "Tile Floor",
+        "Countertop - Laminate Flat",
+        "Countertop - Laminate Postformed",
+        "Countertop - Solid Surface",
+        "Countertop - Granite",
+        "Countertop - Tile",
+        "Countertop - Subdeck",
+        "Cabinet - Full Height",
+        "Cabinet - Upper",
+        "Cabinet - Lower",
+        "Vanity"
+      ]
+    },
+    "containment.components": {
+      "prompt": "Which parts are used in the containment setup?",
+      "type": "multi_choice",
+      "options": [
+        "AIR_FILTER_ON_BARRIER",
+        "ZIPPER_STANDARD",
+        "ZIPPER_HEAVY_DUTY",
+        "TENSION_POSTS"
+      ],
+      "option_labels": [
+        "Air Filter on Barrier",
+        "Zipper - Standard",
+        "Zipper - Heavy Duty",
+        "Tension Posts"
+      ]
+    },
+    "containment.containment_level": {
+      "prompt": "What type of containment is set up at the job site?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "BARRIER",
+        "BARRIER_WITH_AIRLOCK"
+      ],
+      "option_labels": [
+        "None",
+        "Barrier Only",
+        "Barrier with Airlock"
+      ]
+    },
+    "containment.ducting": {
+      "prompt": "Which type of ducting was used for containment or drying setup?",
+      "type": "multi_choice",
+      "options": [
+        "FLEXIBLE_ROUND",
+        "LAY_FLAT_STANDARD",
+        "LAY_FLAT_LARGE",
+        "MULTIPORT_ADAPTER"
+      ],
+      "option_labels": [
+        "Flexible Round",
+        "Lay Flat - Standard",
+        "Lay Flat - Large",
+        "Multiport Adapter"
+      ]
+    },
+    "containment.negative_air_size": {
+      "prompt": "What size of negative air setup is used for containment?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "STANDARD",
+        "LARGE",
+        "X_LARGE"
+      ],
+      "option_labels": [
+        "None",
+        "Standard",
+        "Large",
+        "X-Large"
+      ]
+    },
+    "containment.return_register_protection": {
+      "prompt": "What size of return register protection is used?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "STANDARD",
+        "LARGE"
+      ],
+      "option_labels": [
+        "None",
+        "Standard",
+        "Large"
+      ]
+    },
+    "contents_protection.contents_handling": {
+      "prompt": "Which contents handling steps were done to protect items?",
+      "type": "multi_choice",
+      "options": [
+        "NONE",
+        "BLOCK_AND_PAD",
+        "TRANSPORT_CARPET_FOR_DRYING",
+        "HANG_DRY_CARPETS_RUGS"
+      ],
+      "option_labels": [
+        "None",
+        "Block and Pad",
+        "Transport Carpet for Drying",
+        "Hang Dry Carpets or Rugs"
+      ]
+    },
+    "contents_protection.surface_protection": {
+      "prompt": "Which type of surface protection did you use for contents?",
+      "type": "multi_choice",
+      "options": [
+        "NONE",
+        "FLOOR_FILM",
+        "FLOOR_CLOTH",
+        "FLOOR_NEOPRENE",
+        "BREATHABLE",
+        "LEAK_PROOF",
+        "PROTECT_WITH_PLASTIC"
+      ],
+      "option_labels": [
+        "None",
+        "Floor Film",
+        "Floor Cloth",
+        "Floor Neoprene",
+        "Breathable Cover",
+        "Leak-Proof Cover",
+        "Plastic Sheeting"
+      ]
+    },
+    "decon.antimicrobial": {
+      "prompt": "Which antimicrobial or cleaner was used during decontamination?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "SYNTHETIC",
+        "PLANT_BASED",
+        "BIOLOGICAL",
+        "MOLD_STAIN_REMOVER"
+      ],
+      "option_labels": [
+        "None",
+        "Synthetic",
+        "Plant-Based",
+        "Biological",
+        "Mold Stain Remover"
+      ]
+    },
+    "decon.contaminated_water_disposal": {
+      "prompt": "Did you need to dispose of contaminated water during this job?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "decon.equipment_decon": {
+      "prompt": "What level of cleaning is needed for the equipment?",
+      "type": "single_choice",
+      "options": [
+        "STANDARD",
+        "HEAVY"
+      ],
+      "option_labels": [
+        "Standard",
+        "Heavy"
+      ]
+    },
+    "decon.waste_handling": {
+      "prompt": "How will waste or debris from decon be handled?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "BAG",
+        "HAZARDOUS_BAG_BOX_CONTAINER"
+      ],
+      "option_labels": [
+        "None",
+        "Bag",
+        "Hazardous Bag/Box/Container"
+      ]
+    },
+    "drying.air_movement.air_mover_type": {
+      "prompt": "What type of air mover is being used for drying?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "STANDARD",
+        "MINI",
+        "AXIAL"
+      ],
+      "option_labels": [
+        "None",
+        "Standard",
+        "Mini",
+        "Axial"
+      ]
+    },
+    "drying.air_movement.port_adapters": {
+      "prompt": "Are port adapters used for the air movers or ducting setup?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "drying.air_quality_treatment": {
+      "prompt": "Which air quality treatments were used during drying?",
+      "type": "multi_choice",
+      "options": [
+        "NONE",
+        "HEPA",
+        "CARBON_VAPOR",
+        "GAS_ODOR_NEUTRALIZATION"
+      ],
+      "option_labels": [
+        "None",
+        "HEPA Filter",
+        "Carbon/Vapor Filter",
+        "Gas or Odor Neutralizer"
+      ]
+    },
+    "drying.cavity_drying.holes_drilled": {
+      "prompt": "Were holes drilled to help dry inside the wall or cavity?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "drying.cavity_drying.holes_filled": {
+      "prompt": "Were the holes made for cavity drying filled after drying was done?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "drying.cavity_drying.method": {
+      "prompt": "Which method is used for cavity drying?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "INJECTION",
+        "DUCTED"
+      ],
+      "option_labels": [
+        "None",
+        "Injection",
+        "Ducted"
+      ]
+    },
+    "drying.dehumidification.approach": {
+      "prompt": "Which type of dehumidification is being used?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "REFRIGERANT",
+        "DESICCANT"
+      ],
+      "option_labels": [
+        "None",
+        "Refrigerant",
+        "Desiccant"
+      ]
+    },
+    "drying.dehumidification.booster_used": {
+      "prompt": "Was a booster used during dehumidification?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "drying.dehumidification.environmental_control": {
+      "prompt": "Was any environmental control used during drying or dehumidification?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "drying.heat_assisted": {
+      "prompt": "What type of heat-assisted drying is used?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "HYDRONIC_BOILER",
+        "DUCTED_AIR",
+        "THERMAL_EXCHANGER_PLUS_AIR_MOVER",
+        "THERMAL_AIR_MOVER",
+        "INFRARED_PANELS",
+        "DRYING_BLANKETS_MATS",
+        "SENSOR_CONTROLLED_SYSTEM"
+      ],
+      "option_labels": [
+        "None",
+        "Hydronic Boiler",
+        "Ducted Air",
+        "Thermal Exchanger + Air Mover",
+        "Thermal Air Mover",
+        "Infrared Panels",
+        "Drying Blankets/Mats",
+        "Sensor-Controlled System"
+      ]
+    },
+    "drying.wood_floor_drying_system": {
+      "prompt": "Which wood floor drying system is being used?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "SUBFLOOR_AIRFLOW",
+        "EXTRACTION_MAT",
+        "ADD_ON_KIT"
+      ],
+      "option_labels": [
+        "None",
+        "Subfloor Airflow",
+        "Extraction Mat",
+        "Add-On Kit"
+      ]
+    },
+    "extraction_pumping.extraction_intensity": {
+      "prompt": "How strong was the water extraction effort?",
+      "type": "single_choice",
+      "options": [
+        "STANDARD",
+        "HEAVY",
+        "WEIGHT_ASSISTED"
+      ],
+      "option_labels": [
+        "Standard",
+        "Heavy",
+        "Weight Assisted"
+      ]
+    },
+    "extraction_pumping.extraction_surface": {
+      "prompt": "What type of surface are you pumping water from?",
+      "type": "single_choice",
+      "options": [
+        "CARPETED",
+        "HARD_SURFACE"
+      ],
+      "option_labels": [
+        "Carpeted",
+        "Hard Surface"
+      ]
+    },
+    "extraction_pumping.pumping_cat3_indicator": {
+      "prompt": "Was the pumping done in Category 3 (black) water?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "extraction_pumping.pumping_method": {
+      "prompt": "Which type of pump did you use for water extraction?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "SUBMERSIBLE_PUMP",
+        "TRASH_PUMP",
+        "TRUCK_MOUNTED"
+      ],
+      "option_labels": [
+        "None",
+        "Submersible Pump",
+        "Trash Pump",
+        "Truck Mounted Pump"
+      ]
+    },
+    "extraction_pumping.third_party_extraction_review": {
+      "prompt": "Was the extraction work reviewed by a third party?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "fixtures_appliances.detach_or_reset": {
+      "prompt": "Which fixtures or appliances did you detach or reset?",
+      "type": "multi_choice",
+      "options": [
+        "SINK_SINGLE",
+        "SINK_DOUBLE",
+        "SINK_PEDESTAL",
+        "SINK_UNDERMOUNT",
+        "TOILET",
+        "GARBAGE_DISPOSAL",
+        "DISHWASHER",
+        "RANGE_GAS",
+        "RANGE_ELECTRIC",
+        "REFRIGERATOR",
+        "WASHER",
+        "DRYER_GAS",
+        "DRYER_ELECTRIC",
+        "WATER_HEATER"
+      ],
+      "option_labels": [
+        "Sink - Single",
+        "Sink - Double",
+        "Sink - Pedestal",
+        "Sink - Undermount",
+        "Toilet",
+        "Garbage Disposal",
+        "Dishwasher",
+        "Range - Gas",
+        "Range - Electric",
+        "Refrigerator",
+        "Washer",
+        "Dryer - Gas",
+        "Dryer - Electric",
+        "Water Heater"
+      ]
+    },
+    "fixtures_appliances.shower_details": {
+      "prompt": "Which shower features are present?",
+      "type": "multi_choice",
+      "options": [
+        "CURB_CONCRETE",
+        "CURB_FRAMED",
+        "WATERPROOF_MEMBRANE_DRAIN_CONTEXT"
+      ],
+      "option_labels": [
+        "Concrete Curb",
+        "Framed Curb",
+        "Waterproof Membrane/Drain Area"
+      ]
+    },
+    "loss.climate_control": {
+      "prompt": "Is the affected area climate controlled?",
+      "type": "single_choice",
+      "options": [
+        "CLIMATE_CONTROLLED",
+        "NON_CLIMATE_CONTROLLED"
+      ],
+      "option_labels": [
+        "Climate Controlled",
+        "Not Climate Controlled"
+      ]
+    },
+    "loss.confined_space": {
+      "prompt": "Was the work area a confined space (like a crawlspace or small enclosure)?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "loss.standing_water": {
+      "prompt": "Is there standing water that needs to be pumped out?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "loss.water_category": {
+      "prompt": "What is the water category for this loss?",
+      "type": "single_choice",
+      "options": [
+        "CAT1",
+        "CAT2",
+        "CAT3"
+      ],
+      "option_labels": [
+        "Category 1 (Clean)",
+        "Category 2 (Gray)",
+        "Category 3 (Black)"
+      ]
+    },
+    "loss.water_class": {
+      "prompt": "What is the water class for this loss?",
+      "type": "single_choice",
+      "options": [
+        "CLASS_1",
+        "CLASS_2",
+        "CLASS_3",
+        "CLASS_4"
+      ],
+      "option_labels": [
+        "Class 1",
+        "Class 2",
+        "Class 3",
+        "Class 4"
+      ]
+    },
+    "loss.work_timing": {
+      "prompt": "When was the work done?",
+      "type": "single_choice",
+      "options": [
+        "BUSINESS_HOURS",
+        "AFTER_HOURS",
+        "EMERGENCY_DURING",
+        "EMERGENCY_AFTER"
+      ],
+      "option_labels": [
+        "During Business Hours",
+        "After Hours",
+        "Emergency During Business Hours",
+        "Emergency After Hours"
+      ]
+    },
+    "monitoring_power.monitoring_mode": {
+      "prompt": "How is the power use being monitored for this equipment?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "ONSITE_TECH",
+        "REMOTE_GATEWAY_SENSORS"
+      ],
+      "option_labels": [
+        "No Monitoring",
+        "Onsite Tech",
+        "Remote Sensors"
+      ]
+    },
+    "monitoring_power.temporary_power_distribution": {
+      "prompt": "Was temporary power distribution used during monitoring?",
+      "type": "single_choice",
+      "options": [
+        "False",
+        "True"
+      ],
+      "option_labels": [
+        "No",
+        "Yes"
+      ]
+    },
+    "monitoring_power.third_party_monitoring_review": {
+      "prompt": "Was a third party used to review the power monitoring?",
+      "type": "single_choice",
+      "options": [
+        "true",
+        "false"
+      ],
+      "option_labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    "ppe.cartridge": {
+      "prompt": "What type of respirator cartridge is used?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "HEPA",
+        "HEPA_VAPOR_GAS",
+        "ORGANIC_VAPOR_ACID_GAS"
+      ],
+      "option_labels": [
+        "None",
+        "HEPA",
+        "HEPA + Vapor/Gas",
+        "Organic Vapor + Acid Gas"
+      ]
+    },
+    "ppe.extra_ppe": {
+      "prompt": "Which extra protective gear did you use?",
+      "type": "multi_choice",
+      "options": [
+        "EYE_PROTECTION",
+        "DISPOSABLE_SUIT",
+        "WATERPROOF_BOOTS",
+        "FACE_SHIELD",
+        "TEMP_SAFETY_SHOWER"
+      ],
+      "option_labels": [
+        "Eye Protection",
+        "Disposable Suit",
+        "Waterproof Boots",
+        "Face Shield",
+        "Temp Safety Shower"
+      ]
+    },
+    "ppe.ppe_level": {
+      "prompt": "What level of protective gear is needed for this task?",
+      "type": "single_choice",
+      "options": [
+        "STANDARD",
+        "HEAVY_DUTY"
+      ],
+      "option_labels": [
+        "Standard",
+        "Heavy Duty"
+      ]
+    },
+    "ppe.respirator": {
+      "prompt": "What type of respirator did you wear for this task?",
+      "type": "single_choice",
+      "options": [
+        "NONE",
+        "N95",
+        "HALF_FACE",
+        "FULL_FACE",
+        "PAPR",
+        "SAR"
+      ],
+      "option_labels": [
+        "None",
+        "N95 Mask",
+        "Half Face",
+        "Full Face",
+        "PAPR",
+        "SAR"
+      ]
+    },
+    "testing_inspection_diagnostics.tests": {
+      "prompt": "Which tests or inspections were done on this job?",
+      "type": "multi_choice",
+      "options": [
+        "NONE",
+        "MOISTURE_CALCIUM_CHLORIDE",
+        "AIR_SURFACE_LAB_PRE",
+        "AIR_SURFACE_LAB_POST",
+        "ATP_ONSITE",
+        "DOP_TEST",
+        "THERMAL_IMAGING"
+      ],
+      "option_labels": [
+        "None",
+        "Moisture (Calcium Chloride)",
+        "Air/Surface Lab - Pre",
+        "Air/Surface Lab - Post",
+        "ATP Onsite",
+        "DOP Test",
+        "Thermal Imaging"
+      ]
+    }
+  }
+}

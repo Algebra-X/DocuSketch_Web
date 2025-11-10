@@ -1,0 +1,2488 @@
+- cluster_id: basement__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_DHM>>>_+
+  - WTR_EXTS+_+
+  - WTR_FCCS_-
+  - WTR_TACKS_-
+  - WTR_PROT_+
+  - WTR_FHEPA_+
+  - WTR_PADS_-
+  - WTR_CSVS_-
+  room_type: BASEMENT
+- cluster_id: basement__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_EXTGA_+
+  - WTR_PROTA_+
+  - WTR_FCCA_-
+  - WTR_PADA_-
+  - WTR_EXTHGA_+
+  - WTR_BASE_-
+  - WTR_GRMBA_+
+  - WTR_TRI_-
+  room_type: BASEMENT
+- cluster_id: basement__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_CSV_-
+  - WTR_BARRZ_+
+  - WTR_LIFT_+
+  - WTR_DRYW_-
+  - WTR_DRYW4_-
+  - WTR_INSW4_-
+  - WTR_BARR_+
+  - WTR_WALLH_+
+  room_type: BASEMENT
+- cluster_id: basement__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_SNKD_+
+  - WTR_CABVAN_-
+  - WTR_TLTD_+
+  - WTR_CABFH_-
+  - WTR_SF_-
+  - WTR_FCV_-
+  - WTR_PNL_-
+  - WTR_DRYW4S_-
+  room_type: BASEMENT
+- cluster_id: basement__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_DRYWLF_-
+  - WTR_PLYTK_-
+  - WTR_BMUD_-
+  - WTR_FCT_-
+  - WTR_INSWLF_-
+  - WTR_FCC_-
+  - WTR_EXTG_+
+  - WTR_HEPAW_+
+  room_type: BASEMENT
+- cluster_id: basement__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_BASEB>_-
+  - WTR_INS_-
+  - WTR_BLKHR_+
+  - WTR_EXTHG_+
+  - WTR_PLAS_-
+  - WTR_PLA_-
+  - WTR_BASED_+
+  - WTR_EQ_+
+  room_type: BASEMENT
+- cluster_id: basement__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_FCTS_-
+  - WTR_MUCK+_-
+  - WTR_CABVNC_-
+  - WTR_TILS_-
+  - WTR_CABUP_-
+  - WTR_DRYWS_-
+  - WTR_HEPAWSH_+
+  - WTR_INSS_-
+  room_type: BASEMENT
+- cluster_id: basement__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_FCWLS_-
+  - WTR_SFS_-
+  - WTR_ULAYS_-
+  - WTR_TRIM_-
+  - WTR_DORSLD_+
+  - WTR_DRYWLS_-
+  - WTR_INSWLS_-
+  - WTR_BASEB_-
+  room_type: BASEMENT
+- cluster_id: basement__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_WSHD_+
+  - WTR_MUCK_-
+  - WTR_DHM>>_+
+  - WTR_DRYED_+
+  - WTR_DRYGD_+
+  - WTR_FCVS_-
+  - WTR_ACTS_-
+  - WTR_EXTWP_+
+  room_type: BASEMENT
+- cluster_id: basement__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_BLK_+
+  - WTR_RFD_+
+  - WTR_EXTHSA_+
+  - WTR_EXTWPT_+
+  - WTR_EXTH_+
+  - WTR_NAFAN>_+
+  room_type: BASEMENT
+- cluster_id: basement__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_PLYTKS_-
+  - WTR_CABVND_+
+  - WTR_FCWL_-
+  - WTR_PATCHJ_-
+  - WTR_CABLOW_-
+  room_type: BASEMENT
+- cluster_id: basement__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_ACTSS_-
+  - WTR_PNLS_+
+  - WTR_PNLS_-
+  - WTR_DHM>_+
+  - WTR_FCVUVS_-
+  room_type: BASEMENT
+- cluster_id: basement__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_CABLWD_+
+  - WTR_CTSSD_+
+  - WTR_GRM_+
+  - WTR_HEPAVAS_+
+  room_type: BASEMENT
+- cluster_id: basement__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_CLASS2_+
+  - WTR_MICRO_+
+  - WTR_MICRO_M
+  room_type: BASEMENT
+- cluster_id: basement__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_ACTAS3_-
+  room_type: BASEMENT
+- cluster_id: basement__cluster_16
+  description: Auto cluster 16
+  core_item_codes:
+  - WTR_CLASS3_+
+  room_type: BASEMENT
+- cluster_id: bathroom__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_INSS_-
+  - WTR_FCTS_-
+  - WTR_HEPAFSH_+
+  - WTR_CABFH_-
+  - WTR_SBIF_+
+  - WTR_SBIW_+
+  - WTR_DRYWS_-
+  - WTR_FCWS_-
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_CABLWD_+
+  - WTR_WSHD_+
+  - WTR_BASED_-
+  - WTR_BLK<_+
+  - WTR_FCV_-
+  - WTR_DRYED_+
+  - WTR_WALLH_+
+  - WTR_BLKHRA_+
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_SNKDA_+
+  - WTR_TLTDA_+
+  - WTR_TRIMA_-
+  - WTR_CTSSDA_+
+  - WTR_TILSA_-
+  - WTR_FCTSA_-
+  - WTR_DRYWLSA_-
+  - WTR_CABVANA_-
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_ULAY_-
+  - WTR_FCT_-
+  - WTR_TRI_-
+  - WTR_BC_-
+  - WTR_SF_-
+  - WTR_BASE_-
+  - WTR_FCWL_-
+  - WTR_CTFBSD_+
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_BARRZ_+
+  - WTR_BARR_+
+  - WTR_FLVAP_+
+  - WTR_MASKFPB_+
+  - WTR_FHEPA<_+
+  - WTR_DHM>>_+
+  - WTR_DRYW_-
+  - WTR_INS_-
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_DUCTLF>_+
+  - WTR_EQ_+
+  - WTR_EQD_+
+  - WTR_MASKFP+_+
+  - WTR_CABUPD_+
+  - WTR_MASKV_+
+  - WTR_CSVS_-
+  - WTR_GRMBIO_+
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_PAD_-
+  - WTR_FCC_-
+  - WTR_SFSL_-
+  - WTR_SNKDD_+
+  - WTR_TACK_-
+  - WTR_CABFHD_+
+  - WTR_EXTG_+
+  - WTR_BARRP_+
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_SWRPMD_-
+  - WTR_FLD_-
+  - WTR_TIL_-
+  - WTR_SWRCF_-
+  - WTR_TRIMT_-
+  - WTR_BMUD_-
+  - WTR_TILS_-
+  - WTR_TRID_+
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_DRYWIS_-
+  - WTR_CBB_-
+  - WTR_FCVS_-
+  - WTR_CABVND_+
+  - WTR_FCWGC_-
+  - WTR_EXTH_+
+  - WTR_FCVTS_-
+  - WTR_EXTHS_+
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_INSA_-
+  - WTR_TRIA_-
+  - WTR_DRYWLFA_-
+  - WTR_BASEDA>_+
+  - WTR_BASEA_-
+  - WTR_BLKA<_+
+  - WTR_EXTHGA_+
+  - WTR_FCWLA_-
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_EXTS_+
+  - WTR_PADS_-
+  - WTR_TACKS_-
+  - WTR_FCCS_-
+  - WTR_CTSSD_+
+  - WTR_DRYW4S_-
+  - WTR_DRYWLS_-
+  - WTR_CABVAN_-
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_WALLHA_+
+  - WTR_GRMA_+
+  - WTR_WALL_+
+  - WTR_DRY+_+
+  - WTR_CB_-
+  - WTR_BASEDA_+
+  - WTR_WALLF_+
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_MICRO_M
+  - WTR_CLASS2_+
+  - WTR_CLASS3_+
+  - WTR_BARRZ+_M
+  - WTR_TEAR_+
+  - WTR_MICRO_+
+  - WTR_CLASS4_+
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_PPEGHD_+
+  - WTR_PPEG6_+
+  - WTR_PPEM_+
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_MASKV>_+
+  room_type: BATHROOM
+- cluster_id: bathroom__cluster_16
+  description: Auto cluster 16
+  core_item_codes:
+  - WTR_CLASS1_+
+  room_type: BATHROOM
+- cluster_id: bedroom__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_INSS_-
+  - WTR_TRIM_-
+  - WTR_DRYWS_-
+  - WTR_CSVS_-
+  - WTR_HEPAWSH_+
+  - WTR_FCWS_-
+  - WTR_DRYW4S_-
+  - WTR_INSW4S_-
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_FCC_-
+  - WTR_CABFHD_+
+  - WTR_PAD_-
+  - WTR_TACK_-
+  - WTR_DRYWLF_-
+  - WTR_BASE_-
+  - WTR_ESRV_+
+  - WTR_BLKA_+
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_TUBD_+
+  - WTR_FLD_-
+  - WTR_BMUD_-
+  - WTR_SWRCC_-
+  - WTR_SNKD_+
+  - WTR_TILS_-
+  - WTR_TLTD_+
+  - WTR_FCTS_-
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_PADA_-
+  - WTR_TACKA_-
+  - WTR_FCCA_-
+  - WTR_LIFTA_+
+  - WTR_TRIMA_-
+  - WTR_WSHD_+
+  - WTR_DRYED_+
+  - WTR_WALL_+
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_FCVS_-
+  - WTR_FCWGC_-
+  - WTR_DRYWLS_-
+  - WTR_DWD_+
+  - WTR_EXTH_+
+  - WTR_RFD_+
+  - WTR_PLYTKS_-
+  - WTR_FCWLS_-
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_CABUPD_+
+  - WTR_CTFLD_+
+  - WTR_CABLWD_+
+  - WTR_PNLS_-
+  - WTR_SNKDD_+
+  - WTR_CABMCD_+
+  - WTR_CTFBSD_+
+  - WTR_CABUP_-
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_BLKHR_+
+  - WTR_EXTGA_+
+  - WTR_FCCGD_-
+  - WTR_CSV_-
+  - WTR_HEPAVAL_+
+  - WTR_WALLH_+
+  - WTR_BASED_+
+  - WTR_FCT_+
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_BARRZ_+
+  - WTR_BARR_+
+  - WTR_DUCTLF_+
+  - WTR_SNKPD_+
+  - WTR_BARRP_+
+  - WTR_DHM_+
+  - WTR_PATCHJ_-
+  - WTR_MASKFPB_+
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_DRY+_+
+  - WTR_LIFT_+
+  - WTR_EXTG_+
+  - WTR_EXTW_+
+  - WTR_GRM_+
+  - WTR_BLK>_+
+  - WTR_POWD_+
+  - WTR_BLK<_+
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_DUCTLF>_+
+  - WTR_EXTHGA_+
+  - WTR_DRYWLFA_-
+  - WTR_BASEBA>_-
+  - WTR_MASKV_+
+  - WTR_MASKV>_+
+  - WTR_PROT_+
+  - WTR_BLKA<_+
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_BASED_-
+  - WTR_TRID_-
+  - WTR_LAB_+
+  - WTR_ULAY_-
+  - WTR_PLYTK_-
+  - WTR_PLA_-
+  - WTR_FCVUV_-
+  - WTR_FCVL_-
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_EQ_+
+  - WTR_FLVAP_+
+  - WTR_FHEPA<_+
+  - WTR_EQD_+
+  - WTR_FHEPA_+
+  - WTR_NAFAN_+
+  - WTR_BARRZ+_+
+  - WTR_EQA_+
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_MICRO_+
+  - WTR_TEAR_+
+  - WTR_CLASS2_+
+  - WTR_CLASS3_+
+  - WTR_CLASS1_+
+  - WTR_BAG_+
+  - WTR_MICRO_M
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_CABLOW_-
+  - WTR_TRIA_-
+  - WTR_PLYTKA_-
+  - WTR_BASEA_-
+  - WTR_FCV_-
+  - WTR_CTFL_-
+  - WTR_DRYN4S_-
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_INSW4_-
+  - WTR_DRYW4_-
+  - WTR_FCWLA_-
+  - WTR_SFSL_-
+  - WTR_BASED>_+
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_16
+  description: Auto cluster 16
+  core_item_codes:
+  - WTR_CTPFD_+
+  - WTR_EXTHG_+
+  - WTR_DHM>>>_+
+  - WTR_FCWL_-
+  - WTR_DRYWI_-
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_17
+  description: Auto cluster 17
+  core_item_codes:
+  - WTR_DRYWG_-
+  - WTR_FCVTS_-
+  - WTR_INSCS_-
+  - WTR_FCVT_-
+  - WTR_HEPAF_+
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_18
+  description: Auto cluster 18
+  core_item_codes:
+  - WTR_PPEGHD_+
+  - WTR_PPEG6_+
+  - WTR_PPEM_+
+  room_type: BEDROOM
+- cluster_id: bedroom__cluster_19
+  description: Auto cluster 19
+  core_item_codes:
+  - WTR_GRMB_M
+  - WTR_DRY2_+
+  - WTR_LABC_+
+  room_type: BEDROOM
+- cluster_id: closet__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_TACK_-
+  - WTR_PAD_-
+  - WTR_FCC_-
+  - WTR_SF_-
+  - WTR_TRID_+
+  - WTR_DRY_+
+  - WTR_TRI_-
+  - WTR_EXTG_+
+  room_type: CLOSET
+- cluster_id: closet__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_INSS_-
+  - WTR_FCTS_-
+  - WTR_SNKD_+
+  - WTR_TUBD_+
+  - WTR_DRYWS_-
+  - WTR_TRIM_-
+  - WTR_EXTHS_+
+  - WTR_HEPAW_+
+  room_type: CLOSET
+- cluster_id: closet__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_PADA_-
+  - WTR_INSA_-
+  - WTR_FCCA_-
+  - WTR_BARRZA+_+
+  - WTR_BARRA_+
+  - WTR_GRMBA_+
+  - WTR_TACKA_-
+  - WTR_DUCTLF_+
+  room_type: CLOSET
+- cluster_id: closet__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_EXTS+_+
+  - WTR_INSW4S_-
+  - WTR_PADS_-
+  - WTR_TACKS_-
+  - WTR_FCCS_-
+  - WTR_INSWLS_-
+  - WTR_DRYW4S_-
+  - WTR_SANDW_+
+  room_type: CLOSET
+- cluster_id: closet__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_CABLOW_-
+  - WTR_FCVN_-
+  - WTR_BASED>_+
+  - WTR_EXTH_+
+  - WTR_WSHD_+
+  - WTR_DRYED_+
+  - WTR_EXTHA_+
+  - WTR_CABUP_-
+  room_type: CLOSET
+- cluster_id: closet__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_CSV_-
+  - WTR_INS_-
+  - WTR_MASKFPB_+
+  - WTR_DRYW_-
+  - WTR_ACTS_-
+  - WTR_PATCHJ_-
+  - WTR_FCT_-
+  - WTR_DHM_+
+  room_type: CLOSET
+- cluster_id: closet__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_BASED_-
+  - WTR_NAFAN_+
+  - WTR_BARRZ_+
+  - WTR_FHEPA_+
+  - WTR_EXT_+
+  - WTR_BARR_+
+  - WTR_HEPAVAC_+
+  - WTR_DHM>>_+
+  room_type: CLOSET
+- cluster_id: closet__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_FCVSA_-
+  - WTR_DORSLDA_+
+  - WTR_DRYWLSA_-
+  - WTR_EXTHSA_+
+  - WTR_TRIMA_-
+  - WTR_HEPAWSH_+
+  - WTR_HEPAVAS_+
+  - WTR_FCTSA_-
+  room_type: CLOSET
+- cluster_id: closet__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_BAG_+
+  - WTR_PPEG6_+
+  - WTR_PPEM_+
+  - WTR_ESRVD_+
+  - WTR_PPE_+
+  - WTR_FHEPA<_+
+  - WTR_LAB_+
+  - WTR_PPERC_+
+  room_type: CLOSET
+- cluster_id: closet__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_MICRO_+
+  - WTR_CLASS3_+
+  - WTR_TEAR_+
+  - WTR_CLASS2_+
+  - WTR_MICRO_M
+  room_type: CLOSET
+- cluster_id: closet__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_HTBL_+
+  room_type: CLOSET
+- cluster_id: closet__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_MASKFP+_+
+  room_type: CLOSET
+- cluster_id: closet__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_MASKV>_+
+  room_type: CLOSET
+- cluster_id: closet__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_TESTATP_+
+  room_type: CLOSET
+- cluster_id: closet__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_DHM>>>_+
+  room_type: CLOSET
+- cluster_id: crawlspace__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_GRMBA_+
+  - WTR_PPE_+
+  - WTR_FURN10_+
+  - WTR_INSA_-
+  - WTR_INSCSA_-
+  - WTR_BARRA_+
+  - WTR_MUCKCS_-
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_CSV_-
+  - WTR_DHM>>_+
+  - WTR_ESRVD_+
+  - WTR_LAB_+
+  - WTR_EXTHG_+
+  - WTR_GRMB_+
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_FHEPA_+
+  - WTR_NAFAN_+
+  - WTR_GRMS_+
+  - WTR_DUCTLF_+
+  - WTR_INSS_-
+  - WTR_BARRZ_+
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_PPE+_+
+  - WTR_PPEG6_+
+  - WTR_PPEM_+
+  - WTR_DHM>>>_+
+  - WTR_INSC_-
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_EQ_+
+  - WTR_DHM_+
+  - WTR_INS_-
+  - WTR_SF_-
+  - WTR_BARR_+
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_EXTG_+
+  - WTR_TACK_-
+  - WTR_PAD_-
+  - WTR_FCC_-
+  - WTR_HEPAVAL_+
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_DHM>_+
+  - WTR_INS_+
+  - WTR_MUCKCS-_-
+  - WTR_DRY_+
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_PROT_+
+  - WTR_HEPAWSH_+
+  - WTR_HEPAFSH_+
+  - WTR_INSCS_-
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_INSW4S_-
+  - WTR_EXTH_+
+  - WTR_HEPAW_+
+  - WTR_CSVS_-
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_EXTHS_+
+  - WTR_MUCKCS+_-
+  - WTR_FCCS_-
+  - WTR_EXTHSA_+
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_WALL_+
+  - WTR_EQD_+
+  - WTR_DRY+_+
+  - WTR_GRM_+
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_HEPAVAS_+
+  - WTR_DRYWS_-
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_INSWLS_-
+  - WTR_HEPAF_+
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_DRY++_+
+  room_type: CRAWLSPACE
+- cluster_id: crawlspace__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_MUCK-_-
+  room_type: CRAWLSPACE
+- cluster_id: garage__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_INSWLF_-
+  - WTR_BASE_-
+  - WTR_INSW4_-
+  - WTR_DRYWLF_-
+  - WTR_DRYW4_-
+  - WTR_BASEB_-
+  - WTR_WALLH_+
+  - WTR_RFD_+
+  room_type: GARAGE
+- cluster_id: garage__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_CABUP_-
+  - WTR_CABFH_-
+  - WTR_CABLOW_-
+  - WTR_CTSS_-
+  - WTR_ULAYS_-
+  - WTR_BASEB>_-
+  - WTR_DRYWS_-
+  - WTR_BARRZ_+
+  room_type: GARAGE
+- cluster_id: garage__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_INS_-
+  - WTR_DRYW_-
+  - WTR_DRY_+
+  - WTR_ESRVD_+
+  - WTR_MASKFLP_I
+  - WTR_MASKFL_+
+  - WTR_EXTHG_+
+  - WTR_DRY++_+
+  room_type: GARAGE
+- cluster_id: garage__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_INSA_-
+  - WTR_DRYWA_-
+  - WTR_DRY+_+
+  - WTR_DHM>_+
+  - WTR_MASKFPB_+
+  - WTR_NAFAN>>_+
+  - WTR_PATCHJ_-
+  - WTR_GRMA_+
+  room_type: GARAGE
+- cluster_id: garage__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_BLK>_+
+  - WTR_INSWLS_-
+  - WTR_DRYWLS_-
+  - WTR_ACTS_-
+  - WTR_ACTSS_-
+  - WTR_EXTHGA_+
+  - WTR_GRMBIO_+
+  - WTR_EXTHS_+
+  room_type: GARAGE
+- cluster_id: garage__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_MUCK-_-
+  - WTR_HEPAF_+
+  - WTR_EXTH_+
+  - WTR_HEPAW_+
+  - WTR_ACT3_-
+  - WTR_BLK_+
+  - WTR_HEPAVAS_+
+  room_type: GARAGE
+- cluster_id: garage__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_SANDF_+
+  - WTR_EQD_+
+  - WTR_EQ_+
+  - WTR_CABFHD_+
+  - WTR_SANDW_+
+  - WTR_DUCTLF_+
+  - WTR_CSVS_-
+  room_type: GARAGE
+- cluster_id: garage__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_BARRZ+_+
+  - WTR_BARRP_+
+  - WTR_MASKFLP_+
+  - WTR_BARR_+
+  - WTR_LAB_+
+  - WTR_SMAT_+
+  - WTR_WHD_+
+  room_type: GARAGE
+- cluster_id: garage__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_WALLHA_+
+  - WTR_BASEBA_-
+  - WTR_GRMBA_+
+  - WTR_RFDA_+
+  - WTR_CABLWD_+
+  - WTR_EXTHA_+
+  - WTR_ACTSA_-
+  room_type: GARAGE
+- cluster_id: garage__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_INSC_-
+  - WTR_CSV_-
+  - WTR_HEPAVAL_+
+  - WTR_GRMB_+
+  - WTR_DRYW4S_-
+  room_type: GARAGE
+- cluster_id: garage__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_FHEPA_+
+  - WTR_FHEPA<_+
+  - WTR_NAFAN_+
+  - WTR_DHM>>>_+
+  - WTR_DHM_+
+  room_type: GARAGE
+- cluster_id: garage__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_DORSLD_+
+  - WTR_WSHD_+
+  - WTR_DRYED_+
+  - WTR_TRIM_-
+  - WTR_BARRF_+
+  room_type: GARAGE
+- cluster_id: garage__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_FHEPA>_+
+  - WTR_FLVAP>_+
+  - WTR_NAFAN>_+
+  - WTR_DHM>>_+
+  - WTR_HEPAFSH_+
+  room_type: GARAGE
+- cluster_id: garage__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_DRYWG_-
+  - WTR_PNL_-
+  - WTR_TRI_-
+  - WTR_HEPAWSH_+
+  room_type: GARAGE
+- cluster_id: garage__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_CTFLD_+
+  - WTR_CABUPD_+
+  - WTR_PROT_+
+  room_type: GARAGE
+- cluster_id: general__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_THERM_+
+  - WTR_DISC_+
+  - WTR_PPER_+
+  - WTR_TESTATP_+
+  - WTR_PPEG6_+
+  - WTR_PPEM_+
+  - WTR_ESRVD_+
+  - WTR_PPEB_+
+  room_type: GENERAL
+- cluster_id: general__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_POLY_+
+  - WTR_TEAR_+
+  - WTR_TRAVELA_+
+  - WTR_CONT_+
+  - WTR_BAG1_+
+  - WTR_TRAVEL_+
+  - WTR_LAB_+
+  - WTR_TEARA_+
+  room_type: GENERAL
+- cluster_id: general__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_FLVAP>_+
+  - WTR_FHEPA<<_+
+  - WTR_FHEPA>_+
+  - WTR_DHM>>_+
+  - WTR_NAFAN>_+
+  - WTR_PPERCM_+
+  - WTR_NAFAN>>_+
+  - WTR_DRY++_+
+  room_type: GENERAL
+- cluster_id: general__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_HEPAVAS_+
+  - WTR_BARRP_+
+  - WTR_BARRZ+_+
+  - WTR_GRMB_+
+  - WTR_TEST_+
+  - WTR_MASKFLP_+
+  - WTR_PROT_+
+  room_type: GENERAL
+- cluster_id: general__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_RM_+
+  - WTR_HEPAVAC_+
+  - WTR_MASKFP+_+
+  - WTR_PPERH_+
+  - WTR_PPERC_+
+  - WTR_PPE+_+
+  - WTR_BIDITM_+
+  room_type: GENERAL
+- cluster_id: general__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_DRY_+
+  - WTR_DHM_+
+  - WTR_SMAT_+
+  - WTR_NAFAN_+
+  - WTR_FLVAP_+
+  - WTR_MASKFLP_I
+  - WTR_WFI_+
+  room_type: GENERAL
+- cluster_id: general__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_EQA_+
+  - WTR_ESRV_+
+  - WTR_GRMBA_+
+  - WTR_DUCTLF>_+
+  - WTR_EXTWPTM_+
+  - WTR_POWDW_+
+  room_type: GENERAL
+- cluster_id: general__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_MASKFLP_M
+  - WTR_PPEGHD_+
+  - WTR_PPEE_+
+  - WTR_BAG_+
+  - WTR_POWD>_+
+  room_type: GENERAL
+- cluster_id: general__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_TEST+_+
+  - WTR_PPERCV_+
+  - WTR_DHM>_+
+  - WTR_PPE_+
+  - WTR_HEPAF_+
+  room_type: GENERAL
+- cluster_id: general__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_MASKFL_+
+  - WTR_LABS_+
+  - WTR_MASKFPB_+
+  - WTR_MISC_+
+  - WTR_POWD_+
+  room_type: GENERAL
+- cluster_id: general__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_HBAGG_+
+  - WTR_FHEPA_+
+  - WTR_FHEPA<_+
+  - WTR_EQD_+
+  room_type: GENERAL
+- cluster_id: general__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_DHM>>>_+
+  - WTR_EQDH_+
+  - WTR_DRY+_+
+  - WTR_LABC_+
+  room_type: GENERAL
+- cluster_id: general__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_BARRZ_+
+  - WTR_BARR_+
+  - WTR_MASKFLA_+
+  - WTR_DUCTLF_+
+  room_type: GENERAL
+- cluster_id: general__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_PPERF_+
+  - WTR_MASKFPN_+
+  - WTR_PPERCP_+
+  room_type: GENERAL
+- cluster_id: general__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_EQ_+
+  room_type: GENERAL
+- cluster_id: hallway__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_PAD_-
+  - WTR_FCC_-
+  - WTR_EXT_+
+  - WTR_TACK_-
+  - WTR_LIFT_+
+  - WTR_DRYWLF_-
+  - WTR_EXTG_+
+  - WTR_BASE_-
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_TACKS_-
+  - WTR_FCCS_-
+  - WTR_PADS_-
+  - WTR_EXTS_+
+  - WTR_SBIF_+
+  - WTR_SBIW_+
+  - WTR_DRYWLS_-
+  - WTR_TRIM_-
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_FHEPA_+
+  - WTR_FHEPA<_+
+  - WTR_EQ_+
+  - WTR_EQD_+
+  - WTR_FLVAP_+
+  - WTR_WSHD_+
+  - WTR_BARRZ+_+
+  - WTR_BARRP_+
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_TRIMA_-
+  - WTR_DRYWLSA_-
+  - WTR_BASEBA_-
+  - WTR_GRMBA_+
+  - WTR_PADSA_-
+  - WTR_FCCSA_-
+  - WTR_FCVSA_-
+  - WTR_INSWLSA_-
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_CSV_-
+  - WTR_EXTGA_+
+  - WTR_DHM>_+
+  - WTR_FCT_-
+  - WTR_WALLH_+
+  - WTR_FCVL_-
+  - WTR_BASED_+
+  - WTR_INS_-
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_CABLOW_-
+  - WTR_CTFBSD_+
+  - WTR_CTFLD_+
+  - WTR_SNKD_+
+  - WTR_SNKDD_+
+  - WTR_CTSSD_+
+  - WTR_ACTSS_-
+  - WTR_CABUP_-
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_GRM_+
+  - WTR_FCWS_-
+  - WTR_MUCK-_-
+  - WTR_PLAS_-
+  - WTR_FCWGW_-
+  - WTR_PROT_+
+  - WTR_FCWGC_+
+  - WTR_TRI_+
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_FCCA_-
+  - WTR_PADA_-
+  - WTR_LIFTA_+
+  - WTR_EXTGA+_+
+  - WTR_TACKA_-
+  - WTR_WALL_+
+  - WTR_EXTHGA_+
+  - WTR_FCV_-
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_DUCTLF>_+
+  - WTR_DRYWA_-
+  - WTR_INSA_-
+  - WTR_BARRA_+
+  - WTR_BASEA_-
+  - WTR_HEPAF_+
+  - WTR_PATCHJ_-
+  - WTR_MASKFLP_I
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_GRMA_+
+  - WTR_DUCTLF_+
+  - WTR_DRYW4_-
+  - WTR_DRY+_+
+  - WTR_CB_-
+  - WTR_DRYWI_-
+  - WTR_INSW4_-
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_MICRO_M
+  - WTR_RZDC_+
+  - WTR_BAG_M
+  - WTR_CLASS1_+
+  - WTR_CLASS2_+
+  - WTR_MICRO_+
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_PPEGHD_+
+  - WTR_PPEG6_+
+  - WTR_PPEM_+
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_GRMB_M
+  - WTR_MASKFLP_M
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_HTBL_+
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_FURN_+
+  room_type: HALLWAY
+- cluster_id: hallway__cluster_16
+  description: Auto cluster 16
+  core_item_codes:
+  - WTR_TILS_-
+  room_type: HALLWAY
+- cluster_id: kitchen__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_CABFH_-
+  - WTR_CABUP_-
+  - WTR_CTSS_-
+  - WTR_CABLOW_-
+  - WTR_FCTS_-
+  - WTR_TILS_-
+  - WTR_PADS_-
+  - WTR_SBSFSH_+
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_FCV_-
+  - WTR_TRI_-
+  - WTR_BASE_-
+  - WTR_INS_-
+  - WTR_FCVUV_-
+  - WTR_ULAY_-
+  - WTR_CSV_-
+  - WTR_INSWLF_-
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_WALLHA_+
+  - WTR_RFDA_+
+  - WTR_BASEBA_-
+  - WTR_GRMBA_+
+  - WTR_BARRZA+_+
+  - WTR_WALL_+
+  - WTR_FCWLA_-
+  - WTR_FCVUVA_-
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_HTAM_+
+  - WTR_LAB_+
+  - WTR_FHEPA_+
+  - WTR_BARR_M
+  - WTR_BARRZ_M
+  - WTR_NAFAN_+
+  - WTR_POWD_+
+  - WTR_BARRZ_+
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_DRYWA_-
+  - WTR_BARRA_+
+  - WTR_EXTHGA_+
+  - WTR_INSA_-
+  - WTR_BASEA_-
+  - WTR_DUCTLF>_+
+  - WTR_PLYTKA_-
+  - WTR_DHM>_+
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_EQD_+
+  - WTR_GRMBIO_+
+  - WTR_FLVAP>_+
+  - WTR_FHEPA>_+
+  - WTR_FHEPA<_+
+  - WTR_NAFAN>_+
+  - WTR_CSVS_-
+  - WTR_HEPAFSH_+
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_CTTLS_-
+  - WTR_HEPAWSH_+
+  - WTR_INSS_-
+  - WTR_DRYWS_-
+  - WTR_CTDKS_-
+  - WTR_INSWLS_-
+  - WTR_SNKPD_+
+  - WTR_TRIM_-
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_CTDK_-
+  - WTR_DRY-_+
+  - WTR_BC_-
+  - WTR_INSW4_-
+  - WTR_DRYW4_-
+  - WTR_FCT_-
+  - WTR_SNKUD_+
+  - WTR_ACT3_-
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_CTPFD_+
+  - WTR_EXTH_+
+  - WTR_CBB_-
+  - WTR_SNKDD_+
+  - WTR_FCVS_-
+  - WTR_CABUPD_+
+  - WTR_RGED_+
+  - WTR_CABLWD_+
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_TACK_-
+  - WTR_PAD_-
+  - WTR_FCC_-
+  - WTR_EXTG_+
+  - WTR_FCWA_-
+  - WTR_PROTA_+
+  - WTR_DHM_+
+  - WTR_WFI_+
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_CABLWD_-
+  - WTR_CABUPD_-
+  - WTR_CTFLD_-
+  - WTR_CB_-
+  - WTR_CABFHD_+
+  - WTR_SNKD_+
+  - WTR_DRYW_-
+  - WTR_PATCHJ_-
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_DWD_I
+  - WTR_RFD_I
+  - WTR_RGED_I
+  - WTR_BASED_+
+  - WTR_CABLOW_+
+  - WTR_CTSS_+
+  - WTR_CABLDS_+
+  - WTR_DWD_+
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_BARRZ+_+
+  - WTR_FCWS_-
+  - WTR_PLYTKS_-
+  - WTR_BARR_+
+  - WTR_FCVSL_-
+  - WTR_MASKFP+_+
+  - WTR_FCVL_-
+  - WTR_INSNLS_-
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_MICRO_+
+  - WTR_TEAR_+
+  - WTR_CLASS1_+
+  - WTR_CLASS2_+
+  - WTR_BAG_+
+  - WTR_CLASS3_+
+  - WTR_MICRO_M
+  - WTR_CLASS4_+
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_MUCK_-
+  - WTR_RGGD_+
+  - WTR_CABFH_+
+  - WTR_SANDW_+
+  - WTR_BASED_-
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_16
+  description: Auto cluster 16
+  core_item_codes:
+  - WTR_PPEGHD_+
+  - WTR_PPEG6_+
+  - WTR_PPEM_+
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_17
+  description: Auto cluster 17
+  core_item_codes:
+  - WTR_MASKFPN_+
+  room_type: KITCHEN
+- cluster_id: kitchen__cluster_18
+  description: Auto cluster 18
+  core_item_codes:
+  - WTR_MASKV>_+
+  room_type: KITCHEN
+- cluster_id: laundry__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_DRYWS_-
+  - WTR_INSS_-
+  - WTR_TACKS_-
+  - WTR_PADS_-
+  - WTR_FCCS_-
+  - WTR_HEPAFSH_+
+  - WTR_EXTS_+
+  - WTR_PROT_+
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_PLYTK_-
+  - WTR_WALLH_+
+  - WTR_FCVUV_-
+  - WTR_TRID_+
+  - WTR_BASED_+
+  - WTR_BLK<_+
+  - WTR_FCVL_-
+  - WTR_BASED_-
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_CABLOW_-
+  - WTR_SNKD_+
+  - WTR_TILS_-
+  - WTR_INSW4S_-
+  - WTR_CTFLD_+
+  - WTR_TRIMT_-
+  - WTR_WHD_+
+  - WTR_DRYW4S_-
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_INS_-
+  - WTR_BARRZ+_+
+  - WTR_SANDF_+
+  - WTR_CABVCD_+
+  - WTR_SNKUD_+
+  - WTR_BASE_-
+  - WTR_DRYW_-
+  - WTR_SFSL_-
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_DRYEDA_+
+  - WTR_WSHDA_+
+  - WTR_BASEBA_-
+  - WTR_DORSLDA_+
+  - WTR_DRYWLSA_-
+  - WTR_FCVSA_-
+  - WTR_INSWLSA_-
+  - WTR_TRIMA_-
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_TACK_-
+  - WTR_PAD_-
+  - WTR_EXTG_+
+  - WTR_ACTS_-
+  - WTR_BLK>_+
+  - WTR_NAFAN_+
+  - WTR_PNL_-
+  - WTR_FCCGD_-
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_ULAY_-
+  - WTR_CTFL_-
+  - WTR_CTFBSD_+
+  - WTR_BLKHR_+
+  - WTR_BASEDA_+
+  - WTR_DRYWLF_-
+  - WTR_WHD_-
+  - WTR_FCV_+
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_FCTS_-
+  - WTR_LAB_+
+  - WTR_BASEB>_-
+  - WTR_BMUD_-
+  - WTR_DRYGD_+
+  - WTR_GRMS_+
+  - WTR_SFS_-
+  - WTR_DRYNIS_-
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_DRYWGA_-
+  - WTR_INSA_-
+  - WTR_TRIA_-
+  - WTR_SFA_-
+  - WTR_FCWLA_-
+  - WTR_BASEA_-
+  - WTR_DRYWA_-
+  - WTR_FCVA_-
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_DRYNS_-
+  - WTR_SFSLSN_-
+  - WTR_HEPAF_+
+  - WTR_EXTHS_+
+  - WTR_FCWS_-
+  - WTR_FCWGW_-
+  - WTR_GRM_+
+  - WTR_HEPAW_+
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_CTPFD_+
+  - WTR_FHEPA<_+
+  - WTR_CABLWD_+
+  - WTR_CABFHD_+
+  - WTR_INSWLS_-
+  - WTR_CABFH_-
+  - WTR_DRYWLS_-
+  - WTR_FCCGDS_-
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_MICRO_M
+  - WTR_RZDC_+
+  - WTR_BAG_M
+  - WTR_CLASS1_+
+  - WTR_BARRP_+
+  - WTR_CLASS2_+
+  - WTR_TEAR_+
+  - WTR_MICRO_+
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_DRYMA_+
+  - WTR_WALL_+
+  - WTR_DUCTLF>_+
+  - WTR_PATCHJ_-
+  - WTR_DHM>>_+
+  - WTR_DRYWI_-
+  - WTR_WALLF_+
+  - WTR_BLKA<_+
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_CTSSD_+
+  - WTR_INSW4_-
+  - WTR_CSV_-
+  - WTR_EXTHGA_+
+  - WTR_BASEBA>_-
+  - WTR_DRYW4_-
+  - WTR_EXTH_+
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_TIL_-
+  - WTR_BCSA_-
+  - WTR_BARRZ_+
+  - WTR_BARR_+
+  - WTR_DHM_+
+  room_type: LAUNDRY
+- cluster_id: laundry__cluster_16
+  description: Auto cluster 16
+  core_item_codes:
+  - WTR_ACTSA_-
+  - WTR_EXTA+_+
+  - WTR_DRY+_+
+  room_type: LAUNDRY
+- cluster_id: living_area__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_PADA_-
+  - WTR_BARRA_+
+  - WTR_FCCA_-
+  - WTR_TACKA_-
+  - WTR_DRYWA_-
+  - WTR_GRMA_+
+  - WTR_WALL_+
+  - WTR_FCWLA_-
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_FCT_-
+  - WTR_PNL_-
+  - WTR_TRI_-
+  - WTR_TIL_-
+  - WTR_INS_-
+  - WTR_BASE_-
+  - WTR_ULAY_-
+  - WTR_TRIMT_-
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_PAD_-
+  - WTR_EXTG_+
+  - WTR_FCC_-
+  - WTR_CSV_-
+  - WTR_TACK_-
+  - WTR_DRYWLF_-
+  - WTR_BLK<_+
+  - WTR_LIFT_+
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_CABUP_-
+  - WTR_CABLOW_-
+  - WTR_PNLS_-
+  - WTR_FCTS_-
+  - WTR_HEPAWSH_+
+  - WTR_INSS_-
+  - WTR_CTSS_-
+  - WTR_DRYWS_-
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_INSW4S_-
+  - WTR_INSWLS_-
+  - WTR_CSVS_-
+  - WTR_TRIM_-
+  - WTR_DRYW4S_-
+  - WTR_SFS_-
+  - WTR_FCWS_-
+  - WTR_EXTS+_+
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_TRIMA_-
+  - WTR_DRYWLSA_-
+  - WTR_GRMBA_+
+  - WTR_TACKSA_-
+  - WTR_PADSA_-
+  - WTR_FCCSA_-
+  - WTR_BASEBA_-
+  - WTR_INSSA_-
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_DWD_+
+  - WTR_RGED_+
+  - WTR_RFD_+
+  - WTR_SNKDD_+
+  - WTR_CABLWD_+
+  - WTR_GDD_+
+  - WTR_CABUPD_+
+  - WTR_WALLD_+
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_BARRP_+
+  - WTR_SANDF_+
+  - WTR_BARRZ+_+
+  - WTR_BARR_+
+  - WTR_SFSL_-
+  - WTR_PATCHJ_-
+  - WTR_BARRZ_+
+  - WTR_FCV_-
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_DHM_+
+  - WTR_LABA_+
+  - WTR_EXTHA_+
+  - WTR_BLK_+
+  - WTR_PLA_-
+  - WTR_LAB_+
+  - WTR_DRY_+
+  - WTR_DRYWGA_-
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_EQD_+
+  - WTR_FLVAP_+
+  - WTR_FHEPA<_+
+  - WTR_EQ_+
+  - WTR_WSHD_+
+  - WTR_DRYED_+
+  - WTR_NAFAN_+
+  - WTR_PPE_+
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_FHEPA>_+
+  - WTR_FLVAP>_+
+  - WTR_TACKS_-
+  - WTR_FCCS_-
+  - WTR_PADS_-
+  - WTR_GRMB_M
+  - WTR_NAFAN>>_+
+  - WTR_DHM>>>_+
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_CLASS1_+
+  - WTR_MICRO_M
+  - WTR_MICRO_+
+  - WTR_TEAR_+
+  - WTR_RZDC_+
+  - WTR_BAG_M
+  - WTR_CLASS2_+
+  - WTR_BARRZ+_M
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_BASED_-
+  - WTR_FCW_+
+  - WTR_DRYWLF_+
+  - WTR_WFI_+
+  - WTR_TRID_-
+  - WTR_HEPAVAL_+
+  - WTR_DHM>>_+
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_PPEGHD_+
+  - WTR_PPEG6_+
+  - WTR_PPEM_+
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_BARR_M
+  - WTR_PROT_M
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_16
+  description: Auto cluster 16
+  core_item_codes:
+  - WTR_MASKFLA_+
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_17
+  description: Auto cluster 17
+  core_item_codes:
+  - WTR_MASKV>_+
+  room_type: LIVING AREA
+- cluster_id: living_area__cluster_18
+  description: Auto cluster 18
+  core_item_codes:
+  - WTR_MUCK-_-
+  room_type: LIVING AREA
+- cluster_id: office__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_PATCHJ_-
+  - WTR_DRYW_-
+  - WTR_LIFT_+
+  - WTR_PAD_-
+  - WTR_SF_-
+  - WTR_BLKHR_+
+  - WTR_FCVUV_-
+  - WTR_ULAY_-
+  room_type: OFFICE
+- cluster_id: office__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_INSA_-
+  - WTR_DRYW4A_-
+  - WTR_DRYWA_-
+  - WTR_FCWLA_-
+  - WTR_BASEBA_-
+  - WTR_BASED>_+
+  - WTR_BARRA_+
+  - WTR_GRMBA_+
+  room_type: OFFICE
+- cluster_id: office__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_CB_-
+  - WTR_MASKFLP_+
+  - WTR_EQD_+
+  - WTR_DHM>>_+
+  - WTR_BLK_+
+  - WTR_INS_-
+  - WTR_DRYWLF_-
+  - WTR_EXTG_+
+  room_type: OFFICE
+- cluster_id: office__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_INSS_-
+  - WTR_DRYW4S_-
+  - WTR_FCWS_-
+  - WTR_BASEB_-
+  - WTR_BMUD_-
+  - WTR_FCTS_-
+  - WTR_GRMBIO_+
+  - WTR_HEPAVAS_+
+  room_type: OFFICE
+- cluster_id: office__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_LIFTA_+
+  - WTR_EXTGA_+
+  - WTR_PADA_-
+  - WTR_TACK_-
+  - WTR_EXTWA_+
+  - WTR_BASEA_-
+  - WTR_DHM_+
+  - WTR_BASED_+
+  room_type: OFFICE
+- cluster_id: office__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_DRYW4_-
+  - WTR_TRI_-
+  - WTR_FCWL_-
+  - WTR_BASE_-
+  - WTR_BASE>_-
+  - WTR_EXTW_+
+  - WTR_FCV_-
+  - WTR_EXT_+
+  room_type: OFFICE
+- cluster_id: office__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_CABUP_-
+  - WTR_SNKDD_+
+  - WTR_RFD_+
+  - WTR_CTSS_-
+  - WTR_CABLOW_-
+  - WTR_FCVS_-
+  - WTR_HEPAF_+
+  - WTR_DRYWS_-
+  room_type: OFFICE
+- cluster_id: office__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_TACKS_-
+  - WTR_PADS_-
+  - WTR_SBIF_+
+  - WTR_SBIW_+
+  - WTR_FCCS_-
+  - WTR_FCCS_+
+  - WTR_FHEPA<_+
+  - WTR_TRIM_-
+  room_type: OFFICE
+- cluster_id: office__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_CSVS_-
+  - WTR_INSWLS_-
+  - WTR_DRY++_+
+  - WTR_DRYWIS_-
+  - WTR_EXTH_+
+  - WTR_EXTHS_+
+  - WTR_SFS_-
+  - WTR_MUCK+_-
+  room_type: OFFICE
+- cluster_id: office__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_BARRZ_+
+  - WTR_BARRF_+
+  - WTR_BARR_+
+  - WTR_INSW4S_-
+  - WTR_DUCTLF_+
+  - WTR_MASKV_+
+  - WTR_PLA_-
+  - WTR_MASKFL_+
+  room_type: OFFICE
+- cluster_id: office__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_FCWGC_-
+  - WTR_WSHD_+
+  - WTR_DRYED_+
+  - WTR_DHM>_+
+  - WTR_FCCGD_-
+  - WTR_FCW_-
+  - WTR_BLK<_+
+  - WTR_CABFH_-
+  room_type: OFFICE
+- cluster_id: office__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_CABFHD_+
+  - WTR_CABLWD_+
+  - WTR_SNKUD_+
+  - WTR_DHM>>>_+
+  - WTR_CTFLD_+
+  - WTR_CTSSD_+
+  - WTR_BASERS>_+
+  - WTR_FCWLS_-
+  room_type: OFFICE
+- cluster_id: office__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_GRMS_+
+  - WTR_PLAS_-
+  - WTR_EXTHG_+
+  - WTR_FCCGDS_-
+  - WTR_GRM_+
+  - WTR_PROT_+
+  - WTR_SFSLS_-
+  - WTR_FCVTS_-
+  room_type: OFFICE
+- cluster_id: office__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_CLASS2_+
+  - WTR_MICRO_+
+  - WTR_TEAR_+
+  room_type: OFFICE
+- cluster_id: office__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_MISC_+
+  room_type: OFFICE
+- cluster_id: other__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_EQ_+
+  - WTR_PPEG6_+
+  - WTR_FHEPA<_+
+  - WTR_BAG_+
+  - WTR_PPERC_+
+  - WTR_EQD_+
+  - WTR_PPE_+
+  - WTR_PPEM_+
+  room_type: OTHER
+- cluster_id: other__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_FCC_-
+  - WTR_PAD_-
+  - WTR_CSV_-
+  - WTR_BLKHR_+
+  - WTR_TACK_-
+  - WTR_DRYW4_-
+  - WTR_SBSFSH_+
+  - WTR_SBSW_+
+  room_type: OTHER
+- cluster_id: other__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_TLTD_+
+  - WTR_FCTS_-
+  - WTR_TILS_-
+  - WTR_CABVAN_-
+  - WTR_SNKD_+
+  - WTR_CABMCD_+
+  - WTR_SWRCC_-
+  - WTR_BMUD_-
+  room_type: OTHER
+- cluster_id: other__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_DRYWA_-
+  - WTR_GRMBA_+
+  - WTR_WALLHA_+
+  - WTR_CBA_-
+  - WTR_PNLA_-
+  - WTR_INSA_-
+  - WTR_TRIMA_-
+  - WTR_PLYTKA_-
+  room_type: OTHER
+- cluster_id: other__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_RFD_+
+  - WTR_SNKDD_+
+  - WTR_DWD_+
+  - WTR_RGED_+
+  - WTR_CABLWD_+
+  - WTR_GDD_+
+  - WTR_CABUPD_+
+  - WTR_CABLOW_-
+  room_type: OTHER
+- cluster_id: other__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_INSS_-
+  - WTR_DRYWS_-
+  - WTR_TRIM_-
+  - WTR_BASEB_-
+  - WTR_FCWS_-
+  - WTR_HEPAW_+
+  - WTR_HEPAF_+
+  - WTR_FCWGW_-
+  room_type: OTHER
+- cluster_id: other__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_INSWLS_-
+  - WTR_DRYWLS_-
+  - WTR_EXTS_+
+  - WTR_FCCS_-
+  - WTR_TACKS_-
+  - WTR_PADS_-
+  - WTR_INSNLS_-
+  - WTR_PNLS_-
+  room_type: OTHER
+- cluster_id: other__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_SWRPMD_-
+  - WTR_BARR_+
+  - WTR_NAFAN_+
+  - WTR_BARRZ_+
+  - WTR_MASKV_+
+  - WTR_BARRP_+
+  - WTR_BARRF_+
+  - WTR_SWRCF_-
+  room_type: OTHER
+- cluster_id: other__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_FHEPA>_+
+  - WTR_EXTA+_+
+  - WTR_PLYTK_-
+  - WTR_DUCTLF_+
+  - WTR_WALL_+
+  - WTR_NAFAN>_+
+  - WTR_MASKFL_+
+  - WTR_DRY+_+
+  room_type: OTHER
+- cluster_id: other__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_PADA_-
+  - WTR_TACKA_-
+  - WTR_FCCA_-
+  - WTR_EXTA_+
+  - WTR_BASEA_-
+  - WTR_TACKSA_-
+  - WTR_BLKA>_+
+  - WTR_BLKA<_+
+  room_type: OTHER
+- cluster_id: other__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_INS_-
+  - WTR_WSHD_+
+  - WTR_DRYW_-
+  - WTR_DRYGD_+
+  - WTR_PATCHJ_-
+  - WTR_DRYED_+
+  - WTR_PNL_-
+  - WTR_FCVT_-
+  room_type: OTHER
+- cluster_id: other__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_CBB_-
+  - WTR_FCVTS_-
+  - WTR_CABLDS_+
+  - WTR_DRYWIS_-
+  - WTR_EXTHS_+
+  - WTR_FCWGC_-
+  - WTR_NAFAN>>_+
+  - WTR_BLK_+
+  room_type: OTHER
+- cluster_id: other__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_DRYWLSA_-
+  - WTR_FCVSA_-
+  - WTR_DORSLDA_+
+  - WTR_EXTHSA_+
+  - WTR_BASEBA_-
+  - WTR_HEPAWSH_+
+  - WTR_FCWLSA_-
+  - WTR_HEPAVAS_+
+  room_type: OTHER
+- cluster_id: other__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_DHM>>_+
+  - WTR_SANDF_+
+  - WTR_SANDW_+
+  - WTR_GRM_+
+  - WTR_DRYW4S_-
+  - WTR_EXT+_+
+  - WTR_MISC_+
+  - WTR_PNL_+
+  room_type: OTHER
+- cluster_id: other__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_MICRO_+
+  - WTR_RZDC_+
+  - WTR_MICRO_M
+  - WTR_CLASS2_+
+  - WTR_BARRZ+_+
+  - WTR_CLASS1_+
+  - WTR_CLASS3_+
+  - WTR_CLASS4_+
+  room_type: OTHER
+- cluster_id: other__cluster_16
+  description: Auto cluster 16
+  core_item_codes:
+  - WTR_PPEG6_
+  - WTR_ESRV_
+  - WTR_EQ_
+  - WTR_NAFAN_
+  - WTR_PPE_
+  - WTR_FHEPA_
+  - WTR_BAG_
+  room_type: OTHER
+- cluster_id: other__cluster_17
+  description: Auto cluster 17
+  core_item_codes:
+  - WTR_PLA_-
+  - WTR_BASE>_-
+  - WTR_ACT_-
+  - WTR_TRI_-
+  - WTR_FCW_-
+  - WTR_FCV_-
+  - WTR_WFI_+
+  room_type: OTHER
+- cluster_id: other__cluster_18
+  description: Auto cluster 18
+  core_item_codes:
+  - WTR_CABVND_-
+  - WTR_CTSSD_-
+  - WTR_SNKD_-
+  - WTR_DRYWLF_-
+  - WTR_BASE_-
+  - WTR_DRYN4_-
+  room_type: OTHER
+- cluster_id: other__cluster_19
+  description: Auto cluster 19
+  core_item_codes:
+  - WTR_EXTH_+
+  - WTR_FCVN_-
+  - WTR_BASED>_+
+  - WTR_EXTWPC_+
+  room_type: OTHER
+- cluster_id: other__cluster_20
+  description: Auto cluster 20
+  core_item_codes:
+  - WTR_INS_+
+  room_type: OTHER
+- cluster_id: stairs__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_DRY_+
+  - WTR_DRYWLF_-
+  - WTR_PAD_-
+  - WTR_DRYW_-
+  - WTR_FCC_-
+  - WTR_LIFT_+
+  - WTR_EXTG_+
+  - WTR_PATCHJ_-
+  room_type: STAIRS
+- cluster_id: stairs__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_FCWS_-
+  - WTR_TRIM_-
+  - WTR_INSS_-
+  - WTR_FCWGC_-
+  - WTR_FCWGW_-
+  - WTR_PROT_+
+  - WTR_DRYWS_-
+  - WTR_HEPAVAC_+
+  room_type: STAIRS
+- cluster_id: stairs__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_CTFLD_+
+  - WTR_CABLOW_-
+  - WTR_EXTH_+
+  - WTR_FCVS_-
+  - WTR_INSWLS_-
+  - WTR_EXTHS_+
+  - WTR_DRYWLS_-
+  - WTR_CSVS_-
+  room_type: STAIRS
+- cluster_id: stairs__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_BASED_+
+  - WTR_TRID_+
+  - WTR_FCCS_-
+  - WTR_BLK_+
+  - WTR_EXTS_+
+  - WTR_PADS_-
+  - WTR_LAB_+
+  - WTR_TACKS_-
+  room_type: STAIRS
+- cluster_id: stairs__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_BASEA_-
+  - WTR_DRY+_+
+  - WTR_GRMA_+
+  - WTR_PADA_-
+  - WTR_DHM_+
+  - WTR_EXTHA_+
+  - WTR_ACTSS_-
+  - WTR_FCCGDS_-
+  room_type: STAIRS
+- cluster_id: stairs__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_BASEBA_-
+  - WTR_GRMBA_+
+  - WTR_FCVSA_-
+  - WTR_BARRA_+
+  - WTR_BARRZA_+
+  - WTR_DRYWLSA_-
+  - WTR_EXTHSA_+
+  - WTR_BARRP_+
+  room_type: STAIRS
+- cluster_id: stairs__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_INS_-
+  - WTR_BASEB>_-
+  - WTR_INSW4_-
+  - WTR_BMUD_-
+  - WTR_PLA_-
+  - WTR_DRYW4_-
+  - WTR_FCW_-
+  - WTR_FCT_-
+  room_type: STAIRS
+- cluster_id: stairs__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_NAFAN_+
+  - WTR_WSHD_+
+  - WTR_DRYED_+
+  - WTR_BARRF_+
+  - WTR_DUCTLF>_+
+  - WTR_FHEPA_+
+  - WTR_ULAY_-
+  - WTR_FCWL_-
+  room_type: STAIRS
+- cluster_id: stairs__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_FHEPA>_+
+  - WTR_FLVAP>_+
+  - WTR_EQD_+
+  - WTR_NAFAN>_+
+  - WTR_BARRZ+_+
+  - WTR_BARR_+
+  room_type: STAIRS
+- cluster_id: stairs__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_MASKFLA_+
+  - WTR_PROTA_+
+  room_type: STAIRS
+- cluster_id: stairs__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_EXT_+
+  room_type: STAIRS
+- cluster_id: stairs__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_TRI_+
+  room_type: STAIRS
+- cluster_id: stairs__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_WFI_+
+  room_type: STAIRS
+- cluster_id: stairs__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_MASKFP+_+
+  room_type: STAIRS
+- cluster_id: stairs__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_MASKFLP_I
+  room_type: STAIRS
+- cluster_id: utility__cluster_01
+  description: Auto cluster 1
+  core_item_codes:
+  - WTR_DRYWS_-
+  - WTR_TACKS_-
+  - WTR_PADS_-
+  - WTR_BASEB_-
+  - WTR_FCCS_-
+  - WTR_TRIM_-
+  - WTR_INSWLS_-
+  - WTR_INSS_-
+  room_type: UTILITY
+- cluster_id: utility__cluster_02
+  description: Auto cluster 2
+  core_item_codes:
+  - WTR_PAD_-
+  - WTR_FCC_-
+  - WTR_INS_-
+  - WTR_BASED_+
+  - WTR_TACK_-
+  - WTR_TRI_-
+  - WTR_BASE_-
+  - WTR_EXTG+_+
+  room_type: UTILITY
+- cluster_id: utility__cluster_03
+  description: Auto cluster 3
+  core_item_codes:
+  - WTR_GRMBA_+
+  - WTR_WALLHA_+
+  - WTR_TACKA_-
+  - WTR_BLKA_+
+  - WTR_BASEA_-
+  - WTR_LIFTA_+
+  - WTR_PADA_-
+  - WTR_EXTA+_+
+  room_type: UTILITY
+- cluster_id: utility__cluster_04
+  description: Auto cluster 4
+  core_item_codes:
+  - WTR_CABVCD_+
+  - WTR_SNKD_+
+  - WTR_ULAY_-
+  - WTR_CABUPD_+
+  - WTR_FCVUV_-
+  - WTR_DRYNS_-
+  - WTR_TLTD_+
+  - WTR_WSHD_+
+  room_type: UTILITY
+- cluster_id: utility__cluster_05
+  description: Auto cluster 5
+  core_item_codes:
+  - WTR_TRIMA_-
+  - WTR_BASEBA_-
+  - WTR_DORSLDA_+
+  - WTR_DRYWLSA_-
+  - WTR_FCWLSA_-
+  - WTR_INSWLSA_-
+  - WTR_HEPAWSH_+
+  - WTR_FCVSA_-
+  room_type: UTILITY
+- cluster_id: utility__cluster_06
+  description: Auto cluster 6
+  core_item_codes:
+  - WTR_BARR_+
+  - WTR_BARRZ+_+
+  - WTR_DRYWI_-
+  - WTR_EXTA_+
+  - WTR_BARRZ_+
+  - WTR_PLYTK_-
+  - WTR_DHM>>_+
+  - WTR_CB_-
+  room_type: UTILITY
+- cluster_id: utility__cluster_07
+  description: Auto cluster 7
+  core_item_codes:
+  - WTR_NAFAN>_+
+  - WTR_EQ_+
+  - WTR_FHEPA_+
+  - WTR_FHEPA>_+
+  - WTR_NAFAN_+
+  - WTR_EQD_+
+  - WTR_EXTWPTM_+
+  - WTR_DRY+_+
+  room_type: UTILITY
+- cluster_id: utility__cluster_08
+  description: Auto cluster 8
+  core_item_codes:
+  - WTR_FCCGDS_-
+  - WTR_GRM_+
+  - WTR_CTSSD_+
+  - WTR_EXTS_+
+  - WTR_CABLWD_+
+  - WTR_MUCK_-
+  - WTR_SFSN_-
+  - WTR_MISC_+
+  room_type: UTILITY
+- cluster_id: utility__cluster_09
+  description: Auto cluster 9
+  core_item_codes:
+  - WTR_FCWGC_-
+  - WTR_CBB_-
+  - WTR_DRYWIS_-
+  - WTR_FCVTS_-
+  - WTR_EXTHS_+
+  - WTR_FCW_-
+  - WTR_CABUP_-
+  - WTR_CABVAN_-
+  room_type: UTILITY
+- cluster_id: utility__cluster_10
+  description: Auto cluster 10
+  core_item_codes:
+  - WTR_CLASS2_+
+  - WTR_TEAR_+
+  - WTR_MICRO_+
+  - WTR_MICRO_M
+  room_type: UTILITY
+- cluster_id: utility__cluster_11
+  description: Auto cluster 11
+  core_item_codes:
+  - WTR_PPEGHD_+
+  - WTR_PPEG6_+
+  - WTR_PPEM_+
+  room_type: UTILITY
+- cluster_id: utility__cluster_12
+  description: Auto cluster 12
+  core_item_codes:
+  - WTR_DUCTLF>_+
+  room_type: UTILITY
+- cluster_id: utility__cluster_13
+  description: Auto cluster 13
+  core_item_codes:
+  - WTR_WFI_+
+  room_type: UTILITY
+- cluster_id: utility__cluster_14
+  description: Auto cluster 14
+  core_item_codes:
+  - WTR_MASKFL_+
+  room_type: UTILITY
+- cluster_id: utility__cluster_15
+  description: Auto cluster 15
+  core_item_codes:
+  - WTR_WALLF_+
+  room_type: UTILITY
