@@ -44,13 +44,6 @@ global:
       - ppe.ppe_level
       - ppe.respirator
       - monitoring_power.monitoring_mode
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - drying.air_movement.air_mover_type
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -147,13 +140,6 @@ carrier:2:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -250,13 +236,6 @@ carrier:3:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -353,13 +332,6 @@ carrier:4:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - drying.air_movement.air_mover_type
-      - extraction_pumping.extraction_surface
-      - decon.waste_handling
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -456,13 +428,6 @@ carrier:5:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -559,13 +524,6 @@ carrier:6:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -662,13 +620,6 @@ carrier:7:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -765,13 +716,6 @@ carrier:8:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -868,13 +812,6 @@ carrier:9:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -971,13 +908,6 @@ carrier:10:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -1074,13 +1004,6 @@ carrier:11:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -1177,13 +1100,6 @@ carrier:12:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -1280,13 +1196,6 @@ carrier:13:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - drying.air_movement.air_mover_type
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -1383,13 +1292,6 @@ carrier:14:
       - ppe.ppe_level
       - monitoring_power.monitoring_mode
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - drying.air_movement.air_mover_type
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -1486,13 +1388,6 @@ carrier:15:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.waste_handling
-      - decon.antimicrobial
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -1589,13 +1484,6 @@ carrier:16:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -1692,13 +1580,6 @@ carrier:17:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -1795,13 +1676,6 @@ carrier:18:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -1898,13 +1772,6 @@ carrier:19:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -2001,13 +1868,6 @@ carrier:20:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -2104,13 +1964,6 @@ carrier:21:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -2207,13 +2060,6 @@ carrier:22:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
   HALLWAY:
     must_asks:
       - loss.water_category
@@ -2310,13 +2156,7 @@ carrier:23:
       - monitoring_power.monitoring_mode
       - ppe.ppe_level
       - ppe.respirator
-  GYM:
-    must_asks:
-      - loss.water_category
-      - decon.antimicrobial
-      - decon.waste_handling
-      - extraction_pumping.extraction_surface
-      - drying.air_movement.air_mover_type
+
   HALLWAY:
     must_asks:
       - loss.water_category

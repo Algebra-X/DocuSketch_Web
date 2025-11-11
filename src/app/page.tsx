@@ -13,7 +13,7 @@ export default function Home() {
       </div>
       {/* Centered text content */}
       <div className="text-center mb-12 px-2">
-        <h1 className="text-3xl md:text-6xl my-4">DocuSketch test</h1>
+        <h1 className="text-3xl md:text-6xl my-4">DocuSketch Demo</h1>
         <p className="text-lg md:text-4xl">Log in 👇</p>
       </div>
       {/* Action buttons */}
