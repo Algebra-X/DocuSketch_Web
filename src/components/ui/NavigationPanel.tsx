@@ -65,7 +65,7 @@ const NavigationPanel: FC = React.memo(() => {
 
           <div className="px-6 pb-6 mt-auto">
             <Button
-              text="Abmelden"
+              text="Log out"
               size="md"
               hoverColor="pink"
               onClick={logout}
