@@ -43,7 +43,18 @@ function getRoomLabel(roomType: string): string {
 }
 
 function getRoomImage(roomType: string): string {
-  return ROOM_IMAGES[roomType] ?? "/window.svg";
+  if (!roomType) return "/window.svg";
+  const tryKeys = [
+    roomType,
+    roomType.replace(/\s+/g, "_"),
+    roomType.toUpperCase(),
+    roomType.toUpperCase().replace(/\s+/g, "_"),
+    toTitleCase(roomType).toUpperCase().replace(/\s+/g, "_"),
+  ];
+  for (const k of tryKeys) {
+    if (Object.prototype.hasOwnProperty.call(ROOM_IMAGES, k)) return ROOM_IMAGES[k];
+  }
+  return "/window.svg";
 }
 
 /* =========================
