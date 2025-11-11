@@ -55,9 +55,24 @@ const ProgressBar: React.FC<{ value: number }> = ({ value }) => {
   );
 };
 
-const OptionButton: React.FC<{ label: string; onClick?: () => void }> = ({ label, onClick }) => (
+type OptionButtonProps = {
+  label: string;
+  onClick?: () => void;
+  variant?: "default" | "muted";
+};
+
+const OptionButton: React.FC<OptionButtonProps> = ({
+  label,
+  onClick,
+  variant = "default",
+}) => (
   <button
-    className="w-full rounded-xl bg-rose-300/70 px-4 py-4 text-left font-medium text-neutral-800 transition hover:bg-rose-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-400"
+    className={
+      "w-full rounded-xl px-4 py-4 text-left font-medium transition focus:outline-none focus-visible:ring-2 " +
+      (variant === "muted"
+        ? "bg-neutral-200 text-neutral-700 hover:bg-neutral-300 focus-visible:ring-neutral-300"
+        : "bg-rose-300/70 text-neutral-800 hover:bg-rose-300 focus-visible:ring-rose-400")
+    }
     type="button"
     onClick={onClick}
   >
@@ -74,7 +89,7 @@ const QuestionBlock: React.FC<{ question: NextQuestion; onSelect?: (value: strin
         {question.options.map((opt, idx) => (
           <OptionButton key={idx} label={opt.label} onClick={() => onSelect?.(opt.value)} />
         ))}
-        <OptionButton label="Unknown" onClick={() => onSelect?.("__UNKNOWN__")} />
+        <OptionButton label="Unknown" variant="muted" onClick={() => onSelect?.("__UNKNOWN__")} />
       </div>
     </Card>
   );
