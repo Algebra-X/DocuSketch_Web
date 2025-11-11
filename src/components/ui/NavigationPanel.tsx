@@ -25,7 +25,23 @@ const NavigationPanel: FC = React.memo(() => {
   }, [closeOnEsc]);
 
   const logout = useCallback(async () => {
-    await supabase.auth.signOut();
+    // Try clearing demo cookie on the server (if present), then sign out Supabase if any,
+    // finally navigate to the root.
+    try {
+      await fetch('/api/demo-logout', { method: 'POST', credentials: 'same-origin' })
+        .catch(() => {
+          /* ignore network errors */
+        })
+    } catch (e) {
+      // ignore
+    }
+
+    try {
+      await supabase.auth.signOut();
+    } catch (e) {
+      // ignore errors signing out of Supabase if not used
+    }
+
     router.push('/');
   }, [router, supabase]);
 

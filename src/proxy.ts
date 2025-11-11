@@ -17,7 +17,9 @@ export async function proxy(req: NextRequest) {
   const pathname = url.pathname;
 
   // Явный allowlist публичных путей
-  const PUBLIC = new Set<string>(["/", "/login"]);
+  // Allow the demo login/logout API endpoints (and other public API endpoints) to run
+  // without prior authentication so they can set/clear the demo cookie.
+  const PUBLIC = new Set<string>(["/", "/login", "/api/demo-login", "/api/demo-logout"]);
   const isPublic = PUBLIC.has(pathname);
 
   // Ответ-заготовка (сюда будем писать куки)
@@ -39,6 +41,15 @@ export async function proxy(req: NextRequest) {
     set(name: string, value: string, options?: CookieOptions): void;
     remove(name: string, options?: CookieOptions): void;
   };
+
+  // Quick demo-cookie check: if `demo_auth` cookie is present and valid,
+  // treat the request as authenticated (demo mode) and skip Supabase.
+  // This lets the simple password-only login work without a Supabase client on the browser.
+  const demoCookie = req.cookies.get("demo_auth")?.value;
+  if (demoCookie === "1") {
+    // allow demo-authenticated user
+    return res;
+  }
 
   // Инициализируем Supabase client
   const supabase = createServerClient(
