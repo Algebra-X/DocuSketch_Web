@@ -1,3 +1,4 @@
+// app/api/demo-login/route.ts
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
@@ -10,13 +11,23 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid password" }, { status: 401 });
     }
 
-    // Set a simple demo cookie. Use NextResponse.cookies.set for reliability.
+    // Set a simple demo cookie
     const res = NextResponse.json({ ok: true });
     const maxAge = 60 * 60 * 24 * 7; // 7 days
-    // Note: proxy expects demo_auth === "1"
-    res.cookies.set({ name: 'demo_auth', value: '1', httpOnly: true, path: '/в', maxAge, sameSite: 'lax' });
+
+    // ВАЖНО: путь только ASCII → '/'
+    // HttpOnly + SameSite=Lax достаточно для одного домена
+    res.cookies.set({
+      name: "demo_auth",
+      value: "1",
+      httpOnly: true,
+      path: "/",       // <-- исправлено (раньше было '/в', что ломало Set-Cookie на деплое)
+      maxAge,
+      sameSite: "lax",
+    });
+
     return res;
-  } catch (err) {
+  } catch {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
 }
