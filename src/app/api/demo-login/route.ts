@@ -11,17 +11,15 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid password" }, { status: 401 });
     }
 
-    // Set a simple demo cookie
     const res = NextResponse.json({ ok: true });
     const maxAge = 60 * 60 * 24 * 7; // 7 days
 
-    // ВАЖНО: путь только ASCII → '/'
-    // HttpOnly + SameSite=Lax достаточно для одного домена
+    // ВАЖНО: только ASCII путь — '/'.
     res.cookies.set({
       name: "demo_auth",
       value: "1",
       httpOnly: true,
-      path: "/",       // <-- исправлено (раньше было '/в', что ломало Set-Cookie на деплое)
+      path: "/",   // <-- исправлено (раньше было '/в')
       maxAge,
       sameSite: "lax",
     });

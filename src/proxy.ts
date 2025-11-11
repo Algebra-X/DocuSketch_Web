@@ -1,9 +1,10 @@
-// middleware.ts
+// src/proxy.ts
 import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 
 /**
- * Запускаем middleware на всех путях КРОМЕ статики и картинок.
+ * Включаем прокси на всех путях КРОМЕ статики и картинок.
+ * (аналог matcher для middleware)
  */
 export const config = {
   matcher: [
@@ -11,9 +12,9 @@ export const config = {
   ],
 };
 
-export async function middleware(req: NextRequest) {
-  const url = req.nextUrl;
-  const pathname = url.pathname;
+// ⬇️ ИМЕННО ЭТОЙ функцией должен экспортироваться proxy
+export async function proxy(req: NextRequest) {
+  const pathname = req.nextUrl.pathname;
 
   // Явный allowlist публичных путей
   const PUBLIC = new Set<string>(["/", "/login", "/api/demo-login", "/api/demo-logout"]);
@@ -22,7 +23,7 @@ export async function middleware(req: NextRequest) {
   // Ответ-заготовка (сюда будем писать куки)
   const res = NextResponse.next();
 
-  // Demo-cookie: если есть `demo_auth=1`, считаем юзера аутентифицированным
+  // Быстрая проверка демо-куки
   const demoCookie = req.cookies.get("demo_auth")?.value;
   if (demoCookie === "1") return res;
 
@@ -46,7 +47,7 @@ export async function middleware(req: NextRequest) {
     remove(name: string, options?: CookieOptions): void;
   };
 
-  // Supabase проверка сессии на приватных путях
+  // Проверка сессии Supabase только для приватных путей
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
