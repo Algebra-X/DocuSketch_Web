@@ -15,6 +15,20 @@ const ROOM_IMAGES: Record<string, string> = {
   KITCHEN: "/kuhnya-eterno-790-1.jpg",
   LIVING_ROOM: "/gostinaya-20-1.jpg",
   BEDROOM: "/spalnya-123-1.jpg",
+  BASEMENT: "/Basement.jpg",
+  CLOSET: "/closet.webp",
+  CRAWLSPACE: "/crawlspace.jpg",
+  GARAGE: "/garage.jpg",
+  GENERAL: "/general.jpg",
+  HALLWAY: "/hallway.jpg",
+  LAUNDRY: "/laundry.webp",
+  LIVING_AREA: "/living.jpg",
+  OFFICE: "/office.webp",
+  PATIO: "/patio.jpg",
+  STAIRS: "/stairs.webp",
+  STORAGE: "/storage.jpg",
+  OTHER: "/other.jpg",
+  UTILITY: "/utility.webp",
 };
 
 function toTitleCase(s: string): string {
