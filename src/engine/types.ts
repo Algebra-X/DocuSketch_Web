@@ -71,6 +71,10 @@ export interface EngineState {
   metrics?: {
     topKMass?: number;
     candidatesCount: number;
+    // number of unanswered facts that are currently relevant (frontier)
+    frontierCount?: number;
+    // how many facts/questions have already been asked
+    answeredCount?: number;
   };
 }
 

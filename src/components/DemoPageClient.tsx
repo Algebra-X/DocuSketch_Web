@@ -88,7 +88,7 @@ const RoomGrid: React.FC<{
   rooms: string[];
   onPick: (room: string) => void;
 }> = ({ rooms, onPick }) => (
-  <div className="w-full max-w-[640px] mx-auto">
+  <div className="w-full max-w-[640px] mx-auto pt-2 pb-8 sm:pt-3 sm:pb-10">
     <h3 className="text-center text-sm font-semibold text-neutral-800 mb-4">Please select the room you are in</h3>
     <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
       {rooms.map((roomType) => (
@@ -144,14 +144,14 @@ const PhoneShell: React.FC<{ room: string | null; progress: number; onClose: () 
   return (
     <div className="mx-auto w-[320px] sm:w-[360px]">
       <div className="relative rounded-[36px] bg-neutral-900/5 p-2 shadow-xl ring-1 ring-black/10">
-        <div className="rounded-[32px] bg-white h-[640px] flex flex-col overflow-hidden">
-          <motion.div initial={false} animate={{ height: showImage ? 176 : 0 }} className="overflow-hidden rounded-t-[32px] flex-shrink-0">
+        <div className="rounded-[32px] bg-white h-[700px] flex flex-col overflow-hidden">
+          <motion.div initial={false} animate={{ height: showImage ? 160 : 0 }} className="overflow-hidden rounded-t-[32px] flex-shrink-0">
             {showImage && (
               <motion.img
                 key={room!}
                 src={getRoomImage(room!)}
                 alt={title}
-                className="h-44 w-full object-cover"
+                className="h-40 w-full object-cover"
                 initial={{ opacity: 0, scale: 1.02 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3 }}
@@ -189,7 +189,7 @@ const PhoneShell: React.FC<{ room: string | null; progress: number; onClose: () 
             </div>
           )}
 
-          <div className="px-4 pb-5 flex-1 overflow-y-auto min-h-0">{children}</div>
+          <div className="px-4 pt-4 pb-10 flex-1 overflow-y-auto min-h-0">{children}</div>
         </div>
       </div>
     </div>
@@ -468,7 +468,13 @@ export default function DemoPageClient({ initialRoom }: { initialRoom?: RoomId }
         setCurrentQuestion(state.nextQuestion);
         setCandidates(state.candidates);
         setStop(state.stop);
-        setProgress(state.metrics?.topKMass ? state.metrics.topKMass * 100 : 0);
+  // Compute progress as answered / (answered + frontier). If frontier
+  // info is not available, fall back to the model's topKMass metric.
+  const answered = state.metrics?.answeredCount ?? 0;
+  const frontier = state.metrics?.frontierCount ?? 0;
+  const total = answered + frontier;
+  const pct = total > 0 ? (answered / total) * 100 : state.metrics?.topKMass ? state.metrics.topKMass * 100 : 0;
+  setProgress(pct);
 
         setLoading(false);
       } catch (err) {
@@ -504,7 +510,13 @@ export default function DemoPageClient({ initialRoom }: { initialRoom?: RoomId }
     setCurrentQuestion(state.nextQuestion);
     setCandidates(state.candidates);
     setStop(state.stop);
-    setProgress(state.metrics?.topKMass ? state.metrics.topKMass * 100 : 0);
+    {
+      const answered = state.metrics?.answeredCount ?? 0;
+      const frontier = state.metrics?.frontierCount ?? 0;
+      const total = answered + frontier;
+      const pct = total > 0 ? (answered / total) * 100 : state.metrics?.topKMass ? state.metrics.topKMass * 100 : 0;
+      setProgress(pct);
+    }
 
     // Update answer log
     const answerLabel = val === "__UNKNOWN__" ? "Unknown" : q.options.find((opt) => opt.value === val)?.label || String(val);
@@ -564,7 +576,13 @@ export default function DemoPageClient({ initialRoom }: { initialRoom?: RoomId }
       setCurrentQuestion(state.nextQuestion);
       setCandidates(state.candidates);
       setStop(state.stop);
-      setProgress(state.metrics?.topKMass ? state.metrics.topKMass * 100 : 0);
+      {
+        const answered = state.metrics?.answeredCount ?? 0;
+        const frontier = state.metrics?.frontierCount ?? 0;
+        const total = answered + frontier;
+        const pct = total > 0 ? (answered / total) * 100 : state.metrics?.topKMass ? state.metrics.topKMass * 100 : 0;
+        setProgress(pct);
+      }
       setLoading(false);
     } catch (err) {
       console.error("Failed to undo:", err);

@@ -44,7 +44,13 @@ export default function EnginePage() {
         setCurrentQuestion(state.nextQuestion);
         setCandidates(state.candidates);
         setStop(state.stop); 
-        setProgress(state.metrics?.topKMass);
+  // Compute progress fraction (0..1) as answered / (answered + frontier).
+  // Fall back to topKMass if frontier info isn't available.
+  const answered = state.metrics?.answeredCount ?? 0;
+  const frontier = state.metrics?.frontierCount ?? 0;
+  const total = answered + frontier;
+  const frac = total > 0 ? answered / total : state.metrics?.topKMass ?? 0;
+  setProgress(frac);
 
         setLoading(false);
       } catch (err) {
@@ -71,7 +77,13 @@ export default function EnginePage() {
     setCurrentQuestion(state.nextQuestion);
     setCandidates(state.candidates);
     setStop(state.stop);
-    setProgress(state.metrics?.topKMass);
+    {
+      const answered = state.metrics?.answeredCount ?? 0;
+      const frontier = state.metrics?.frontierCount ?? 0;
+      const total = answered + frontier;
+      const frac = total > 0 ? answered / total : state.metrics?.topKMass ?? 0;
+      setProgress(frac);
+    }
 
     // Add to transcript
     setTranscript((prev) => [...prev, { question: currentQuestion, answer }]);
@@ -107,7 +119,13 @@ export default function EnginePage() {
       setCurrentQuestion(state.nextQuestion);
       setCandidates(state.candidates);
       setStop(state.stop);
-      setProgress(state.metrics?.topKMass);
+      {
+        const answered = state.metrics?.answeredCount ?? 0;
+        const frontier = state.metrics?.frontierCount ?? 0;
+        const total = answered + frontier;
+        const frac = total > 0 ? answered / total : state.metrics?.topKMass ?? 0;
+        setProgress(frac);
+      }
 
       setLoading(false);
     } catch (err) {
@@ -125,7 +143,13 @@ export default function EnginePage() {
     setCurrentQuestion(state.nextQuestion);
     setCandidates(state.candidates);
     setStop(state.stop);
-    setProgress(state.metrics?.topKMass);
+    {
+      const answered = state.metrics?.answeredCount ?? 0;
+      const frontier = state.metrics?.frontierCount ?? 0;
+      const total = answered + frontier;
+      const frac = total > 0 ? answered / total : state.metrics?.topKMass ?? 0;
+      setProgress(frac);
+    }
     setTranscript([]);
   };
 

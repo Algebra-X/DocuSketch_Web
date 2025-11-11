@@ -538,6 +538,13 @@ export class Selector {
       topKMass = probs.reduce((a, b) => a + b, 0);
     }
 
+    // Expose a couple small helper metrics so callers can compute a UI-style
+    // progress (answered vs remaining frontier). The frontier is the set of
+    // unanswered facts that are relevant to the current candidate set.
+    const frontier = this._frontierFactIds();
+    const frontierCount = frontier.size;
+    const answeredCount = this.questionsAsked.length;
+
     return {
       candidates,
       nextQuestion,
@@ -545,6 +552,8 @@ export class Selector {
       metrics: {
         topKMass,
         candidatesCount: this.candidateClusterIds.length,
+        frontierCount,
+        answeredCount,
       },
     };
   }
